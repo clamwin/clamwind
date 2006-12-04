@@ -1,0 +1,8 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+ <action>asynresult</action>
+ <jobid>1</jobid>
+ <status>SCANNING</status>
+ <progress>35</progress>
+ <message>The file is being scanned</message>
+</clamwinreply>

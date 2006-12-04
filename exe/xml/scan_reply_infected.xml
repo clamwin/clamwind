@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+ <action>scan</action>
+ <filename>c:\eicar.com</filename>
+ <status>INFECTED</status>
+ <message>Eicar-Test-Signature</message>
+</clamwinreply>

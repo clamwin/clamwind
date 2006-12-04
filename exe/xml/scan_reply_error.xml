@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+  <action>scan</action>
+  <filename>c:\notfound.exe</filename>
+  <status code="2">ERROR</status>
+</clamwinreply>

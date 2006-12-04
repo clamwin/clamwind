@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+ <action>scan</action>
+ <filename>c:\windows\system32\shell32.dll</filename>
+ <status>INFECTED</status>
+ <message>ClamAV Test Pattern</message>
+</clamwinreply>

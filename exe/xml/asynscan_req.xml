@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<clamwinrequest>
+ <action>asynscan</action>
+ <filename>c:\windows\system32\shell32.dll</filename>
+</clamwinrequest>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<clamwinrequest>
+ <action>fsfiltercontrol</action>
+ <value>0</value>
+</clamwinrequest>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+ <action>asynscan</action>
+ <filename>c:\windows\system32\shell32.dll</filename>
+ <jobid>1</jobid>
+</clamwinreply>

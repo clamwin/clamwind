@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clamwind", "clamwind.vcproj", "{AA78A606-C2A3-4622-861D-DD99729EC6ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6} = {5715B90C-602E-446C-AC4A-D517CBE5E2C6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamav", "libclamav.vcproj", "{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "profiler", "profiler.vcproj", "{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6} = {5715B90C-602E-446C-AC4A-D517CBE5E2C6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pipeclient", "pipeclient.vcproj", "{92E138CA-2606-4B00-9B2A-EF0FD5196D88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Debug|Win32.Build.0 = Debug|Win32
+		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Release|Win32.ActiveCfg = Release|Win32
+		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Release|Win32.Build.0 = Release|Win32
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Debug|Win32.Build.0 = Debug|Win32
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Release|Win32.ActiveCfg = Release|Win32
+		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Release|Win32.Build.0 = Release|Win32
+		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Debug|Win32.ActiveCfg = Debug|Win32
+		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Debug|Win32.Build.0 = Debug|Win32
+		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Release|Win32.ActiveCfg = Release|Win32
+		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Release|Win32.Build.0 = Release|Win32
+		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Debug|Win32.Build.0 = Debug|Win32
+		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.ActiveCfg = Release|Win32
+		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

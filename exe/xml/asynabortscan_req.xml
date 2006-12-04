@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<clamwinrequest>
+ <action>asynabortscan</action>
+ <jobid>1</jobid>
+</clamwinrequest>

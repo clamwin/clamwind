@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<clamwinreply>
+ <action>getinfo</action>
+ <core>1.0</core>
+ <libclamav>0.99</libclamav>
+ <main>35</main>
+ <daily>1243</daily>
+ <fsfilter>1</fsfilter>
+</clamwinreply>
