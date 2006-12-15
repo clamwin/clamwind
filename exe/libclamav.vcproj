@@ -208,6 +208,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\cab.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\chmunpack.c"
 				>
 			</File>
@@ -277,6 +281,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\msexpand.c"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\mspack.c"
 				>
 			</File>
 			<File
@@ -411,54 +419,6 @@
 				RelativePath=".\clamav\libclamav\yc.c"
 				>
 			</File>
-			<Filter
-				Name="mspack"
-				>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\cab.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\cabd.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\lzx.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\lzxd.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\mspack.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\mszip.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\mszipd.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\qtm.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\qtmd.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\system.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\mspack\system.h"
-					>
-				</File>
-			</Filter>
 			<Filter
 				Name="unrar"
 				>
@@ -630,6 +590,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\cab.h"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\chmunpack.h"
 				>
 			</File>
@@ -715,6 +679,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\msexpand.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\mspack.h"
 				>
 			</File>
 			<File
