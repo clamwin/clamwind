@@ -43,10 +43,12 @@ class cwCache
 public:
     cwCache(wchar_t *dbdir);
     ~cwCache();
-    void Insert(const uint32_t *hash, entry_t &entry);
+    int Insert(const uint32_t *hash, entry_t &entry);
     entry_t *Get(const uint32_t *hash);
-    Dbc *GetCursor(void);
+    int error;
 private:
+    friend class cwPruningService;
+    DbEnv *envp;
     Db *database;
 };
 

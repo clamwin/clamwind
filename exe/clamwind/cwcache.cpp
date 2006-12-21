@@ -26,77 +26,74 @@
 
 #define HASH_BYTE_SIZE  32
 
+#define BDB_CWOPEN_FLAGS (DB_CREATE | DB_INIT_MPOOL | DB_READ_UNCOMMITTED | DB_THREAD | DB_AUTO_COMMIT)
+#define ENV_FLAGS (DB_CREATE | DB_RECOVER | DB_INIT_LOCK | DB_INIT_LOG | DB_INIT_TXN | DB_INIT_MPOOL | DB_THREAD)
+
+#define BDB_FILENAME "cache.dat"
+
 cwCache::cwCache(wchar_t *dbdir)
 {
-    char dbasefile[MAX_PATH] = "";
+    char dbase[MAX_PATH] = "";
     std::wstring path(dbdir);
-    path.append(L"\\cache.dat");
-    WideCharToMultiByte(CP_ACP, 0, path.c_str(), -1, dbasefile, sizeof(dbasefile), NULL, NULL);
+    WideCharToMultiByte(CP_ACP, 0, path.c_str(), -1, dbase, sizeof(dbase), NULL, NULL);
 
-    this->database = new Db(NULL, 0);
+    this->envp = new DbEnv(0);
+    //this->envp = new DbEnv(DB_CXX_NO_EXCEPTIONS);
+    this->envp->set_lk_detect(DB_LOCK_MINWRITE);
+    this->envp->open(dbase, ENV_FLAGS, 0);
 
-    try // FIXME: error handling
-    {
-        //this->database->open(NULL, dbasefile, NULL, DB_HASH, DB_CREATE | DB_THREAD | DB_INIT_MPOOL, 0);
-        // humm DB_THREAD needs some stuff to be done in a different way, but no examples with DB_HASH
-        // are using also DB_THREAD, maybe not needed?
-        this->database->open(NULL, dbasefile, NULL, DB_HASH, DB_CREATE | DB_INIT_MPOOL, 0);
+    strncat(dbase, "\\" BDB_FILENAME, MAX_PATH);
+
+    this->database = new Db(this->envp, 0);
+    //this->database = new Db(this->envp, DB_CXX_NO_EXCEPTIONS);
+
+    if ((this->error = this->database->open(NULL, dbase, NULL, DB_HASH, BDB_CWOPEN_FLAGS, 0)))
+        dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db open failed\n");
+    else
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db opened\n");
-    } catch(DbException &e)
-    {
-        // Error handling code goes here
-        MessageBoxA(NULL, e.what(), "cwCache::{ctor}", MB_OK);
-    }
 }
 
 cwCache::~cwCache()
 {
-    try
-    {
-        this->database->close(0);
+
+    if (this->database && this->envp && this->database->close(0) || this->envp->close(0))
+        dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db Close() Failed\n");
+    else
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db Closed\n");
-    } catch(DbException &e)
-    {
-        MessageBoxA(NULL, e.what(), "cwCache::{dtor}", MB_OK);
-        // Error handling code goes here
-    }
-    // FIXME delete database crashes
 }
 
-void cwCache::Insert(const uint32_t *hash, entry_t &entry)
+int cwCache::Insert(const uint32_t *hash, entry_t &entry)
 {
-    int ret = 0;
+    int err = 0;
     Dbt key((void *) hash, HASH_BYTE_SIZE);
-    Dbt data(&entry, sizeof(entry));
-    try
+    Dbt data((void *) &entry, sizeof(entry));
+
+    if (err = this->database->put(NULL, &key, &data, 0))
     {
-        ret = this->database->put(NULL, &key, &data, 0);
-    } catch(DbException &e)
-    {
-        MessageBoxA(NULL, e.what(), "cwCache::Insert", MB_OK);
-        // Error handling code goes here
+        dbgprint(LOG_ALWAYS, L"Persistent Cache :: Insert Failed\n");
+        this->database->err(err, "INSERT");
     }
+    return err;
 }
 
 entry_t *cwCache::Get(const uint32_t *hash)
 {
-    int ret = -1;
+    int err = 0;
+    entry_t *datares = new entry_t;
     Dbt key((void *) hash, HASH_BYTE_SIZE);
+
     Dbt data;
-    try
+    data.set_data((void *) datares);
+    data.set_size(sizeof(entry_t));
+	data.set_ulen(sizeof(entry_t));
+	data.set_flags(data.get_flags() | DB_DBT_USERMEM);
+
+    if ((err = this->database->get(NULL, &key, &data, DB_READ_UNCOMMITTED))
+        && err != DB_NOTFOUND)
     {
-        ret = this->database->get(NULL, &key, &data, 0);
-    } catch(DbException &e)
-    {
-        // Error handling code goes here
-        MessageBoxA(NULL, e.what(), "cwCache::Get", MB_OK);
+        dbgprint(LOG_ALWAYS, L"Persistent Cache :: Get Failed\n");
+        this->database->err(err, "GET");
     }
-    return ret ? NULL : (entry_t *) data.get_data();
+    return err ? NULL : (entry_t *) data.get_data();
 }
-/* TODO: error checking */
-Dbc *cwCache::GetCursor(void)
-{
-    Dbc *cursorp;
-    this->database->cursor(NULL, &cursorp, 0);
-    return cursorp;
-}
+

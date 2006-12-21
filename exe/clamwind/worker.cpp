@@ -112,6 +112,7 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
             dbgprint(LOG_ALWAYS, L"[DENIED] Thread %u; Filename: %s found in cache\n", GetCurrentThreadId(), wsfilename.c_str());
             scanres = SCAN_RES_INFECTED;
         }
+        delete match;
     }
     return scanres;
 }
@@ -372,11 +373,12 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
                     job.total = _lseeki64(fd, 0, SEEK_END);
                     _lseeki64(fd, 0, SEEK_SET);
 
-                    /* TimeStamp */
+                    /* TimeStamp */ /* FIXME: time() ? */
                     if (QueryPerformanceCounter(&ts))
-                        dbgprint(LOG_ALWAYS, L"Worker::QueryPerformanceCounter() failed %d\n", GetLastError());
-                    else
                         job.timestamp = ts.QuadPart;
+                    else
+                        dbgprint(LOG_ALWAYS, L"Worker::QueryPerformanceCounter() failed %d\n", GetLastError());
+
 
                     reply.append("<jobid>");
                     reply.append(_ui64toa(jobid, szToDigit, 10)); /* FIXME: Check range */

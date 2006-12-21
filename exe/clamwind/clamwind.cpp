@@ -54,6 +54,11 @@ bool CClamWinD::Init(void)
 
     /* BDB Database */
     this->cache = new cwCache(this->ourPath);
+    if (this->cache->error)
+    {
+        dbgprint(LOG_ALWAYS, L"Problems opening Persistant Cache Db, aborting...\n");
+        return false;
+    }
 
     /* Sync objects */
     this->InitEvents();
@@ -114,7 +119,7 @@ void CClamWinD::ServiceProc(void)
 int wmain(int argc, wchar_t *argv[])
 {
     // read loglevel from registry
-    DWORD logLevel = LOG_DEBUG;
+    DWORD logLevel = LOG_ALWAYS;
     svc.GetConfigValue(L"LogLevel", &logLevel);
 
     if ((argc > 1) && wcsstr(argv[1], L"/t"))
