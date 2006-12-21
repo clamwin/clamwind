@@ -343,14 +343,14 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
             reply.append(msg->GetArgument(TAG_FILENAME));
             reply.append("</filename>");
 
-			// need to lock Impersonation from concurrent access
-			// as this may result in a security breach of opening file
-			// under undesired user account
-			LOCK(IMPERSONATE);
+            // need to lock Impersonation from concurrent access
+            // as this may result in a security breach of opening file
+            // under undesired user account
+            LOCK(IMPERSONATE);
             if (this->impersonate) ImpersonateNamedPipeClient(msg->client);
             hFile = CreateFile(msg->filename, GENERIC_READ, FILE_SHARE_READ/*|FILE_SHARE_WRITE*/, NULL, OPEN_EXISTING, FILE_FLAG_RANDOM_ACCESS, NULL);
-			if (this->impersonate) RevertToSelf();
-			UNLOCK(IMPERSONATE);
+            if (this->impersonate) RevertToSelf();
+            UNLOCK(IMPERSONATE);
             if ((hFile != INVALID_HANDLE_VALUE) && ((fd = _open_osfhandle((intptr_t) hFile, O_RDONLY | O_BINARY)) != -1))
             {
                 std::string message;

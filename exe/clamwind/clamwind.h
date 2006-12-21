@@ -75,7 +75,7 @@ typedef enum
     LOCK_FILE,
     LOCK_ABORTED,
     LOCK_WORKER,
-	LOCK_IMPERSONATE,
+    LOCK_IMPERSONATE,
     LOCK_RELOAD,
     LOCK_MAX
 } cs_t;
@@ -156,7 +156,6 @@ public:
         else Execute();
     }
 
-
     static DWORD WINAPI HandleIOCTL(LPVOID lParam);
     static DWORD WINAPI Worker(LPVOID lParam);
     static int ScanCallback(int desc, int bytes);
@@ -186,11 +185,11 @@ public:
     int UpdateThreadJob(int desc, int bytes);
 
 private:
-	friend class cwPipeServer;
+    friend class cwPipeServer;
     friend class cwPruningService;
 
-	bool impersonate;
-	HANDLE hStopEvent;
+    bool impersonate;
+    HANDLE hStopEvent;
 
     wchar_t ourPath[MAX_PATH];
     DWORD pipesrv_tid; /* Needed to check for it in Scan CallBack */

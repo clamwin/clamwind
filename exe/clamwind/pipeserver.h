@@ -41,30 +41,30 @@ inline uint32_t string_to_uint32(const char *str)
 }
 class cwPipeServer
 {
-	typedef struct
-	{
-		OVERLAPPED oOverlap;
-		HANDLE hPipeInst;
-		char chRequest[XML_MSG_SIZE];
-		DWORD cbRead;
-		char chReply[XML_MSG_SIZE];
-		DWORD cbToWrite;
-		CClamWinD *svc;
-	} PIPEINST, *LPPIPEINST;
+    typedef struct
+    {
+        OVERLAPPED oOverlap;
+        HANDLE hPipeInst;
+        char chRequest[XML_MSG_SIZE];
+        DWORD cbRead;
+        char chReply[XML_MSG_SIZE];
+        DWORD cbToWrite;
+        CClamWinD *svc;
+    } PIPEINST, *LPPIPEINST;
 
 
-	static void DisconnectAndClose(LPPIPEINST lpPipeInst);
-	static void GetAnswerToRequest(LPPIPEINST pipe);
-	static bool ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo);
-	static bool CreateAndConnectInstance(LPOVERLAPPED lpoOverlap, HANDLE& hPipe);
+    static void DisconnectAndClose(LPPIPEINST lpPipeInst);
+    static void GetAnswerToRequest(LPPIPEINST pipe);
+    static bool ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo);
+    static bool CreateAndConnectInstance(LPOVERLAPPED lpoOverlap, HANDLE& hPipe);
 
-	// completion routines need to be static
-	static void WINAPI CompletedReadRoutine(DWORD dwErr, DWORD cbBytesRead, LPOVERLAPPED lpOverLap);
-	static void WINAPI CompletedWriteRoutine(DWORD dwErr, DWORD cbWritten, LPOVERLAPPED lpOverLap);
+    // completion routines need to be static
+    static void WINAPI CompletedReadRoutine(DWORD dwErr, DWORD cbBytesRead, LPOVERLAPPED lpOverLap);
+    static void WINAPI CompletedWriteRoutine(DWORD dwErr, DWORD cbWritten, LPOVERLAPPED lpOverLap);
 
 public:
-	// main pipe server thread
-	static DWORD WINAPI Run(LPVOID lpvThreadParam);
+    // main pipe server thread
+    static DWORD WINAPI Run(LPVOID lpvThreadParam);
 };
 
 #endif /* _PIPESERVER_H_ */

@@ -85,8 +85,8 @@ entry_t *cwCache::Get(const uint32_t *hash)
     Dbt data;
     data.set_data((void *) datares);
     data.set_size(sizeof(entry_t));
-	data.set_ulen(sizeof(entry_t));
-	data.set_flags(data.get_flags() | DB_DBT_USERMEM);
+    data.set_ulen(sizeof(entry_t));
+    data.set_flags(data.get_flags() | DB_DBT_USERMEM);
 
     if ((err = this->database->get(NULL, &key, &data, DB_READ_UNCOMMITTED))
         && err != DB_NOTFOUND)

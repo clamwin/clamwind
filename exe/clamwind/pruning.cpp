@@ -47,15 +47,15 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     uint32_t *hashres = new uint32_t[PAN_STAGE_SIZE];
     key.set_data((void *) hashres);
     key.set_size(PAN_STAGES);
-	key.set_ulen(PAN_STAGES);
-	key.set_flags(key.get_flags() | DB_DBT_USERMEM);
+    key.set_ulen(PAN_STAGES);
+    key.set_flags(key.get_flags() | DB_DBT_USERMEM);
 
     Dbt data;
     entry_t *datares = new entry_t;
     data.set_data((void *) datares);
     data.set_size(sizeof(entry_t));
-	data.set_ulen(sizeof(entry_t));
-	data.set_flags(data.get_flags() | DB_DBT_USERMEM);
+    data.set_ulen(sizeof(entry_t));
+    data.set_flags(data.get_flags() | DB_DBT_USERMEM);
 
     dbgprint(LOG_ALWAYS, L"Pruning Service :: Starting...\n");
     /* This is a background service */
