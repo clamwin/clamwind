@@ -33,7 +33,7 @@
 typedef struct _entry
 {
     bool allowed;
-    wchar_t filename[512]; /* MAX_PATH is 260 but I think ^2 will perform better */
+    wchar_t filename[512]; /* MAX_PATH is 260 but I think a power of 2 may perform better */
     uint32_t main, daily;
 } entry_t;
 #pragma pack()
@@ -44,6 +44,7 @@ public:
     cwCache(wchar_t *dbdir);
     ~cwCache();
     int Insert(const uint32_t *hash, entry_t &entry);
+    int Delete(Dbt *key);
     entry_t *Get(const uint32_t *hash);
     int error;
 private:

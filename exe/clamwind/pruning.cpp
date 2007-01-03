@@ -40,10 +40,9 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     uint32_t hash[PAN_STAGE_SIZE];
     uint32_t *dbhash = NULL;
     Dbc *cursorp = NULL;
-    DbTxn *txn = NULL;
     entry_t *entry = NULL;
 
-    Dbt key;
+    Dbt key, *dkey;
     uint32_t *hashres = new uint32_t[PAN_STAGE_SIZE];
     key.set_data((void *) hashres);
     key.set_size(PAN_STAGES);
@@ -61,13 +60,12 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     /* This is a background service */
     SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_IDLE);
 
-    while (true)
+    while (false) // NOT WORKING :(
     {
         BREAKIFDONE(SLEEPTIME);
 
-        txn = NULL;
-        svc->cache->envp->txn_begin(NULL, &txn, 0);
-        svc->cache->database->cursor(txn, &cursorp, 0);
+        svc->cache->database->cursor(NULL, &cursorp, DB_READ_UNCOMMITTED);
+        dkey = NULL;
 
         if (!cursorp)
         {
@@ -85,7 +83,7 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
             if (hFile == INVALID_HANDLE_VALUE)
             {
                 dbgprint(LOG_ALWAYS, L"Error opening file: %s (%d) - REMOVED\n", entry->filename, GetLastError());
-                cursorp->del(0);
+                dkey = &key;
                 break;
             }
 
@@ -107,13 +105,13 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
             if (memcmp(dbhash, hash, PAN_STAGES))
             {
                 dbgprint(LOG_ALWAYS, L"File has different Checksum: %s - REMOVED\n", entry->filename);
-                cursorp->del(0);
+                dkey = &key;
                 break;
             }
         }
         cursorp->close();
         cursorp = NULL;
-        txn->commit(0);
+        if (dkey) svc->cache->Delete(dkey);
     }
 
     delete hashres;

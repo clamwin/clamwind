@@ -26,11 +26,15 @@
 
 #define HASH_BYTE_SIZE  32
 
-#define BDB_CWOPEN_FLAGS (DB_CREATE | DB_INIT_MPOOL | DB_READ_UNCOMMITTED | DB_THREAD | DB_AUTO_COMMIT)
-#define ENV_FLAGS (DB_CREATE | DB_RECOVER | DB_INIT_LOCK | DB_INIT_LOG | DB_INIT_TXN | DB_INIT_MPOOL | DB_THREAD)
+//#define BDB_CWOPEN_FLAGS (DB_CREATE | DB_INIT_MPOOL | DB_READ_UNCOMMITTED | DB_THREAD | DB_AUTO_COMMIT)
+//#define ENV_FLAGS (DB_CREATE | DB_THREAD | DB_RECOVER | DB_INIT_LOCK | DB_INIT_LOG | DB_INIT_TXN | DB_INIT_MPOOL)
+
+#define BDB_CWOPEN_FLAGS (DB_CREATE | DB_INIT_MPOOL | DB_READ_UNCOMMITTED | DB_THREAD)
+#define ENV_FLAGS (DB_CREATE | DB_THREAD | DB_INIT_CDB | DB_INIT_MPOOL)
 
 #define BDB_FILENAME "cache.dat"
 
+// FIXME: Add Database recovery - DB_RECOVER is enough?
 cwCache::cwCache(wchar_t *dbdir)
 {
     char dbase[MAX_PATH] = "";
@@ -39,7 +43,8 @@ cwCache::cwCache(wchar_t *dbdir)
 
     this->envp = new DbEnv(0);
     //this->envp = new DbEnv(DB_CXX_NO_EXCEPTIONS);
-    this->envp->set_lk_detect(DB_LOCK_MINWRITE);
+    //this->envp->set_lk_detect(DB_LOCK_DEFAULT);
+    //this->envp->set_flags(DB_DIRECT_DB, 1); /* Turn off system caching */
     this->envp->open(dbase, ENV_FLAGS, 0);
 
     strncat(dbase, "\\" BDB_FILENAME, MAX_PATH);
@@ -56,7 +61,7 @@ cwCache::cwCache(wchar_t *dbdir)
 cwCache::~cwCache()
 {
 
-    if (this->database && this->envp && this->database->close(0) || this->envp->close(0))
+    if (this->database && this->envp && (this->database->close(0) || this->envp->close(0)))
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db Close() Failed\n");
     else
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Cache Db Closed\n");
@@ -68,10 +73,21 @@ int cwCache::Insert(const uint32_t *hash, entry_t &entry)
     Dbt key((void *) hash, HASH_BYTE_SIZE);
     Dbt data((void *) &entry, sizeof(entry));
 
-    if (err = this->database->put(NULL, &key, &data, 0))
+    if ((err = this->database->put(NULL, &key, &data, 0)))
     {
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Insert Failed\n");
         this->database->err(err, "INSERT");
+    }
+    return err;
+}
+
+int cwCache::Delete(Dbt *key)
+{
+    int err = 0;
+    if ((err = this->database->del(NULL, key, 0)))
+    {
+        dbgprint(LOG_ALWAYS, L"Persistent Cache :: Delete Failed\n");
+        this->database->err(err, "DELETE");
     }
     return err;
 }
@@ -88,9 +104,9 @@ entry_t *cwCache::Get(const uint32_t *hash)
     data.set_ulen(sizeof(entry_t));
     data.set_flags(data.get_flags() | DB_DBT_USERMEM);
 
-    if ((err = this->database->get(NULL, &key, &data, DB_READ_UNCOMMITTED))
-        && err != DB_NOTFOUND)
+    if ((err = this->database->get(NULL, &key, &data, DB_READ_UNCOMMITTED)))
     {
+        if (err == DB_NOTFOUND) return NULL;
         dbgprint(LOG_ALWAYS, L"Persistent Cache :: Get Failed\n");
         this->database->err(err, "GET");
     }
