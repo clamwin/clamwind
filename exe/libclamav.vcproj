@@ -228,11 +228,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\entconv.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\filetypes.c"
 				>
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\fsg.c"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\hashtab.c"
 				>
 			</File>
 			<File
@@ -622,6 +630,18 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\encoding_aliases.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\entconv.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\entitylist.h"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\execs.h"
 				>
 			</File>
@@ -631,6 +651,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\fsg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\hashtab.h"
 				>
 			</File>
 			<File
@@ -864,6 +888,10 @@
 				</File>
 				<File
 					RelativePath=".\clamav\libclamav\sis.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\include\stdint.h"
 					>
 				</File>
 				<File
