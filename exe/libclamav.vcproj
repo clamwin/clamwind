@@ -220,6 +220,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\dconf.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\dsig.c"
 				>
 			</File>
@@ -615,6 +619,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\cvd.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\dconf.h"
 				>
 			</File>
 			<File
