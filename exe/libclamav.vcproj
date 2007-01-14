@@ -264,6 +264,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\lockdb.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\matcher-ac.c"
 				>
 			</File>
@@ -289,6 +293,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\message.c"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\mew.c"
 				>
 			</File>
 			<File
@@ -409,6 +417,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\unzip.c"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\upack.c"
 				>
 			</File>
 			<File
@@ -682,6 +694,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\lockdb.h"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\matcher-ac.h"
 				>
 			</File>
@@ -707,6 +723,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\message.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\mew.h"
 				>
 			</File>
 			<File
@@ -823,6 +843,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\unzip.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\upack.h"
 				>
 			</File>
 			<File
