@@ -133,7 +133,6 @@ bool CClamWinD::AbortJob(uint32_t jobid)
 
     if (this->IsAborted(jobid)) return false;
     this->aborted.push_back(jobid);
-    UNLOCK(ABORTED);
     return true;
 }
 
