@@ -60,7 +60,7 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     /* This is a background service */
     SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_IDLE);
 
-    while (false) // NOT WORKING :(
+    while (true)
     {
         BREAKIFDONE(SLEEPTIME);
 
