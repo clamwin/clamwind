@@ -50,7 +50,7 @@ void cwPipeServer::GetAnswerToRequest(LPPIPEINST pipe)
         msg->client = pipe->hPipeInst;
         std::string reply = pipe->svc->HandleXmlMessage(msg);
         strcpy(pipe->chReply, reply.c_str());
-        pipe->cbToWrite = (DWORD) reply.length();
+        pipe->cbToWrite = (DWORD) reply.length() + 1;
     }
     else
     {
