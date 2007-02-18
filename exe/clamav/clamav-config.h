@@ -280,7 +280,7 @@
 /* #undef USE_SYSLOG */
 
 /* Version number of package */
-#define VERSION "0.90"
+#define VERSION "devel-msvc - "__DATE__
 
 /* use libcurl in mbox code */
 /* #define WITH_CURL 1 */
