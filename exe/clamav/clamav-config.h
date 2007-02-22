@@ -24,12 +24,6 @@
 /* Path to virus database directory. */
 #define DATADIR "."
 
-/* Name of the main database */
-#define DB1NAME "main.cvd"
-
-/* Name of the daily database */
-#define DB2NAME "daily.cvd"
-
 /* "default FD_SETSIZE value" */
 #define DEFAULT_FD_SETSIZE 64
 
@@ -291,6 +285,9 @@
 
 /* Define to 1 to make fseeko visible on some hosts (e.g. glibc 2.2). */
 /* #undef _LARGEFILE_SOURCE */
+
+/* POSIX compatibility */
+/* #undef _POSIX_PII_SOCKET */
 
 /* thread safe */
 /* #undef _REENTRANT */
