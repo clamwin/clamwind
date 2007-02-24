@@ -132,6 +132,9 @@
 /* "pragma pack" */
 #define HAVE_PRAGMA_PACK 1
 
+/* "pragma pack hppa/hp-ux style" */
+/* #undef HAVE_PRAGMA_PACK_HPPA */
+
 /* readdir_r takes 2 arguments */
 /* #undef HAVE_READDIR_R_2 */
 
