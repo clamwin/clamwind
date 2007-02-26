@@ -81,6 +81,9 @@
 /* have gmp installed */
 #define HAVE_GMP 1
 
+/* Define to 1 if you have the <grp.h> header file. */
+/* #undef HAVE_GRP_H */
+
 /* Define to 1 if you have the <iconv.h> header file. */
 /* #undef HAVE_ICONV_H */
 
@@ -134,6 +137,9 @@
 
 /* "pragma pack hppa/hp-ux style" */
 /* #undef HAVE_PRAGMA_PACK_HPPA */
+
+/* Define to 1 if you have the <pwd.h> header file. */
+/* #undef HAVE_PWD_H */
 
 /* readdir_r takes 2 arguments */
 /* #undef HAVE_READDIR_R_2 */
