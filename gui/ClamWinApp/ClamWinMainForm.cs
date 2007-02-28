@@ -1364,7 +1364,8 @@ namespace ClamWinApp
 
             SaveScanItemsToDatabase();
 
-            ClamWinScanner.ManageGuiHandle(this.Handle, false);
+            // Alch 20070228 - temporarily disabled as service does not yet implement gui notify
+            // ClamWinScanner.ManageGuiHandle(this.Handle, false);
 
             ClamWinQuarantine.Close();
             ClamWinScanner.Close();
@@ -1376,7 +1377,8 @@ namespace ClamWinApp
         /// </summary>        
         private void ClamWinMainForm_Load(object sender, EventArgs e)
         {
-            ClamWinScanner.ManageGuiHandle(this.Handle, true);
+            // Alch 20070228 - temporarily disabled as service does not yet implement gui notify
+            //ClamWinScanner.ManageGuiHandle(this.Handle, true);
 
             formQuarantine.MainFomrHandle = this.Handle;
 
