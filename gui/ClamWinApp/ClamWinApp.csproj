@@ -1,0 +1,297 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5CBADE9-63F0-47E3-8A92-E3B16CB2673A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClamWinApp</RootNamespace>
+    <AssemblyName>ClamWinApp</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.29.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SQLLite.NET\bin\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TaskScheduler, Version=1.1.2169.29349, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TaskScheduler Project\bin\Debug\TaskScheduler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClamWinDatabase.cs" />
+    <Compile Include="ClamWinFilterData.cs" />
+    <Compile Include="ClamWinFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinFilterForm.Designer.cs">
+      <DependentUpon>ClamWinFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinFilterNotifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinFilterNotifyForm.Designer.cs">
+      <DependentUpon>ClamWinFilterNotifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinGlobal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClamWinGlobal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinGlobal.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClamWinGlobal.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinGlobal.ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClamWinGlobal.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinInfectedNotifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinInfectedNotifyForm.Designer.cs">
+      <DependentUpon>ClamWinInfectedNotifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinListViewSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinListViewSearchForm.Designer.cs">
+      <DependentUpon>ClamWinListViewSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinMainForm.Designer.cs">
+      <DependentUpon>ClamWinMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinMainFormNotifications.cs" />
+    <Compile Include="ClamWinNewVersionNotifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinNewVersionNotifyForm.Designer.cs">
+      <DependentUpon>ClamWinNewVersionNotifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinQuarantine.cs" />
+    <Compile Include="ClamWinQuarantineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinQuarantineForm.Designer.cs">
+      <DependentUpon>ClamWinQuarantineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinScan.cs" />
+    <Compile Include="ClamWinScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinScanForm.Designer.cs">
+      <DependentUpon>ClamWinScanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinScanner.cs" />
+    <Compile Include="ClamWinScanRequest.cs" />
+    <Compile Include="ClamWinScanResponse.cs" />
+    <Compile Include="ClamWinScanScheduler.cs" />
+    <Compile Include="ClamWinScheduleData.cs" />
+    <Compile Include="ClamWinScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinScheduleForm.Designer.cs">
+      <DependentUpon>ClamWinScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinSettings.cs" />
+    <Compile Include="ClamWinSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinSettingsForm.Designer.cs">
+      <DependentUpon>ClamWinSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinStatistics.cs" />
+    <Compile Include="ClamWinTrayNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClamWinTrayNotifier.Designer.cs">
+      <DependentUpon>ClamWinTrayNotifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClamWinVersion.cs" />
+    <Compile Include="FolderBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClamWinFilterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinFilterNotifyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinFilterNotifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinGlobal.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClamWinGlobal.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinGlobal.ru.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClamWinGlobal.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinInfectedNotifyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinInfectedNotifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinListViewSearchForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinListViewSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinMainForm.en.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinMainForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinGlobal.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClamWinGlobal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinNewVersionNotifyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinNewVersionNotifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinQuarantineForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinQuarantineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinScanForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinScanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinScheduleForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClamWinTrayNotifier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClamWinTrayNotifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win32API.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PanelsEx\PanelsEx.csproj">
+      <Project>{35C155E9-F8DA-469D-A881-7332D4014793}</Project>
+      <Name>PanelsEx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\dw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusSubPanel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_ball.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low_pr_level.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

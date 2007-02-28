@@ -1,0 +1,4027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="trayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>6, 11</value>
+  </metadata>
+  <metadata name="menuTray.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>95, 12</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuItemTrayOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="menuItemTrayOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="menuItemTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="menuItemTrayExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="menuTray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 54</value>
+  </data>
+  <data name="&gt;&gt;menuTray.Name" xml:space="preserve">
+    <value>menuTray</value>
+  </data>
+  <data name="&gt;&gt;menuTray.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="trayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAgAEBAQAAAAAAAoAQAAhgAAABAQAAABAAgAaAUAAK4BAAAgIBAAAAAAAOgCAAAWBwAAICAAAAEA
+        CACoCAAA/gkAADAwAAABAAgAqA4AAKYSAAAQEAAAAQAgAGgEAABOIQAAICAAAAEAIACoEAAAtiUAADAw
+        AAABACAAqCUAAF42AAAoAAAAEAAAACAAAAABAAQAAAAAAMAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAREAAAAAAAATkdAgzAAAATmTg93i1AABHVvTxMYNQBHTV5D97GLAE6Fj0fze4mAT+TnS4c3
+        ODAE+PR/E/sYMATvQA//cXuAAEQAMxMXuLAAAAmP/3tzAAAAA/v7e3AAAAAAP7c3AAAAAAAAAAAAAAAA
+        AAAAAAAA/////+Mf///AB///gAP//4AB//8AAf//AAD//wAA//+AAP//hAD//8gA///wAf//8AP///gH
+        ///8D////////ygAAAAQAAAAIAAAAAEACAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAARo6yAEeR
+        tgBIlLoARo+zAOj4+gDf8vEAGl+IADF6ogA0cZcANWmKAEOFpgBGkLQAJ4C3AOb2+gBFyuoAxvH2AH7t
+        8wBTzNwAW8bfAESZvAA/epgAR5O5AB9YmABxkbwA/f//APD3+gDm9vgAzPL3AFPL3QBTuM4ARafRADtv
+        iQBhBhkAJmeoAC6AowAgUIkAHlSGAB47ZQCO2egAWMvdAESlxQBKrM8AN2N6AObSvwD89/MARImsAOT0
+        +ADt9/oA4/T5AHfh7AAXNEUAb8XjAEKfvwBCnskANVxxAPXw8QDPoHkA///2ANje4ADd5e4AGjZMACRN
+        fQDP6vIAet/sABgzTwBVu+MANHSiADNWaQD18dwA8OfqAFctKgD8+esA+fHjAC6x2ABiwc8AY8DhACV2
+        pgCC4u8AK2OQAEKLvAA6dKMAMVBiAPTu1gB/Q1QAlDjiALypKQDsydQA3+DfAOPx9QAiXZUAdrrNAFTT
+        7AAzZpYAQYK5ADdhigAvS1sA5tqlAEwhKAA1IBkA+fPlAClwvADw+vkAt+72AEXK7AAqXIoANktyAEWY
+        1gAvSlkA6eLVACUVIwC3fkcA//viANDb5gAgPmcAGkt6ACg4aQA4SHcAS6/ZAC9XbQAtRVMA/PXZALeL
+        UQDKtlsA9vDUAN3v8ADB7fQAUbXkAEup2ABIq9UALExYAC1EUgD278AAmGlKAO3jpwA0WW0AWJ+WADBz
+        hQAvVmEALkdWAC1DUQAwTl8ALkZUAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAACEhIQAAjWyOAAAAAAAAACGEhYYhh4iJiouMAAAAACF5ent8IX1+f4CBgoMAAAAh
+        bW5vcCFxcnN0dXZ3eAAhYWJVY2QhZWZnaGlqa2wAIVNUVVZXIVhZWltcXV5fYCFFRkdISSFKS0xNTk9Q
+        UVIAITg5OiE7PD0+P0BBQkNEACEsLSEALi8wMTIzNDU2NwAAISEAAiIjJCUmJygpKisAAAAAFhcYGRob
+        HB0eHyAAAAAAAAwNDg8QERITFBUAAAAAAAAABAUGBwgJCgsAAAAAAAAAAAABAgMDAgEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AADjHwAAwAcAAIADAACAAQAAAAEAAAAAAAAAAAAAgAAAAIQAAADIAAAA8AEAAPAD
+        AAD4BwAA/A8AAP//AAAoAAAAIAAAAEAAAAABAAQAAAAAAIACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA
+        gAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAREgAAAAAAAAAAAAAAAAABOfk5QAAAAAAAAAA
+        AAAAAE5+ZH5AADNTUAAAAAAAAASH50b4ZDh4MziDAAAAAAAEfn5O/oT7e3e5NTEAAAAARufkh+dg9/e4
+        OIuDEAAAAE7+B07+dP8zGIMziYEAAARn5lNW5+B4OLOYmDgzEABETnRVhv50g393uImDiDAABGRA1UTv
+        4L//e3s4NTmDAAR+cF1ORIR/94N7ezi4NQAE7+SGh+9AR/O3k3mJNTMQBH74Rf7+SL/5c3i3OIuIMATv
+        50/v508zezeze4O4OYAATv6OfvQPcTh4N3c5eYOAAEfo5+9wf/8zE3+5gzg4MAAA+P7+QLf////7cze4
+        s4AABOjv5AALd393uDF5eJcwAABEeEAAuDO4uDU3uLO4AAAABEQAezf4MzM7e3uHOAAAAAQAB3g3+/v3
+        d3c4uYAAAAAAAP85P////3uzezgwAAAAAAD3uP97e3t3h4tYAAAAAAAAB4v4t/d3t7s4MwAAAAAAAAC3
+        //cxt5NxcYAAAAAAAAAAAH/3tzODmDAAAAAAAAAAAAAAe4OYODAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////+////8H///+A8D//AEAP/gAAA/4AAAH8AA
+        AA/AAAAHgAAAAwAAAAOAAAABgAAAAYAAAACAAAAAgAAAAMAAAADAAAAA4AAAAOAwAADwQAAB+IAAAfsA
+        AAP+AAAD/gAAB/8AAAf/gAAP/8AAH//wAH///AH///////////8oAAAAIAAAAEAAAAABAAgAAAAAAIAE
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA
+        AQAIAQQAEAIGABkDBwAnBQkALwcLADQIDQA2CQ4AOQoPAD0LEQBBChEARwoTAEwJEgBRCBMAVwcUAF0G
+        FgBfBhgAYAYYAGAGGABgBhgAYAYZAGAGGQBgBhkAYAYZAGAGGQBgBhkAYAoZAGMQHgBkFSEAZRkkAGgi
+        KABpKiwAbjMwAHE5MQB1PzEAe0kwAH5UMgCCWjQAhF41AIZhNQCJZTgAjWk8AJFuPgCTcEEAlXBEAJJq
+        SQCRZ0kAjmNLAItgTACGXE0AfVZPAHRPUABqSVIAX0RVAFVAWABGO1sAQTtZADo7WQAxOloAKDxcACM8
+        XQAgPF4AHzxeAB88XQAgPVwAIz5YACc/UwAqQE8AK0FOACtCTwAsQ1AALERRACxFUgAtRlMALUdVAC5J
+        VwAuS1wALkxgAC9NYwAvTWYAL09pADFRbAAxU20ANFVwADdXcgA+WXYAQ1l6AElYfgBRWIQAWViJAF9Y
+        jgBjWJEAZ1iUAGxamAByWZ4AbFmcAGJXmwBYVZsAT1WYAEVUlAA8VY8ANlWLADNViAAwVYgALVaHAChX
+        iAAkWYkAIVqKACBdjAAfXo0AH2GPACFijwAiY48AJWOOACpkjQAuZYsAMWWKADRmigA1ZokANmiLADdr
+        jAA3a4wAN22OADZxkgA3c5UANXiYADR7nAAvfJ4ALX2gAC19ogAuf6QAMH+mADV/qAA5fqkAPH+rAD6C
+        rAA/hq0AQIauAD2IsQA8jLIAO46zADuQswA8kbQAP5K0AEGTtQBElLUARpe3AEeXuQBImLsAR5i8AEaY
+        vgBEmcEARJrDAEWbxABHnsUAS6PHAE2nxwBPqcoAT6vKAE+szABPrc0ATq7OAE6v0QBNsNMAT7LUAFO0
+        0wBWtdMAXLjTAGC51ABku9UAZ7zWAGm+1wBnwNoAZ8LbAGbE2wBlxtsAZcfdAGfK4ABqzeIAbNDlAG7S
+        6ABx1ekAddrrAHrc7AB+3u0Agt/tAIXg7ACK3+wAjODsAI/g7ACS4e0AluLuAJzj7gCi5vAAqeryALLr
+        8gC87/MAwfH0AMXz9QDM9PUA0vT1ANb19gDa9fYA5Pj4AOz6+gD0/PsA+P38APv9/QD7/vwA+/37APv9
+        9wD7+/QA/PrvAPz56wD8+OMA/PbdAPv12AD58dEA9+vLAPPmxQDt3L4A49S7AODNtgDXwK0AzrShAMms
+        lwDEpowAwqSEAMCjeAC9oWwAu6BlALuhYAC9qFsAv6lYAMKuVgDGtFkAyrpeAM/AZADUw2kA2MdvAN3L
+        dADh0H0A5dSEAOrbiwD///8A7+GSAAkJCQkJCQkJCR4JCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+        CQkJHgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkeHh4tHgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+        CQkJHu/79fP1HgkJCQlYV1ZVVFMJCQkJCQkJCQkJCQkJCR72//cy7f/yHgldXV5eXFhVT1FQCQkJCQkJ
+        CQkJCQkeNuP3+znx4PQtHom1tZyIhIBdV09PTgkJCQkJCQkJCR7//f397/Th+TUW0Mq1uL25q5uGXlZO
+        TgkJCQkJCQke8ePl8Cfw/Ob88RXUzc/Hp5OPlKSZgltOTgkJCQkJCR794+sT7Cn45Ob0EtPWnkh0foBw
+        cI+ihl1RTgkJCQkeLf/jPkBEPDbj4/YS1JRInKaUj4eCW4Gigl1NTgkJHh4n+OwTaEEp9ODf+CSgjNDa
+        zK2llJCGXY+RgFpOCQkJHvE7KQ9oRBYo5N79F5jV2trNwsGuoZCBgKGBcFZOCQke+t/qEmg/K/o7KvAQ
+        wtrayoyRm8CuoY+Ck4Z/Xk4JCR763eknaCs2/9zgJxAe5deKtMCak7+llIaUkH+AUE4JHvrd3DcePOHm
+        4N8eYsDVz5ebn76Iva6VgpqRgoVcUAke9t7a3ijk5tvk5x7UdYyxsp62t4nEr5SAo5SGhn5RCQke4Nrq
+        7OXm3OMeE9jOSHibpqSLyMmlh3CulI+HhVMJCR7/2u3s5t3g/B6/2NrViHV1hdDTsZ+Ah66Rko+EVAkJ
+        CR7eN+Hk2uQeksDT2tra2djX07ifiHGxp5WZlYdVCQkJHuQ73drkHgkJkp280NHU0ciwm4V0s7agmqCd
+        h1YJCQkJHijq7h4Jk5OipXh4l6iomoV1fri9pKWkoZxYCQkJCQkJHh4eCZvEt4vI1aeLeHh4j7TFu6am
+        pqiak1gJCQkJCQkeCQmd072Sdc3a2tjW09HQybaxpq+mpJBdCQkJCQkJCQkJntbQrnei2tra2trW0cm7
+        uqayqpWagV0JCQkJCQkJCQme182rjNfWysXFx8nHuL2ouqCtf5NeCQkJCQkJCQkJCQmezKW117q7zc/L
+        tKjApqixjpNwhl4JCQkJCQkJCQkJCQmei8fa2trIiXitvYGUsVqccH+ACQkJCQkJCQkJCQkJCQmencTX
+        3OeXqJNGh6Vaho+EhAkJCQkJCQkJCQkJCQkJCQkJnZ2YlaGGRYGWcG+HhgkJCQkJCQkJCQkJCQkJCQkJ
+        CQkJCZybm5OTk5KRiAkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+        CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQn/v////7////wf///4DwP/8AQA/+AAAD/gAAAfwAAAD8AA
+        AAeAAAADAAAAA4AAAAGAAAABgAAAAIAAAACAAAAAwAAAAMAAAADgAAAA4DAAAPBAAAH4gAAB+wAAA/4A
+        AAP+AAAH/wAAB/+AAA//wAAf//AAf//8Af///////////ygAAAAwAAAAYAAAAAEACAAAAAAAgAoAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAMEACAFCwA9BxMAUAYUAFYG
+        FgBZBhcAXAYXAF4GGABgBhgAYAYZAGAGGQBgBhkAYQYZAGEGGQBhCBoAYw0dAGQWIQBoHiUAaCAlAGoi
+        JwBpJSsAbSgrAG8rLwByMDIAdTM1AHk2OAB8OTsAfz0+AIBBPgCARD4Af0U/AHxHPwB0RkAAaEJDAFk+
+        RQBIOUUANDpGACs5RAApOEQAKDdDACk4RAApO0cAKkBMACtDUAAsRlQALEdWAC1IVwAtS1sALk5fAC5Q
+        YQAvUWMAMFNmADBWawAxV20AMVhwADFZcQAxW3cAM1x7ADJafgAyWIEAL1mFAC5ahwAwXIgAM1+JADRg
+        iQA0YYsAM2KMADJkjgAyZY4AMmaQADJolAA0a5QANW2SADZukQA2b5EANm+SADRwlQAxcZkAMHKcADB1
+        nQAzdZ0ANnadADh4nQA6eZwAO3mcADt5nwA8eaAAPHqiADx8pQA8faYAPH+oAD2BpgA9g6UAPYakAD+J
+        owBBiqQAQoqqAEGKrwBBjLAAQo6wAD+MsgA9irQAPYq3AD2NuQA+kLoAQZK6AEGSugBAk7oAP5a8AD+Z
+        vgBDm78ARZ6+AEmfvABMoL4AT6K/AE6kwwBOp8YAT6rIAFSsxQBUrssAV7HPAFuz0ABds9EAXbXSAFy2
+        1ABdt9UAX7nWAF661gBevNcAX73YAGC+2QBgwNoAYcLcAGDF3ABkx94AZ8ngAGzL4QBxzeMActDlAHPS
+        5wB11ekAd9jrAHrZ7AB+2+wAg9zsAIfb6wCL2ekAjdThAI7Q3ACPy9kAjcbYAI3A1gCQsdUAkp/UAJWI
+        0wCXddMAmWTTAJda0ACUVswAkVLIAIxOwACITa4AgUqbAIJPhwCHVHkAiVpsAIpcYgCJXV0AjF9UAI5h
+        SgCRYkUAlGNCAJhnSQCcbFAApXlbAKyFXQCwimAAtY5jALeUYQC4ll4At5hWALebVQC4nlkAuqNdAL+q
+        YQDDrmYAyLJmAMu2ZwDOuWsAz7lyANS7eQDXvYEA28J/AN3GfgDey34A4NB6AODTeQDg13kA////AOTb
+        fwDo3IcA6t2NAOrckADr2pUA7NmbAO3YoQDt2qQA7dqoAO/drgDw37QA8uK6APLkwADx5McA8ObMAO/l
+        0ADt59QA4+TYANbk3ADE5eEAsuXmAKnm6QCj5uwAn+fwAJ/o8wCj6vUAqez2AK/v9wC08PYAuPH2AL3y
+        9gDD8/cAyfT3AND19wDX9fcA3PX3AN/2+ADj9vgA6Pn5AOz5+ADv+vkA9Pn2APn38AD6+PEA/PnzAPz7
+        9wD8/PkA/P38APz+/gD8/v4ABgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG
+        BgYGBgYGBgYGBgYGBgYGBgYGBgYTBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG
+        BgYGBgYGBgYTBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBhMTExMTEwYG
+        BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYTEyS/wrKytRMGBgYGBgYGMzIyMTEx
+        MDAGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBhMJvcy/wRy7vLYTBgYGBjY1OjQ1NTMxMjEwMAYGBgYGBgYG
+        BgYGBgYGBgYGBgYGEwnBzsLAvhfZxLy0EwY3Nzg5Ozw6Ojk5NTIxMDAwBgYGBgYGBgYGBgYGBgYGBgYG
+        E7rSw8PEsyDK3ru8GhM/Oz9lZmZbQD8+PDo2MjEvLy8GBgYGBgYGBgYGBgYGBgYTsdbJxcTLHL27+Ma8
+        tBM5ZX2ehX1nZltRUUA+OjYyMS4vMAYGBgYGBgYGBgYGBgYTy9TIx8nFGMq73N67vBYqmpudhoF9eXdq
+        Z1tRRz85NTEwLjAGBgYGBgYGBgYGBhO00dbTydHAs8++1vi8vhcT7+ObmpuTlI6Lg3xzYlJHPjYyMC8w
+        BgYGBgYGBgYGBhPL0NzTwB8ZtNHB1Pi+viET4Ovj6OeVfmhgXmFudXBeUEA5MzAuMAYGBgYGBgYGEyTR
+        0t3GGK21GcTH1PrBvrET4O/v52hEQ0VJSEJCRl9wYU9AODMwLTAGBgYGBgYGE73R1N4nGKy4IbDM1PvH
+        wrIT4POdRERVXl1cW1NOSEFJbWFOQDozMCwwBgYGBgYGE8nP1sYXrTwuriDM1vzTw7IT4OVDVGp5eGpo
+        YVxbT0lBRW1fUEA5MzAwBgYGBgYTI9bS2bkJqaQIrx7M1/vXyLITnGxkj+HxmH96dW1hXk5KQkxtWEc/
+        NzIwMAYGExMTGbIgJRsJqKYuH6/O3PvZyiQTbHTj9///6o+Gf3hybF9PTEFfYU5HPTcxLwYGBgYTts/T
+        1xoqpKguFyC93vve0SATc+X7///16eaXlIV7dW5eT0tPbVhIQDs2MS8GBgYTv9Le2xsqoamuF74hIq+1
+        yBoTjfb////nd2dqgpSKenVsXlxMbV9KRz85MjAGBgYTwNX43Bspp6qvF8/P+tq4JRYTj/z//+JWc393
+        WGqSg3tyX19ObV9OSEc7NzUwBgYTwtf43iKwq78YtczJ+9z4tgoTEyT4/2p7gZCRg1h8j352Y19ObW1U
+        SUs/OTQwBgYTwdn4+MYdt64d3cnZ+tjesRN4jfH39Wp9gmeJiXVnkn96bGBPcG1cT0tHOjYwBgYTv9n6
+        +vi3G6/X3Nr53tvbDBOZY4yZ5YVqamiJjnpjlYR8a15IdW1fVExTPDkwBgYTu9f4/Pzert3W1vj71d66
+        E7XyRVZqd359eYGGjnF3mIV7Y1tHdm5hWVNSQDwxBgYTstP4/P7frN7U1fr409kdE+L/nkJWZ2p3eX2B
+        fmOYl4R2YFFJfnBhXF5PUTsxBgYGE9Dd+//AuPjT2fva17oTKez9/59ESl5kZ2liYprrkH9yW0dfg25j
+        YGNOWjwxBgYGE8PX+f21xvjU+PrY0xkTku3+///xaEVFRU137fCYhXpqWkd4fGtoY2hYWj0yBgYGBhPR
+        3f0g+N3a+/jXshNClOv2//////bz8/T08OaJe2pdSWh/e3Fra2lgW0AyBgYGBhPD1vsi+d76+dm3EwZd
+        dJrm7f7///////TrmIl6amJMU4x7fHJycWpoW1EyBgYGBgYTzvgi+Pr63LUTBgYGXXd9hpnp6evt6eaQ
+        gHdnXkxSiYx2fHFzcnBqUVEzBgYGBgYGE8O53t7TExMGBmNjcnNnZHd9gYaLiH54amJXSl+Ljnx7enN2
+        c3JnUTUGBgYGBgYGBhMTExMTBgYGZ5SNdXyYeVVOVmZqamdeTkxXepKPhnWGdnV8cHBmRzYGBgYGBgYG
+        BgYTBgYGBgZo5pB7YW3w9OiFclZVVFRecoGXl45/hnZ+fGyIYWpjNwYGBgYGBgYGBgYTBgYGBmrrl3xo
+        TG72//729PDu7e3r5uaYiYeMd4xqjF+MWGZiOAYGBgYGBgYGBgYGBgYGcPLojXZfTZL///////708O3s
+        7ZmNkIeJeol2fF98TWQ6BgYGBgYGBgYGBgYGBgZy8vLmh2tVdPb////////+9vTrkJeQf5FnlGGOWGxq
+        SFs7BgYGBgYGBgYGBgYGBgZz9O+Yf2xv8v/+8u7s6+OZkI6X5ol/lmGUfW+DRWpbQjwGBgYGBgYGBgYG
+        BgYGBgZz9u/njnSP9vCRjo6Oj5bm6+ycdJGXYIyPTYdcRmZbSD4GBgYGBgYGBgYGBgYGBgYGc+uXf3Lk
+        9OSRlurw7+uZfWt8l49Vf5NNandCUF5OPwYGBgYGBgYGBgYGBgYGBgYGBnNudXXq/fr3/u+Ka1ZWc5GT
+        akp6jU5Ld1tGSl9ABgYGBgYGBgYGBgYGBgYGBgYGBgZzb3SY9P3//9+AZml9h3dGRGp8U0FkZE9IZ0AG
+        BgYGBgYGBgYGBgYGBgYGBgYGBgYGc3N8jOv29d+ed3d3U0FCY2pbQlJjXl1QUAYGBgYGBgYGBgYGBgYG
+        BgYGBgYGBgYGBgZzcnSMfXl3dmxYQkVaaGJISE1OUVEGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG
+        BnJxalVgbGFISEheYE9IW1tbBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBmpqamhnZ2dj
+        Y2JdBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG
+        BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG
+        BgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYG////////AAD//f////8AAP/9
+        /////wAA/8D/////AAD/AH8A//8AAP4APAA//wAA/AAQAA//AAD8AAAAA/8AAPgAAAAA/wAA+AAAAAB/
+        AADwAAAAAD8AAPAAAAAAHwAA4AAAAAAPAADgAAAAAAcAAOAAAAAABwAAwAAAAAADAAAAAAAAAAMAAMAA
+        AAAAAQAAwAAAAAABAADAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAADAAAAAAAAAAMAAAAAAAAAAwAAAAAAA
+        AADgAAAAAAAAAOAAAAAAAAAA8AAAAAAAAADwAIAAAAAAAPgBwAAAAAAA/AMAAAABAAD+DgAAAAEAAP98
+        AAAAAwAA/3gAAAADAAD/8AAAAAcAAP/gAAAABwAA/+AAAAAPAAD/4AAAAA8AAP/wAAAAHwAA//gAAAA/
+        AAD//AAAAH8AAP/+AAAA/wAA//+AAAP/AAD//+AAD/8AAP///AB//wAA////////AAD///////8AAP//
+        /////wAAKAAAABAAAAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACPhUjw28xl/YgoD9sAAAAAAAAAABsnL6opNjqmJTg7oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADOnl/79u/A/5hpSv/t46f/LBUR2Rl/i/JYn5b/MHOF/y9WYf8iJSf2IisyogAAAAAAAAAAAAAAAAAA
+        AAAqFg3L/PXZ/7eLUf/Ktlv/9vDU/08qFv/d7/D/we30/1G15P9Lqdj/SKvV/yxMWP8iHRzdAAAAAAAA
+        AAAAAAAA3c5/+Oni1f8lFSP/t35H///74v97PB3/0Nvm/yA+Z/8aS3r/KDhp/zhId/9Lr9n/L1dt/yIh
+        I9sAAAAARgQIsMCJRv9MISj/UwzJ/zUgGf/58+X/w10k/ylwvP/w+vn/t+72/0XK7P8qXIr/Nkty/0WY
+        1v8rQ0//AAAAAEcQBWj07tb/f0NU/ywVbv+8qSn/7MnU/y4cF//f4N//4/H1/yJdlf92us3/VNPs/zNm
+        lv9Bgrn/N2GK/ypETdApBAB19fHc//Dn6v9XLSr//Pnr//nx4/81KSv/LrHY/2LBz/9jwOH/JXam/4Li
+        7/8rY5D/Qou8/zp0o/8tS1z3AAAAAOzckfb18PH/z6B5////9v90Nyj/2N7g/93l7v8aNkz/JE19/8/q
+        8v963+z/GDNP/1W74/80dKL/N2V59wAAAABiOh2U5tK///z38//nvn/4AAAAAFPo8vrk9Pj/7ff6/+P0
+        +f934ez/FzRF/2/F4/9Cn7//Qp7J/zhvf+4AAAAAAAAAAC4MCdeMGRXaAAAAAIbp9uAlZqj+LoCj/yBQ
+        if8eVIb/Hjtl/47Z6P9Yy93/RKXF/0qsz/85Y4GIAAAAAAAAAAAAAAAAAAAAAOD6++kfWJj/cZG8//3/
+        ///w9/r/5vb4/8zy9/9Ty93/U7jO/0Wn0f86cZf3AAAAAAAAAAAAAAAAAAAAAAAAAADg+v79J4C3/+b2
+        +v9Fyur/xvH2/37t8/9TzNz/W8bf/0SZvP8oQWr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+A
+        tvPo+Pr/3/Lx/xpfiP8xeqL/NHGX/zVpiv8vSnr8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAII23jh53qehSjbj4Ljlx+EKGq/E6ap/FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////4x///8AH
+        //+AA///gAH//wAB//8AAP//AAD//4AA//+EAP//yAD///AB///wA///+Af///wP////////KAAAACAA
+        AABAAAAAAQAgAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAEsAFW0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAUQAU2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAApBAjBdEku/5eDSP95Syn/ayYe8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAALQwJ9b2yaP/i4nj/zbJU/8KGT//H0Ez/eDMp9wAAAAAAAAAAAAAAAAAA
+        AAAoTFbzK0ZR+yxIUPwqRUz4J0BI8ShBR+YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEcMCe/LuXf/9OeE/866bP+RZjL/0qiB//DcnP+uqDT/aQYH8AAA
+        AAAjWmn/J1Ze/zl1cf85dnL/MF5o/y9WYf8wUFj/KkRN/yk8Rv8nOUL/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApAAKgqH5T//zxrv/Uq2X/2Nh+/49hR/+xoTb/+fDi/720
+        R/+cTR//LhQy/y6nnv99vav/db26/1CerP88gpn/N3KM/zRpgP8xW3D/LlBg/ypFT/8oOkT/JzU/9gAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFkTDev48aP/6ceW/+njif/k2Yv/xaNu/8G0
+        R//57eH/0cV7/6aHMf9KBw7/xu3t/5zY4P9zv9D/b8Ta/2vP4/9bxdz/Ta/O/0SVtv86dZb/Mlx2/y9N
+        Xf8pQUj/KDQ//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7AAR1t51T//v2sv/26MT/s5Zl/1Id
+        Iv+1lWr/6dRo//Xdwv/i0Zn/sp48/0cICP/a7O3/sfn2/8D5+/+P5/L/WaTM/0aHr/9Afan/Qom1/0ed
+        yf9Akbz/N2mO/zFRav8qQU7/KTZA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwMCvfq2X7/+vDL/8Wr
+        m/87FRr/vaqO/2IlNv/bxl//+uzM//fdtf/CsUP/OA4K/9fj6f/p/f7/XJe7/xI6d/8iSnz/Ml6K/zVf
+        if8yUX//Mk5//z51pP9Clcb/OG+X/zFVcP8qRFH/KDVA/wAAAAAAAAAAAAAAAAAAAABPAAsMgEkw/Pv5
+        oP/48NT/bUBH/1kzXv8yNFT/fDRK/66PRP/8887//u/V/9+6Sv84EAr/4Ojr/0SHtv8KPnT/R6q0/0qp
+        vv88ia//PH2n/z14nP86aZH/MUtz/zhjkP9Cj8b/N2qR/zFVcf8qQVD/KTRD+wAAAAAAAAAAZAgbiksA
+        BuRsGCL/071+/8abif86Fhj/kDrW/0QSbv9hKTP/w6pU//764P/++en/6sNc/2EOCP9Nk8H/Go2k/8fz
+        4//6//3/pvT6/0ew3f9JoM3/Poi5/z1/rP85bZb/NE91/z11pv89gbb/N2CG/y5Saf8sP0v/AAAAAAAA
+        AAAAAAAARAEI27GOTf+bW03/dycx/ywHFf+8V+j/NCBZ/04PH/9yIiH/8+rc//378f/v24b/TwUD/xyT
+        uf/m/vX///////////+w9vr/fdvx/3fh9/9Rsdn/P5TB/z1+rf83aJH/NmKH/0CLwf84Z5P/M11//y1L
+        Xv8oPEv6AAAAAAAAAAA5BAbG3NBp///+7P/UuqX/OQ8Y/5Q44v9aRmP/bDwp/+HPcf+GP1P/eSs3/8CK
+        Z/80AQP/f+vq////////////oNni/yeBqf8+g6n/To+w/3Tb8/9Ssdn/QJbC/z55qf85apP/QYW7/zpv
+        nP83Y4r/M1p1/ytDU/8AAAAAAAAAAD0FBs3ez2r///7z/9m+u/9dGRr/inqn/2U3Rf+ieFb/9e5+////
+        9//58+L/lVs5/zQCB/9bJir/98LF//L5+/8cfp7/ZrTX/3jY8v9Dk7r/Roap/2zV8v9FpMr/PYOx/zpu
+        mf8+hrf/PXus/zVljP82YYX/LUxf/y1KWccAAAAAPwQFyd3Obf///vP//fv5/59sbP9hBhn/hUlT//fw
+        3f/u2rf/+vPl//346P9vGAz/TmiF/1Pk7P/k9/j/wPD4/zqVr/9TlbX/Tpi9/2/S8f86eqH/cszm/0+y
+        1v8/irj/OGqQ/0ONuf89grT/N2mR/zduk/8xVGz/LlBg6AAAAAAvAAPG1bld///98f//////9/Hv/3Ij
+        L//578X/8d2z//78+v/76sX/6div/yoLDP/h4+f/GVuJ/yWMp/9euND/Y7DN/0+au/9sv93/acLk/zJ8
+        of+I4vD/UbTY/z6Gsv81YYD/RZjF/z6Itf86c5r/OXOZ/zJgfv8wUGH2AAAAAAAAAACyazT+//3j////
+        ///PtL7/tIaQ//jmtf/s2LH//fv3//30uP+EPiH/PR0s//f///+/0t7/EDNu/x1nkP9HkrH/VKW9/0mg
+        vv8ddqP/ldTh/5Pn+P9Jpcr/OXia/zNXff9PsN3/PYWw/zl8ov87dp7/NnGL/zJTZ/oAAAAAAAAAAIc3
+        HPL69aH//////7CEiv/Anaf/8Nuq//v18////eT/68yE/y4DBf931uT/9f/////////n7vT/MnCd/xlT
+        iP8aVIr/L2+Y/8Xm6v/V+P7/Wrrf/0ebvP81Z4n/PXaf/1C33/88g6v/Pomt/zl+pv84cI//Nmp59gAA
+        AAAAAAAAAAAAAM20V/////H/oWt///fs4f/26Mv////7//jww/9gEwb1NDRV5Vzr9f/V+f3/+f//////
+        ////////+/z8//n7/P/0////0/r//2bF5f9Hnbv/PHqb/zBZhf9au9//R6jL/z+Msf8/kLX/QIyx/z16
+        lf81ZnvlAAAAAAAAAAAAAAAAPRgN1vf0rf+RTl///fn1/////v/z68n/bRwK/TAgNiZRx+IiUZix9Eaf
+        uf9xyeL/xvb7/8z5/f/Y+/7/zfn+/5Lh9f9Xttf/RJKw/zRxlP8jT37/ZLra/1i+3f9Fn77/QZG2/0GW
+        vv9Clrn/OnuR/zdlgcIAAAAAAAAAAAAAAAAAAAAAUiIP13UkIv/Rr6T/uaJ//0UKBMQ8KjMoNtn2d0rR
+        +fs8k8v+TaPE/xpxmf8ZcZr/NI+w/1Swyv9Trsn/QZOy/y1yk/8fWIb/MWSU/3DE4P9lz+n/R6PA/0ij
+        wf9Fn8D/Q5jC/0aYtf86bIf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOgEG3m0XDmshAABWAAAAAGvq
+        84aE7vv/cMLZ/x5wpf+S1u3/4fL3/1yoyv8jdaT/GGWU/xpjjv8fY5H/PX2p/22y0f+L3vP/Zsvi/0ut
+        x/9OpsP/TKfF/0iqy/9Bkr7/RY6p/zpojPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgABFqAAAAAAAA
+        AACG7vmL1f7//3XQ5f89ha7/D0uG/7Lj9////////v////f+///o+vz/0/j7/874/P/D9/z/leb0/2PB
+        1/9cw9X/TqnF/1W0zP9Kpsn/Qp/E/z5/rP9Bh6H/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAX9D5D+f7+/nC+f3/R7LX/xtelP84mcr//f////////////////////n+/v/s/P3/z/X3/5bg
+        6/9wy9r/ZMzd/1Cmwv9fwtX/Ta3L/z6LtP9Ck7n/OGKM/z1/o/kAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABhvN548/79/7D5/P9Lqs7/GoC4//H7/f/v+v3/oeLu/4fb6P+H2+j/kdzp/5bi
+        7f+O4Oj/aMXU/23Y5P9ZrMT/Wsjc/0+cvv9JsNH/NGCN/0GPo/81UYX/AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADs+/z3pPX7/0Sl0f93vNf/8v3+/13M3f9VyOL/rev5/77z
+        9/+i7vP/cbzP/0+syP9v4O3/WabE/0Sryf9ft9L/NXyo/0GKpv8zWoL/OnKb/zdejbIAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbicbwGHiv/47b5v///////f/5//z/
+        //+T3t3/GHad/x1pmf9Bss//Zc/k/zlok/82ia7/WLnR/yhKd/9HnLD/NluH/zVek/9Eo76qAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3sdjgIprK/4bg
+        3v/x/vz/+/z3/7DUwv82m67/Vq3G/0iMqf8kO2z/OHiW/02ku/8sRXH/OXSY/z59qP8uVIr1VrfIcAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAJH+y20e81f83krT/Mouu/zubv/84b6D/LTtx/zdmkP9AjrL/M1mL/zZcjv9Ag67yQo+1swAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAABlkn3tNj7zpV57D9TRrnPk6YJP6P36n9kWNtO9BfaPHOG6eYwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/v////7////wf
+        ///4DwP/8AQA/+AAAD/gAAAfwAAAD8AAAAeAAAADAAAAA4AAAAGAAAABgAAAAIAAAACAAAAAwAAAAMAA
+        AADgAAAA4AAAAPAAAAH4gAAB+wAAA/4AAAP+AAAH/wAAB/+AAA//wAAf//AAf//8Af///////////ygA
+        AAAwAAAAYAAAAAEAIAAAAAAAgCUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE0AFewAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAA
+        FPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASw8M3jcL
+        EP1OFBz/Zhgi/1oMFf9TAxH2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQr
+        F6s4CA/+gEU4/76xXP/Ky2H/lnA8/5JwOP+jg0D/YQ0Y/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAxXGI2MltecC5UV4otTlOLLVBSfCxMUFksS04zLEpNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAaBsPvzkNEf+1nVv/2dd0/8C2YP/Ks1n/fSgk/8aZTv+1skb/qY9E/2QPGf8AAAAAAAAAAAAA
+        AAAAAAAANmVttDBdYewuVVv9LE5W/y5JVf8tSVP/LEdQ/ylETP8oQUv8KUBK8ilDRtcqQ0mQAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACIMxeoOAwQ/9CyZ//h3X7/zrRo/8OvY/+5pFn/bhcd//Xitf/atnD/qaE6/595
+        QP9cBAz/AAAAACyIla4yV1/6LlFf/yxTY/8vXGf/MmJo/zNiZf8xW2H/L1de/y9SWf8tTFP/KkZQ/ylC
+        S/8qPUX/KTpE+Sg+RM8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABg3/wJZh//Hilv/gu23/2bRq/8/FcP+abEf/dzcl/+LI
+        ef/57Nb/tpQ6/7CpTP+BIhz/TgsW/yFqeP8sXGv/NXB0/0KIff9NlYb/TJOJ/z6Agv82bHr/M2J0/zJg
+        bv8yWmn/MFNe/yxLWP8qRVH/KUBJ/yg6RP8pOUL+KTtD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEUBC+yRWDD/8uKn/+rNgv/hvnD/y75y/9jU
+        e/90Jin/sp1Z/7aZOv/5797/3b2C/6mhO/+icj3/YQQM/y9TY/8znJL/ZKyb/368sv90uLb/X6ix/02Y
+        qf9DjJ//P4CW/zp2j/83b4X/NGZ8/zNccP8wVWT/LExa/ypFT/8qP0n/KDhC/yk4Q/UrQEh/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0VE//l1Hn/9OWg/+fE
+        hv/Zwnj/1Mt//9TGef9sGSP/0813/7GXOv/1583/9OnS/6uVMP+ynlL/Zw0O/1AvQv+Y4t//otXV/4fG
+        0f9uusn/ZbPH/1qrwv9SpL3/TJ63/0WWr/9Biaj/PX6b/zdwkP82Z4P/M110/y5RZf8tSlf/K0FK/yg8
+        RP8pNkL/KTxFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARwMM8qBz
+        Qf/x55P/7dKn/+TJmP/d0n//6N6T/8Okb/+dZEr/6N6H/7+lSv/t1Kv/+vLk/7aaOf+5rln/cRkS/1wZ
+        Iv/S7uz/qd/f/5PW2v+K1Nr/gdDf/3rV5f901+v/Z87o/1rB3P9StdX/TKjL/0SWuf89gaX/OHKS/zVj
+        gf8yWXD/LUxe/yxDUf8qO0b/KThC/yg4RdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAWxMR/9vUev/y6Iz/7tjL/+bTm//BrHX/dTE//1QgIf+baFL/6+CR/9OxVf/rz6D//ffu/8Sl
+        Tv+6tFf/gzke/0oOF//d6ej/uPX1/6fp6/+p8fX/oO31/33X6/9apsv/SYqy/0N+pv8+eKT/P3+n/0ON
+        uf9GmcX/QZG7/zt6ov83aY3/M1t5/y9PZP8rRFT/Kj1I/yg3Q/8oPUfMAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABJAQveiEkr/+zlk//p0pT/7+Ha/8u2gP9JHSX/jGRm/59+bv9aICX/yLV3/97C
+        Yv/s0aH//fr0/9izY/+6tlX/kFMw/zoHEP/P4uP/0v38/9L5+v+i6fH/Somv/ylXh/8rVIX/MVqL/zNg
+        jv81X4z/MlWD/zNUgv81XIn/PXup/0KQv/88ga3/OWyS/zRgff8uUGf/K0VU/yk+Sf8qNkT/KkFMqQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMBw38vJta/+/okP/mzaP/6d/V/3I7QP9cHT//jH9u/6OQ
+        fP96OUr/kWJQ/+PWbP/s0KP//vv4/+u/fP/GuFT/lGU4/zUDC//a3uD/4////4nD2f8iVYv/H1eK/zFw
+        nP84e6H/PHug/zx5n/88dZv/O3CY/zlplP81Xov/M1N+/zlijP9Aibr/PIGw/zlslf8zXn//MFBo/ytG
+        Vf8pPkj/KjdH/itFTksAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeFRP/2858/+jihf/jzKf/07ur/0UW
+        Jv9zWWP/NxVt/y01NP+QV13/djU8/+DYbv/t0aj//vz4//PQmv/dulb/kmc6/zgCCf/U3OD/mObv/x9N
+        hf8hcJr/OJit/0+tuP9Lp7r/QJGx/0CIsP89f6j/PHmf/zxzmv86bZT/NmKN/zRVfv83XIj/QIe7/z18
+        q/83apH/M1x7/y9QaP8sRVT/KTtI/ys6SOoAAAAAAAAAAAAAAAAAAAAAAAAAAFMBDsiEQCn/7Oam/+/o
+        lP/u4rz/tZN9/zsSIv92T5b/mijR/yEYL/+CTVT/cy47/93WbP/v2LL//fv4//TesP/sxmT/kl8w/04F
+        C/+hzdf/JoSz/yiFov9sy8P/yPLi/9329P+N4e7/VLLW/0miy/9GlsT/QIm3/z5/rf87eaT/OGyW/zhk
+        jf80Vn//OWaT/0CGvP85c6H/NmSJ/zJZeP8tTGP/LERS/ys6Sv8sRlKVAAAAAAAAAABhBxm9YQUa8VAD
+        Df9wIB7/lFtE/383MP+KRkj/ZyMz/zoSJv99N7f/ljLJ/yIhMv9zNET/jFdQ/+nhc//36sr//fv3//Xh
+        vf/uz3z/jE4k/1oHD/9CibT/Lqi+/6js0f/1/fX////+//r///+y9Pr/bMvt/1u63v9Ws9n/SqDL/0ST
+        wP8/h7X/PXun/zptlv84Zo//NVl//z58r/8+f7L/OGuU/zZghP8xVXH/Lkxe/yxATv8pPE3wAAAAAAAA
+        AAAAAAAAAAAAAE0EDPOqgkv/6N2G/+XHm//l1rL/ZyIo/0QYO/+rWdn/fSOv/yorN/9aEyv/eDY6/76f
+        Uf/z6tv///33//vy1//u3JH/fjYX/1EHEf8rlbb/m+7c//v/9f////7//////+z9/f+t9Pr/jOX2/4Dg
+        9P9y1/P/Wrnd/02m0P9DlsH/QYy6/zt2o/84bZj/NmWN/zltl/8/ib7/OXGe/zZji/8zX3//MFBr/y1K
+        Wv8pPU7/L01YewAAAAAAAAAAAAAAAEwGDfbAp1v/8uqX//bp1//u48f/ZSUn/08qSf/PgeP/XxeY/2ho
+        Wf9aFyf/u6Ru/4E6LP9/Mkb/i0tX/6hvbP/expP/eCES/0QOGv9L2t7/7v3z/////v//////9////6bq
+        8P9Un7z/RYms/0yQsf9ltNT/c9fx/12/4v9MpMz/RJvH/z6Gsv88dKL/O3Wh/zlmkP9Bib7/O3en/zdk
+        jf81YYn/Mlp3/y9PZP8rQ1P/LEZV3AAAAAAAAAAAAAAAAE0JDvzFrlv/9Oyi//jt5//x58//aSkq/1kz
+        Pv9wG8H/XjCJ/4JkVv9UHCL/5NyG/+3ghv/9+fP/5dLC/7WDfv+PTT//ZhIP/0cKFf9vxsT/+fz5////
+        ////////u+bq/yp8n/9Blrv/WbDU/0qewv81dp3/S4+z/2/R7/9Ytdr/SqXL/0OTv/89e6r/PHqm/zpp
+        lP9Aibv/PXyt/zhslP82ZYr/NWOF/zBRa/8uTF7/LEJU+TBUYBwAAAAAAAAAAEwJDvzJtV7/9+6v//ry
+        7f/17uH/gz5A/4NSTP91WXb/saig/1YcK/+nd27/3ddw/+LLj//++/f/+/LM//335v+wh1b/UwgM/1IF
+        EP9IFBz/nURN//rq7f/+////Ppas/0qpxv9os9P/csTj/3HQ7f9atdj/Nnad/1moyP9ozez/Tq7Q/0Wc
+        xf89g6//PXyp/zlsl/8/iLf/PoK2/zlxm/81ZIz/NWiM/zRZd/8uUmP/K0RW/y9UYVQAAAAAAAAAAEwI
+        DfrIsVr/+O+4//v38P/59O7/0LWn/20qNf+whX7/iVJf/2crO//v5dn/48mE//Dhvf/8+fP/89+2//fu
+        3v+NUyL/VQYN/1Sevf9c197/2uzs//T6+//r+/3/PJSs/1uvwf9otdH/Q4as/2a93P9jvuD/SJi//0iJ
+        q/9z0+//U7PU/0qkzP8+hrP/PX2p/zlrkv9Djrr/PYa4/zp1oP84bJP/NmaN/zZohv8xUmj/LUte/zBT
+        ZIkAAAAAAAAAAEsFDPDDqlX/+O+1//z48v/7+fb/+fXw/7CDgv9hKSz/jE5O/+jUrv/06s3/8d/D//z4
+        8f/16tf/+vDF/+vexv9aGRD/Yxgi/5Pc5/8mgqL/acXN/4rb5v+S4vL/a7nZ/0aSrv9Mk7P/RYmw/2S7
+        2v9owOH/T6HG/0KDp/972O//WLfY/02qz/8/h7H/PXuj/zhniv9ElcD/QIi6/zt8pP85cZj/N2eP/zd0
+        lP8yUm//LlNj/zBUZq8AAAAAAAAAAD0BCeC5kUf/9uyu//z18P/8/Pn//fv5//Hp3/+XWlr/9evR//DY
+        q//r1Kr/+vLl//379//t1ab/+e/a/7uYav82Bgf/oHqM/9/4/P8mXYj/KXqb/0SWsP9Onrj/Xq/L/1ur
+        yP9UosL/YbLR/2W62P9rweD/QZK3/1Satv+I5PP/W7nY/02ny/89g67/O3mc/zZihv9HoMz/QIu8/zyA
+        qP86d53/OHCX/zhxk/8yYH3/MVdn/zBPZccAAAAAAAAAACcECcCeVy7/9Oqe//vy6//9/Pn///79/+DO
+        1v+fZW3/+vLY/+nPof/s0qT//Pnz//z37//01pn/7+C6/3grGf8+CRL/t+Po//n///+UwNL/HE9//zB2
+        nv9Ch6f/SJGv/0+Ytf9Wor3/W6zH/2Cz0P9VqMz/MYOp/5be7f+E3PP/XLjX/0icwv89faP/OXCQ/zdj
+        jP9Mrdn/QY68/zuAqP85eaH/O3qh/zhtkv83cYv/MVZq/zBPaNEAAAAAAAAAAAAAAAB6Ihv/8OWJ//nq
+        0P/9+/j////9/8enrv+4j5n/+/Xm/+nNnf/y4L3//fv4//Pkwv/36q//vplj/00JCP9hQF3/vvj7//X8
+        /f/9////jrbJ/x9ViP8dY5D/NHui/z6Gqv9Ci6z/QIyt/y6ApP8xgab/ldTh/7vx+f9xx+X/VrDQ/0WT
+        uP88fJz/NmGF/z16pf9Qtt3/QIy4/zyFqf88fqX/PIWm/zdrlP85e5T/M1Rt/zdwfM8AAAAAAAAAAAAA
+        AABlGBr40Lxc//furf/79fH///76/6h2ff/NsLX/+/bj/+rRof/89uz//fnz//jrs//r2Zn/dR8V/0gL
+        Ff9z2eL/wfb6//f9/v///////////9zp8P9Pi6//JVyP/yJcjv8jXZD/KGaU/2Wduf/G7/P/1/f8/5Hd
+        8/9fudv/TaHE/0WNr/86eJr/NWCJ/0qgyP9LrNP/QIy1/z2Hrf89haz/PIut/zhynP86fpf/M1dx/zl+
+        iMEAAAAAAAAAAAAAAAAAAAAAdjEf//Prk//35dP///77/3osPP/59PH/+e3Q//LixP/9+/b/+/Tn//Tm
+        q/+aYjH/RwUL/zZbg/9o4ez/uPH3/+/8/v/9////////////////////8vf5/+bu8//l7/T/6vf5/+j9
+        /f/X+Pz/neb3/2e+3P9Sp8j/RpGv/z5/n/80Y43/RYmu/1Kz2P9Hpcr/QZK2/z6Lsv8+jLL/QI2v/zx+
+        pf88e5T/N2Z8/zd4hqQAAAAAAAAAAAAAAAAAAAAAPhUY+NfHYP/376j//vz2/4E5Tf/79vL/+OzU//z4
+        8v/9+O//9+y5/7KISf9GBwr/AAAAAG7X5N87nbr/gs3h/5nh9P/C8/r/8v3+//v////7////+/////z/
+        ///1////5/z9/7jy+v+P2/T/Zrzb/1Gjw/9Gjqv/P4Gi/zJnkf86cJr/YcTj/0yny/9Iqcf/QpO3/0GT
+        t/9Akrj/QZCz/0CLrf87d5H/OHOG/zNLc3IAAAAAAAAAAAAAAAAAAAAAAAAAAEscFv/s4Xb/+/XZ/4I3
+        SP/58+r//fnx//768P/27c3/pHk6/0YKDP8AAAAAAAAAAAAAAABWmbfuTJ20/1qrw/9lu9b/kdrw/7Dr
+        9/+v7fj/t/H6/7/0+v+y7vn/lt7z/3bI4/9csM7/S5q4/0OIp/88faH/MGeR/zZvl/9lvNv/YMbj/0ag
+        wv9Mqcj/QZK4/0OYu/9AlLz/QZG3/0GRrv86dI//OG6F/jhxiTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABLHRf/2MVh/76SY//37df/9+7a/+XRmv9tKiD/PAcK+gAAAAAAAAAAI7jrzUa+7PU4kcj7Qpa//zyL
+        rP80h6b/TJ+5/1msxP9escv/abrV/23C3P9qvNj/XK/L/1Ggu/9Gkq3/PoKm/zVzm/8rYZD/QXul/2jA
+        3v9nyuX/TavL/0unxP9JpcP/RJi8/0adv/9Dlr7/QpO3/0WRqv85cIv/N2mI7wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAahsg51UUE/+HNyn/VR0Z/zcMDvcAAAAAAAAAAAAAAAA8zfLzct3y/2PF
+        5P9DmMX/SKjT/5Tc8P9XnsD/Jm+e/yJrmP8odp7/O4qn/0eVsf9HlK//QIuq/zV6ov8ra5X/KWWS/zVx
+        nf9cosT/d8/o/2vL5P9WutX/RJm4/1a60v9Gob//Q5i+/0qtyv9CkLr/QpG1/0WMo/84ZYf/PHaTvAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4ACvUAAAAAAAAAAAAAAAAAAAAAAAAAAFze
+        9fuP5fP/ccrh/0+myv8/gK3/Joe5/9Xz+v/o+v3/qef0/3K31v9HlLz/K3mm/yZvnf8lbJn/JWyZ/zV5
+        pP9Vlbn/arHQ/4TU7P+E2O3/acXf/1Ozzf9Xu9L/R6C//1Wwy/9NrMr/Poq0/1G+2P88gLD/Q4+w/0GC
+        nf85aI/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4AF7wAAAAAAAAAAAAA
+        AAAAAAAAlfD68rfz9/+D2Oj/T6zN/0KKsv8vZpP/LI7D//L8/v/+////+P7+//D9/v/n+fz/1/T6/8nw
+        9//C7vX/wu72/7jt9/+e5/X/nen0/4jW6/9iv9X/XbzU/13F2P9JnLv/Xcvd/0SRtP9Vw9v/N3mo/1LD
+        3P84b6P/QYul/0CBnv83bI3bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACA5/jC3/z7/6nx+f9jx+X/Rp3F/z96pf8eZZ3/e83o////////////////////
+        ///6//7/9P7+/+X9/f/V+/z/wvj7/7zy+v/B8/j/jtjm/2rH2f9vzd3/WL3S/2K+0/9IpsH/YL/W/0ah
+        wP9Mqsr/Onyq/0qszP84ZpX/QIWi/z19ov4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAF694x/e+fr53/v7/4/m9v9Zu9v/Qoy1/yhvov8xnc7/8fv9////
+        ////////////////////////+/////T+/v/u/P3/5/n7/7jq7v94zd7/gtzn/3XO3f9Rtc3/cNTj/zeK
+        rP9y4+3/PX6q/1nO4v82dKH/QImz/0KRsP82YYz/PXKb/0GYtcYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGrD42/p/fz/0/v6/4vk9P9Vs9X/OYWx/ymP
+        w//g9Pn///////j9/v/d9/r/yfP3/77t9P+56vP/ruDt/5nX5v98zeD/aMnc/4Pf5/+c7vH/Zb7Q/1W8
+        z/9/5Oz/NICo/2ve6/9Vp8X/PpK2/1C41P8xWYv/QY+s/zx9mv81Vof/PXqi7gAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHDD4pLv//3/zPr5/5rv
+        +P9mxOT/OZnH/27A3v/v/f3/1fb6/3jP5f9jy+H/YMzg/2XN4f9s1eP/f93p/5rs8v+38/b/vvH0/33L
+        2f87n7z/adPk/4Xl7v8zfaT/WcXc/2vQ4/8tYpf/Ub3W/zt5of8zX4b/QYum/ztzmP82Vov6SLXJSAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADi9/r0tvb6/4Pg8v9Xstn/QpS5/6Xf7v/q+/3/muLp/3LS4v+A1+j/te/5/9f3+v/S9Pj/t+7z/5Lb
+        5f9Vrcf/K4yx/0StyP+D5/D/b8jb/yxynf9Nss3/bNro/zJilP9Bj7P/R5+5/zNcg/86apD/PX6i/ztq
+        l/02VodvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAWbTf8CiNxv9Jm8T/Spu//7Xw9f/6//z/+v7z//P99//z/f7/z/n6/2DD
+        1v8vj7P/InSi/yF1oP87mLn/ZdDm/3PZ6P9IjbL/J2GP/0ikw/9cyd//NmyX/zNmjv9InrT/O3WX/zZf
+        if81Y5P/OHWk+j6Vr3EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE+gxeAqkcf/OpfD/4vj8P/n+vT////6////
+        //////3/5e7a/1y0tP80jqX/QYys/1Orxf9bv9T/TZy6/y5fif8uXYb/Q5Kw/0+uxv86cpX/MFR+/0CF
+        of8/hqX/Om2Y/zdhk/8+e6XrW8zaSQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACn0OqnLo7B+jqq
+        1P9dxtD/uPPt//D9+//t9O3/3NvT/33DxP9Ipbj/Spy6/0eZtv85c5f/Lk57/zJcg/9Ag6H/Rpax/z13
+        mP8xUn//Om+V/z6Eqv87dqL/PXKh/yxgiMlbw84cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAG683c4qhLb8Lpi+/17P3P9UrcL/VKe//0aivP9Fob7/Pomy/zlunP8yToD/NlyH/zpy
+        mv9AiKz/PYGm/zVbi/83YZD/NGWW/zZpm/8+jbLfOnGVUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk8TduEOgyO4ia6L/JGmf/zB9qv83hrL/O4Cu/zVa
+        jf83WYv/NmGR/zx5pP86faf/OG2b/zZekv84apvzTafEymHN2lAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV5nAnlac
+        xdBnpcXkO4az8DtpmPY6aJv3PHOe8UOJr+dGjbPXSo+yrEGBploAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD////////////9//////////3/////////wP////////8AfwD//////gA8AD//
+        ///8ABAAD/////wAAAAD////+AAAAAD////4AAAAAH////AAAAAAP///8AAAAAAf///gAAAAAA///+AA
+        AAAAB///4AAAAAAH///AAAAAAAP//wAAAAAAA///wAAAAAAB///AAAAAAAH//8AAAAAAAP//wAAAAAAA
+        ///AAAAAAAD//8AAAAAAAP//wAAAAAAA///AAAAAAAD//+AAAAAAAP//4AAAAAAA///wAAAAAAD///AA
+        gAAAAP//+AHAAAAA///8AwAAAAH///4OAAAAAf///3wAAAAD////eAAAAAP////wAAAAB////+AAAAAH
+        ////4AAAAA/////gAAAAD/////AAAAAf////+AAAAD/////8AAAAf/////4AAAD//////4AAA///////
+        4AAP///////8AH////////////////////////////////////8=
+</value>
+  </data>
+  <data name="trayIcon.Text" xml:space="preserve">
+    <value>ClamWin Tray</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="trayIcon.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkHelp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 9</value>
+  </data>
+  <data name="linkHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="linkHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;linkHelp.Name" xml:space="preserve">
+    <value>linkHelp</value>
+  </data>
+  <data name="&gt;&gt;linkHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;linkHelp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkSettings.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 9</value>
+  </data>
+  <data name="linkSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="linkSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;linkSettings.Name" xml:space="preserve">
+    <value>linkSettings</value>
+  </data>
+  <data name="&gt;&gt;linkSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;linkSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="sqLiteDataAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>197, 12</value>
+  </metadata>
+  <metadata name="imageFilesList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>340, 12</value>
+  </metadata>
+  <data name="imageFilesList.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 25</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Data Files</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelDataFiles</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelQuarantineSizeValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelQuarantineSizeValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 41</value>
+  </data>
+  <data name="linkLabelQuarantineSizeValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="linkLabelQuarantineSizeValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelQuarantineSizeValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSizeValue.Name" xml:space="preserve">
+    <value>linkLabelQuarantineSizeValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSizeValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSizeValue.Parent" xml:space="preserve">
+    <value>groupBoxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSizeValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelQuarantineSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelQuarantineSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelQuarantineSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 41</value>
+  </data>
+  <data name="linkLabelQuarantineSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="linkLabelQuarantineSize.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelQuarantineSize.Text" xml:space="preserve">
+    <value>Quarantine size:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSize.Name" xml:space="preserve">
+    <value>linkLabelQuarantineSize</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSize.Parent" xml:space="preserve">
+    <value>groupBoxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineSize.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelDataBaseSizeValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelDataBaseSizeValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="linkLabelDataBaseSizeValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="linkLabelDataBaseSizeValue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelDataBaseSizeValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSizeValue.Name" xml:space="preserve">
+    <value>linkLabelDataBaseSizeValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSizeValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSizeValue.Parent" xml:space="preserve">
+    <value>groupBoxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSizeValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelDataBaseSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelDataBaseSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelDataBaseSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="linkLabelDataBaseSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="linkLabelDataBaseSize.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelDataBaseSize.Text" xml:space="preserve">
+    <value>Database size:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSize.Name" xml:space="preserve">
+    <value>linkLabelDataBaseSize</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSize.Parent" xml:space="preserve">
+    <value>groupBoxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDataBaseSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxDiskSpace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 47</value>
+  </data>
+  <data name="groupBoxDiskSpace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 74</value>
+  </data>
+  <data name="groupBoxDiskSpace.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxDiskSpace.Text" xml:space="preserve">
+    <value>Disk space</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDiskSpace.Name" xml:space="preserve">
+    <value>groupBoxDiskSpace</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDiskSpace.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDiskSpace.Parent" xml:space="preserve">
+    <value>panelDataFiles</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDiskSpace.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelDataFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelDataFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelDataFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="panelDataFiles.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelDataFiles.Name" xml:space="preserve">
+    <value>panelDataFiles</value>
+  </data>
+  <data name="&gt;&gt;panelDataFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelDataFiles.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelDataFiles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonUpdateNow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonUpdateNow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 181</value>
+  </data>
+  <data name="buttonUpdateNow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 23</value>
+  </data>
+  <data name="buttonUpdateNow.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonUpdateNow.Text" xml:space="preserve">
+    <value>Update now!</value>
+  </data>
+  <data name="&gt;&gt;buttonUpdateNow.Name" xml:space="preserve">
+    <value>buttonUpdateNow</value>
+  </data>
+  <data name="&gt;&gt;buttonUpdateNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonUpdateNow.Parent" xml:space="preserve">
+    <value>panelUpdate</value>
+  </data>
+  <data name="&gt;&gt;buttonUpdateNow.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 25</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panelUpdate</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelLastUpdateValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelLastUpdateValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="linkLabelLastUpdateValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="linkLabelLastUpdateValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelLastUpdateValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdateValue.Name" xml:space="preserve">
+    <value>linkLabelLastUpdateValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdateValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdateValue.Parent" xml:space="preserve">
+    <value>groupBoxUpdateStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdateValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelLastUpdate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelLastUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelLastUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="linkLabelLastUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="linkLabelLastUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="linkLabelLastUpdate.Text" xml:space="preserve">
+    <value>Last update:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdate.Name" xml:space="preserve">
+    <value>linkLabelLastUpdate</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdate.Parent" xml:space="preserve">
+    <value>groupBoxUpdateStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastUpdate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxUpdateStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 125</value>
+  </data>
+  <data name="groupBoxUpdateStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 47</value>
+  </data>
+  <data name="groupBoxUpdateStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxUpdateStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateStatistics.Name" xml:space="preserve">
+    <value>groupBoxUpdateStatistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateStatistics.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateStatistics.Parent" xml:space="preserve">
+    <value>panelUpdate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateStatistics.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="linkLabelUpdateMethodValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethodValue.Name" xml:space="preserve">
+    <value>linkLabelUpdateMethodValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethodValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethodValue.Parent" xml:space="preserve">
+    <value>groupBoxUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethodValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelUpdateMethod.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelUpdateMethod.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelUpdateMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="linkLabelUpdateMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="linkLabelUpdateMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelUpdateMethod.Text" xml:space="preserve">
+    <value>Update method:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethod.Name" xml:space="preserve">
+    <value>linkLabelUpdateMethod</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethod.Parent" xml:space="preserve">
+    <value>groupBoxUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateMethod.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxUpdateSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 47</value>
+  </data>
+  <data name="groupBoxUpdateSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 50</value>
+  </data>
+  <data name="groupBoxUpdateSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxUpdateSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateSettings.Name" xml:space="preserve">
+    <value>groupBoxUpdateSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateSettings.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateSettings.Parent" xml:space="preserve">
+    <value>panelUpdate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUpdateSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="panelUpdate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelUpdate.Name" xml:space="preserve">
+    <value>panelUpdate</value>
+  </data>
+  <data name="&gt;&gt;panelUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelUpdate.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelUpdate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelStatistics.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelStatistics.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="linkLabelStatistics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelStatistics.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="linkLabelStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 312</value>
+  </data>
+  <data name="linkLabelStatistics.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>18, 0, 0, 0</value>
+  </data>
+  <data name="linkLabelStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="linkLabelStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="linkLabelStatistics.Text" xml:space="preserve">
+    <value>Statistics:</value>
+  </data>
+  <data name="linkLabelStatistics.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;linkLabelStatistics.Name" xml:space="preserve">
+    <value>linkLabelStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelStatistics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelStatistics.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelStatistics.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelDBVersionValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDBVersionValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelDBVersionValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDBVersionValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 280</value>
+  </data>
+  <data name="labelDBVersionValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="labelDBVersionValue.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="labelDBVersionValue.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersionValue.Name" xml:space="preserve">
+    <value>labelDBVersionValue</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersionValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersionValue.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersionValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelDBVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDBVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDBVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 280</value>
+  </data>
+  <data name="labelDBVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="labelDBVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="labelDBVersion.Text" xml:space="preserve">
+    <value>DB Version:</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersion.Name" xml:space="preserve">
+    <value>labelDBVersion</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersion.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelDBVersion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelUpdateNow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelUpdateNow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelUpdateNow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 261</value>
+  </data>
+  <data name="linkLabelUpdateNow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="linkLabelUpdateNow.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="linkLabelUpdateNow.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateNow.Name" xml:space="preserve">
+    <value>linkLabelUpdateNow</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateNow.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdateNow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelLastUpdatedValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLastUpdatedValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelLastUpdatedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLastUpdatedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 261</value>
+  </data>
+  <data name="labelLastUpdatedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="labelLastUpdatedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="labelLastUpdatedValue.Text" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdatedValue.Name" xml:space="preserve">
+    <value>labelLastUpdatedValue</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdatedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdatedValue.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdatedValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelLastUpdated.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLastUpdated.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLastUpdated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 261</value>
+  </data>
+  <data name="labelLastUpdated.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="labelLastUpdated.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelLastUpdated.Text" xml:space="preserve">
+    <value>Last updated:</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdated.Name" xml:space="preserve">
+    <value>labelLastUpdated</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdated.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdated.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelLastUpdated.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="linkLabelUpdates.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelUpdates.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="linkLabelUpdates.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelUpdates.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="linkLabelUpdates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 238</value>
+  </data>
+  <data name="linkLabelUpdates.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>18, 0, 0, 0</value>
+  </data>
+  <data name="linkLabelUpdates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="linkLabelUpdates.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="linkLabelUpdates.Text" xml:space="preserve">
+    <value>DB Updates:</value>
+  </data>
+  <data name="linkLabelUpdates.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdates.Name" xml:space="preserve">
+    <value>linkLabelUpdates</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdates.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelUpdates.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="linkLabelProtectionSettings.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelProtectionSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelProtectionSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 213</value>
+  </data>
+  <data name="linkLabelProtectionSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="linkLabelProtectionSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="linkLabelProtectionSettings.Text" xml:space="preserve">
+    <value>Protection settings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionSettings.Name" xml:space="preserve">
+    <value>linkLabelProtectionSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionSettings.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionSettings.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelEmailProtectionValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEmailProtectionValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelEmailProtectionValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelEmailProtectionValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 193</value>
+  </data>
+  <data name="labelEmailProtectionValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="labelEmailProtectionValue.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelEmailProtectionValue.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtectionValue.Name" xml:space="preserve">
+    <value>labelEmailProtectionValue</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtectionValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtectionValue.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtectionValue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 172</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelResidentFileProtectionValue.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtectionValue.Name" xml:space="preserve">
+    <value>labelResidentFileProtectionValue</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtectionValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtectionValue.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtectionValue.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelEmailProtection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEmailProtection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelEmailProtection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 193</value>
+  </data>
+  <data name="labelEmailProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="labelEmailProtection.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelEmailProtection.Text" xml:space="preserve">
+    <value>E-Mail Protection:</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtection.Name" xml:space="preserve">
+    <value>labelEmailProtection</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtection.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelEmailProtection.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="labelResidentFileProtection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelResidentFileProtection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelResidentFileProtection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 172</value>
+  </data>
+  <data name="labelResidentFileProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="labelResidentFileProtection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelResidentFileProtection.Text" xml:space="preserve">
+    <value>Resident File Protection:</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtection.Name" xml:space="preserve">
+    <value>labelResidentFileProtection</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtection.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelResidentFileProtection.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="linkLabelProtectionStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelProtectionStatus.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="linkLabelProtectionStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelProtectionStatus.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="linkLabelProtectionStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 148</value>
+  </data>
+  <data name="linkLabelProtectionStatus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>18, 0, 0, 0</value>
+  </data>
+  <data name="linkLabelProtectionStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="linkLabelProtectionStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="linkLabelProtectionStatus.Text" xml:space="preserve">
+    <value>Protection:</value>
+  </data>
+  <data name="linkLabelProtectionStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionStatus.Name" xml:space="preserve">
+    <value>linkLabelProtectionStatus</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionStatus.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionStatus.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="labelRecomendations.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRecomendations.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelRecomendations.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelRecomendations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 84</value>
+  </data>
+  <data name="labelRecomendations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="labelRecomendations.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelRecomendations.Text" xml:space="preserve">
+    <value>Recomendation:</value>
+  </data>
+  <data name="&gt;&gt;labelRecomendations.Name" xml:space="preserve">
+    <value>labelRecomendations</value>
+  </data>
+  <data name="&gt;&gt;labelRecomendations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRecomendations.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelRecomendations.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pictureBoxProtectionLevel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxProtectionLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 54</value>
+  </data>
+  <data name="pictureBoxProtectionLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="pictureBoxProtectionLevel.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBoxProtectionLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxProtectionLevel.Name" xml:space="preserve">
+    <value>pictureBoxProtectionLevel</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxProtectionLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxProtectionLevel.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxProtectionLevel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="linkLabelProtectionLevel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelProtectionLevel.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="linkLabelProtectionLevel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelProtectionLevel.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="linkLabelProtectionLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 54</value>
+  </data>
+  <data name="linkLabelProtectionLevel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>18, 0, 0, 0</value>
+  </data>
+  <data name="linkLabelProtectionLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="linkLabelProtectionLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelProtectionLevel.Text" xml:space="preserve">
+    <value>Protection level:</value>
+  </data>
+  <data name="linkLabelProtectionLevel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionLevel.Name" xml:space="preserve">
+    <value>linkLabelProtectionLevel</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionLevel.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;linkLabelProtectionLevel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="pictureBoxStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 47</value>
+  </data>
+  <data name="pictureBoxStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 86</value>
+  </data>
+  <data name="pictureBoxStatus.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBoxStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxStatus.Name" xml:space="preserve">
+    <value>pictureBoxStatus</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxStatus.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxStatus.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="labelClamWinStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelClamWinStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="labelClamWinStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelClamWinStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 31</value>
+  </data>
+  <data name="labelClamWinStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 16</value>
+  </data>
+  <data name="labelClamWinStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelClamWinStatus.Text" xml:space="preserve">
+    <value>ClamWin Status</value>
+  </data>
+  <data name="&gt;&gt;labelClamWinStatus.Name" xml:space="preserve">
+    <value>labelClamWinStatus</value>
+  </data>
+  <data name="&gt;&gt;labelClamWinStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelClamWinStatus.Parent" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;labelClamWinStatus.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="panelHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 430</value>
+  </data>
+  <data name="panelHome.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="panelHome.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Name" xml:space="preserve">
+    <value>panelHome</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHome.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelHome.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonQuarantineManage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonQuarantineManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 23</value>
+  </data>
+  <data name="buttonQuarantineManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 24</value>
+  </data>
+  <data name="buttonQuarantineManage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonQuarantineManage.Text" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
+  <data name="&gt;&gt;buttonQuarantineManage.Name" xml:space="preserve">
+    <value>buttonQuarantineManage</value>
+  </data>
+  <data name="&gt;&gt;buttonQuarantineManage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonQuarantineManage.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineManage</value>
+  </data>
+  <data name="&gt;&gt;buttonQuarantineManage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxQuarantineManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 174</value>
+  </data>
+  <data name="groupBoxQuarantineManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 61</value>
+  </data>
+  <data name="groupBoxQuarantineManage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBoxQuarantineManage.Text" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineManage.Name" xml:space="preserve">
+    <value>groupBoxQuarantineManage</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineManage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineManage.Parent" xml:space="preserve">
+    <value>panelQuarantine</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineManage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 62</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.Text" xml:space="preserve">
+    <value>no file</value>
+  </data>
+  <data name="linkLabelLastFileQuarantinedValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantinedValue.Name" xml:space="preserve">
+    <value>linkLabelLastFileQuarantinedValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantinedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantinedValue.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantinedValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 62</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelLastFileQuarantined.Text" xml:space="preserve">
+    <value>Last quarantined file:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantined.Name" xml:space="preserve">
+    <value>linkLabelLastFileQuarantined</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantined.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantined.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelLastFileQuarantined.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 43</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.Text" xml:space="preserve">
+    <value>0 Mb</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSizeValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSizeValue.Name" xml:space="preserve">
+    <value>linkLabelQuarantineTotalSizeValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSizeValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSizeValue.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSizeValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 43</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelQuarantineTotalSize.Text" xml:space="preserve">
+    <value>Quarantine size:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSize.Name" xml:space="preserve">
+    <value>linkLabelQuarantineTotalSize</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSize.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelQuarantineTotalSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 24</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelFilesQuarantinedValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantinedValue.Name" xml:space="preserve">
+    <value>linkLabelFilesQuarantinedValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantinedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantinedValue.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantinedValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 24</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelFilesQuarantined.Text" xml:space="preserve">
+    <value>Files quarantined:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantined.Name" xml:space="preserve">
+    <value>linkLabelFilesQuarantined</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantined.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantined.Parent" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilesQuarantined.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBoxQuarantineStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="groupBoxQuarantineStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 100</value>
+  </data>
+  <data name="groupBoxQuarantineStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxQuarantineStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineStatistics.Name" xml:space="preserve">
+    <value>groupBoxQuarantineStatistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineStatistics.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineStatistics.Parent" xml:space="preserve">
+    <value>panelQuarantine</value>
+  </data>
+  <data name="&gt;&gt;groupBoxQuarantineStatistics.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelQuarantine.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelQuarantine.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelQuarantine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="labelQuarantine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="labelQuarantine.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelQuarantine.Text" xml:space="preserve">
+    <value>Quarantine</value>
+  </data>
+  <data name="&gt;&gt;labelQuarantine.Name" xml:space="preserve">
+    <value>labelQuarantine</value>
+  </data>
+  <data name="&gt;&gt;labelQuarantine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelQuarantine.Parent" xml:space="preserve">
+    <value>panelQuarantine</value>
+  </data>
+  <data name="&gt;&gt;labelQuarantine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelQuarantine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelQuarantine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 382</value>
+  </data>
+  <data name="panelQuarantine.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="panelQuarantine.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelQuarantine.Name" xml:space="preserve">
+    <value>panelQuarantine</value>
+  </data>
+  <data name="&gt;&gt;panelQuarantine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelQuarantine.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelQuarantine.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonSCMyPCScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCMyPCScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 139</value>
+  </data>
+  <data name="buttonSCMyPCScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCMyPCScan.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonSCMyPCScan.Text" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCScan.Name" xml:space="preserve">
+    <value>buttonSCMyPCScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCScan.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCScan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonSCMyPCRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCMyPCRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 54</value>
+  </data>
+  <data name="buttonSCMyPCRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCMyPCRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonSCMyPCRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCRemove.Name" xml:space="preserve">
+    <value>buttonSCMyPCRemove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCRemove.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCRemove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSCMyPCAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCMyPCAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 28</value>
+  </data>
+  <data name="buttonSCMyPCAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCMyPCAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonSCMyPCAdd.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCAdd.Name" xml:space="preserve">
+    <value>buttonSCMyPCAdd</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCAdd.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;buttonSCMyPCAdd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="listViewSCMyPCItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="listViewSCMyPCItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 136</value>
+  </data>
+  <data name="listViewSCMyPCItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listViewSCMyPCItems.Name" xml:space="preserve">
+    <value>listViewSCMyPCItems</value>
+  </data>
+  <data name="&gt;&gt;listViewSCMyPCItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewSCMyPCItems.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;listViewSCMyPCItems.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="progressBarScanMyPC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarScanMyPC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
+  </data>
+  <data name="progressBarScanMyPC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 12</value>
+  </data>
+  <data name="progressBarScanMyPC.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="progressBarScanMyPC.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanMyPC.Name" xml:space="preserve">
+    <value>progressBarScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanMyPC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanMyPC.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanMyPC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScanValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScanValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 50</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScanValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScanValue.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScanValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScanValue.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCLastScanValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScanValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScanValue.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScanValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanMyPCScannedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCScannedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 34</value>
+  </data>
+  <data name="linkLabelScanMyPCScannedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCScannedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="linkLabelScanMyPCScannedValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScannedValue.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCScannedValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScannedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScannedValue.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScannedValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanMyPCThreatsValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCThreatsValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="linkLabelScanMyPCThreatsValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCThreatsValue.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="linkLabelScanMyPCThreatsValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreatsValue.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCThreatsValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreatsValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreatsValue.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreatsValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="linkLabelScanMyPCLastScan.Text" xml:space="preserve">
+    <value>Last scan:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScan.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCLastScan</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScan.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCLastScan.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="linkLabelScanMyPCScanned.Text" xml:space="preserve">
+    <value>Scanned:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScanned.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCScanned</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScanned.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCScanned.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="linkLabelScanMyPCThreats.Text" xml:space="preserve">
+    <value>Threats detected:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreats.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCThreats</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreats.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCThreats.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBoxSCMyPCStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 227</value>
+  </data>
+  <data name="groupBoxSCMyPCStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 73</value>
+  </data>
+  <data name="groupBoxSCMyPCStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCMyPCStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCStatistics.Name" xml:space="preserve">
+    <value>groupBoxSCMyPCStatistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCStatistics.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCStatistics.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCStatistics.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 18</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCSettingsActionDescr</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 18</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Text" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettings.Name" xml:space="preserve">
+    <value>linkLabelScanMyPCSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettings.Parent" xml:space="preserve">
+    <value>groupBoxSCMyPCSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanMyPCSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCMyPCSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="groupBoxSCMyPCSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="groupBoxSCMyPCSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxSCMyPCSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCSettings.Name" xml:space="preserve">
+    <value>groupBoxSCMyPCSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCSettings.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCSettings.Parent" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCMyPCSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelScanMyPC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelScanMyPC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelScanMyPC.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="panelScanMyPC.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelScanMyPC.Name" xml:space="preserve">
+    <value>panelScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;panelScanMyPC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelScanMyPC.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelScanMyPC.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 22</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panelService</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelServiceVersionValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelServiceVersionValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="linkLabelServiceVersionValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 13</value>
+  </data>
+  <data name="linkLabelServiceVersionValue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelServiceVersionValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersionValue.Name" xml:space="preserve">
+    <value>linkLabelServiceVersionValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersionValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersionValue.Parent" xml:space="preserve">
+    <value>groupBoxServiceProductInfo</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersionValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelServiceVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelServiceVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelServiceVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="linkLabelServiceVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="linkLabelServiceVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelServiceVersion.Text" xml:space="preserve">
+    <value>Product version:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersion.Name" xml:space="preserve">
+    <value>linkLabelServiceVersion</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersion.Parent" xml:space="preserve">
+    <value>groupBoxServiceProductInfo</value>
+  </data>
+  <data name="&gt;&gt;linkLabelServiceVersion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxServiceProductInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 47</value>
+  </data>
+  <data name="groupBoxServiceProductInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 63</value>
+  </data>
+  <data name="groupBoxServiceProductInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxServiceProductInfo.Text" xml:space="preserve">
+    <value>Product info</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServiceProductInfo.Name" xml:space="preserve">
+    <value>groupBoxServiceProductInfo</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServiceProductInfo.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServiceProductInfo.Parent" xml:space="preserve">
+    <value>panelService</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServiceProductInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelService.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelService.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="panelService.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelService.Name" xml:space="preserve">
+    <value>panelService</value>
+  </data>
+  <data name="&gt;&gt;panelService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelService.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelService.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="buttonSCScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 139</value>
+  </data>
+  <data name="buttonSCScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCScan.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonSCScan.Text" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCScan.Name" xml:space="preserve">
+    <value>buttonSCScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCScan.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCScan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonSCRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 54</value>
+  </data>
+  <data name="buttonSCRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonSCRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCRemove.Name" xml:space="preserve">
+    <value>buttonSCRemove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCRemove.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCRemove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSCAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 28</value>
+  </data>
+  <data name="buttonSCAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonSCAdd.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="&gt;&gt;buttonSCAdd.Name" xml:space="preserve">
+    <value>buttonSCAdd</value>
+  </data>
+  <data name="&gt;&gt;buttonSCAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCAdd.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCAdd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="listViewSCItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="listViewSCItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 136</value>
+  </data>
+  <data name="listViewSCItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listViewSCItems.Name" xml:space="preserve">
+    <value>listViewSCItems</value>
+  </data>
+  <data name="&gt;&gt;listViewSCItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewSCItems.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;listViewSCItems.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="progressBarScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
+  </data>
+  <data name="progressBarScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 12</value>
+  </data>
+  <data name="progressBarScan.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="progressBarScan.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressBarScan.Name" xml:space="preserve">
+    <value>progressBarScan</value>
+  </data>
+  <data name="&gt;&gt;progressBarScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarScan.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;progressBarScan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanLastScanValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanLastScanValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 50</value>
+  </data>
+  <data name="linkLabelScanLastScanValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanLastScanValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanLastScanValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScanValue.Name" xml:space="preserve">
+    <value>linkLabelScanLastScanValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScanValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScanValue.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScanValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanScannedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanScannedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 34</value>
+  </data>
+  <data name="linkLabelScanScannedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanScannedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanScannedValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScannedValue.Name" xml:space="preserve">
+    <value>linkLabelScanScannedValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScannedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScannedValue.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScannedValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanThreatsValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanThreatsValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="linkLabelScanThreatsValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanThreatsValue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanThreatsValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreatsValue.Name" xml:space="preserve">
+    <value>linkLabelScanThreatsValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreatsValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreatsValue.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreatsValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanLastScan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanLastScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanLastScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="linkLabelScanLastScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="linkLabelScanLastScan.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanLastScan.Text" xml:space="preserve">
+    <value>Last scan:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScan.Name" xml:space="preserve">
+    <value>linkLabelScanLastScan</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScan.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanLastScan.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanScanned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanScanned.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="linkLabelScanScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="linkLabelScanScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanScanned.Text" xml:space="preserve">
+    <value>Scanned:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScanned.Name" xml:space="preserve">
+    <value>linkLabelScanScanned</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScanned.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanScanned.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanThreats.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanThreats.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanThreats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="linkLabelScanThreats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="linkLabelScanThreats.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanThreats.Text" xml:space="preserve">
+    <value>Threats detected:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreats.Name" xml:space="preserve">
+    <value>linkLabelScanThreats</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreats.Parent" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanThreats.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBoxSCStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 227</value>
+  </data>
+  <data name="groupBoxSCStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 73</value>
+  </data>
+  <data name="groupBoxSCStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCStatistics.Name" xml:space="preserve">
+    <value>groupBoxSCStatistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCStatistics.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCStatistics.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCStatistics.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 18</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Name" xml:space="preserve">
+    <value>linkLabelScanSettingsActionDescr</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Parent" xml:space="preserve">
+    <value>groupBoxSCSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="linkLabelScanSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 18</value>
+  </data>
+  <data name="linkLabelScanSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanSettings.Text" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettings.Name" xml:space="preserve">
+    <value>linkLabelScanSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettings.Parent" xml:space="preserve">
+    <value>groupBoxSCSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="groupBoxSCSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="groupBoxSCSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxSCSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCSettings.Name" xml:space="preserve">
+    <value>groupBoxSCSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCSettings.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCSettings.Parent" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelScan.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="panelScan.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelScan.Name" xml:space="preserve">
+    <value>panelScan</value>
+  </data>
+  <data name="&gt;&gt;panelScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelScan.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelScan.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="buttonSCriticalScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCriticalScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 139</value>
+  </data>
+  <data name="buttonSCriticalScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCriticalScan.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonSCriticalScan.Text" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalScan.Name" xml:space="preserve">
+    <value>buttonSCriticalScan</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalScan.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalScan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="progressBarScanCritical.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarScanCritical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
+  </data>
+  <data name="progressBarScanCritical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 12</value>
+  </data>
+  <data name="progressBarScanCritical.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="progressBarScanCritical.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanCritical.Name" xml:space="preserve">
+    <value>progressBarScanCritical</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanCritical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanCritical.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;progressBarScanCritical.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScanValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScanValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 50</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScanValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScanValue.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScanValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScanValue.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalLastScanValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScanValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScanValue.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScanValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanCriticalScannedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalScannedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 34</value>
+  </data>
+  <data name="linkLabelScanCriticalScannedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalScannedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="linkLabelScanCriticalScannedValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScannedValue.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalScannedValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScannedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScannedValue.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScannedValue.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanCriticalThreatsValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalThreatsValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="linkLabelScanCriticalThreatsValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalThreatsValue.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="linkLabelScanCriticalThreatsValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreatsValue.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalThreatsValue</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreatsValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreatsValue.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreatsValue.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="linkLabelScanCriticalLastScan.Text" xml:space="preserve">
+    <value>Last scan:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScan.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalLastScan</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScan.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalLastScan.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="linkLabelScanCriticalScanned.Text" xml:space="preserve">
+    <value>Scanned:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScanned.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalScanned</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScanned.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalScanned.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="linkLabelScanCriticalThreats.Text" xml:space="preserve">
+    <value>Threats detected:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreats.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalThreats</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreats.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalThreats.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBoxSCCriticalStatistics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 227</value>
+  </data>
+  <data name="groupBoxSCCriticalStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 73</value>
+  </data>
+  <data name="groupBoxSCCriticalStatistics.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCCriticalStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalStatistics.Name" xml:space="preserve">
+    <value>groupBoxSCCriticalStatistics</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalStatistics.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalStatistics.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalStatistics.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSCriticalRemove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCriticalRemove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 54</value>
+  </data>
+  <data name="buttonSCriticalRemove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCriticalRemove.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonSCriticalRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalRemove.Name" xml:space="preserve">
+    <value>buttonSCriticalRemove</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalRemove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalRemove.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalRemove.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 18</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalSettingsActionDescr</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 18</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Text" xml:space="preserve">
+    <value>Action:</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalAction.Name" xml:space="preserve">
+    <value>linkLabelScanCriticalAction</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalAction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalAction.Parent" xml:space="preserve">
+    <value>groupBoxSCCriticalSettings</value>
+  </data>
+  <data name="&gt;&gt;linkLabelScanCriticalAction.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSCCriticalSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="groupBoxSCCriticalSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 49</value>
+  </data>
+  <data name="groupBoxSCCriticalSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxSCCriticalSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalSettings.Name" xml:space="preserve">
+    <value>groupBoxSCCriticalSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalSettings.Type" xml:space="preserve">
+    <value>ClamWinApp.GroupBoxEx, ClamWinApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalSettings.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSCCriticalSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonSCriticalAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonSCriticalAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 28</value>
+  </data>
+  <data name="buttonSCriticalAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonSCriticalAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="buttonSCriticalAdd.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalAdd.Name" xml:space="preserve">
+    <value>buttonSCriticalAdd</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalAdd.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;buttonSCriticalAdd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="listViewSCCriticalItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="listViewSCCriticalItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 136</value>
+  </data>
+  <data name="listViewSCCriticalItems.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;listViewSCCriticalItems.Name" xml:space="preserve">
+    <value>listViewSCCriticalItems</value>
+  </data>
+  <data name="&gt;&gt;listViewSCCriticalItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewSCCriticalItems.Parent" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;listViewSCCriticalItems.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelScanCritical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelScanCritical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelScanCritical.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="panelScanCritical.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelScanCritical.Name" xml:space="preserve">
+    <value>panelScanCritical</value>
+  </data>
+  <data name="&gt;&gt;panelScanCritical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelScanCritical.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelScanCritical.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 57</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 17</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButtonOnAccessSuspended.Text" xml:space="preserve">
+    <value>Suspended for 15 minutes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessSuspended.Name" xml:space="preserve">
+    <value>radioButtonOnAccessSuspended</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessSuspended.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessSuspended.Parent" xml:space="preserve">
+    <value>groupBoxProtectionOnAccess</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessSuspended.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonOnAccessOff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonOnAccessOff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButtonOnAccessOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 38</value>
+  </data>
+  <data name="radioButtonOnAccessOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="radioButtonOnAccessOff.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonOnAccessOff.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOff.Name" xml:space="preserve">
+    <value>radioButtonOnAccessOff</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOff.Parent" xml:space="preserve">
+    <value>groupBoxProtectionOnAccess</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOff.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButtonOnAccessOn.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonOnAccessOn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButtonOnAccessOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 19</value>
+  </data>
+  <data name="radioButtonOnAccessOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="radioButtonOnAccessOn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButtonOnAccessOn.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOn.Name" xml:space="preserve">
+    <value>radioButtonOnAccessOn</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOn.Parent" xml:space="preserve">
+    <value>groupBoxProtectionOnAccess</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOnAccessOn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxProtectionOnAccess.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 47</value>
+  </data>
+  <data name="groupBoxProtectionOnAccess.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 90</value>
+  </data>
+  <data name="groupBoxProtectionOnAccess.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxProtectionOnAccess.Text" xml:space="preserve">
+    <value>On-Access Scaner</value>
+  </data>
+  <data name="&gt;&gt;groupBoxProtectionOnAccess.Name" xml:space="preserve">
+    <value>groupBoxProtectionOnAccess</value>
+  </data>
+  <data name="&gt;&gt;groupBoxProtectionOnAccess.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxProtectionOnAccess.Parent" xml:space="preserve">
+    <value>panelProtection</value>
+  </data>
+  <data name="&gt;&gt;groupBoxProtectionOnAccess.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 25</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 19</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panelProtection</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelProtection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panelProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 309</value>
+  </data>
+  <data name="panelProtection.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="panelProtection.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelProtection.Name" xml:space="preserve">
+    <value>panelProtection</value>
+  </data>
+  <data name="&gt;&gt;panelProtection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelProtection.Parent" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelProtection.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panelExRightPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 54</value>
+  </data>
+  <data name="panelExRightPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 484</value>
+  </data>
+  <data name="panelExRightPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelExRightPanel.Name" xml:space="preserve">
+    <value>panelExRightPanel</value>
+  </data>
+  <data name="&gt;&gt;panelExRightPanel.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExRightPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelExRightPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelExHome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panelExHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="panelExHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 45</value>
+  </data>
+  <data name="panelExHome.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelExHome.Name" xml:space="preserve">
+    <value>panelExHome</value>
+  </data>
+  <data name="&gt;&gt;panelExHome.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExHome.Parent" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExHome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelExScan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="linkScanCritical.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkScanCritical.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkScanCritical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 68</value>
+  </data>
+  <data name="linkScanCritical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="linkScanCritical.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkScanCritical.Text" xml:space="preserve">
+    <value>Scan Critical Areas</value>
+  </data>
+  <data name="&gt;&gt;linkScanCritical.Name" xml:space="preserve">
+    <value>linkScanCritical</value>
+  </data>
+  <data name="&gt;&gt;linkScanCritical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkScanCritical.Parent" xml:space="preserve">
+    <value>panelExScan</value>
+  </data>
+  <data name="&gt;&gt;linkScanCritical.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkScanMyPC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkScanMyPC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkScanMyPC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 46</value>
+  </data>
+  <data name="linkScanMyPC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="linkScanMyPC.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkScanMyPC.Text" xml:space="preserve">
+    <value>Scan My Computer</value>
+  </data>
+  <data name="&gt;&gt;linkScanMyPC.Name" xml:space="preserve">
+    <value>linkScanMyPC</value>
+  </data>
+  <data name="&gt;&gt;linkScanMyPC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkScanMyPC.Parent" xml:space="preserve">
+    <value>panelExScan</value>
+  </data>
+  <data name="&gt;&gt;linkScanMyPC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelExScan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 61</value>
+  </data>
+  <data name="panelExScan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 96</value>
+  </data>
+  <data name="panelExScan.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelExScan.Name" xml:space="preserve">
+    <value>panelExScan</value>
+  </data>
+  <data name="&gt;&gt;panelExScan.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExScan.Parent" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExScan.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelExQuarantine.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panelExQuarantine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 165</value>
+  </data>
+  <data name="panelExQuarantine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 41</value>
+  </data>
+  <data name="panelExQuarantine.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelExQuarantine.Name" xml:space="preserve">
+    <value>panelExQuarantine</value>
+  </data>
+  <data name="&gt;&gt;panelExQuarantine.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExQuarantine.Parent" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExQuarantine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelExService.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="linkProtection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkProtection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkProtection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 38</value>
+  </data>
+  <data name="linkProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="linkProtection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="linkProtection.Text" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="&gt;&gt;linkProtection.Name" xml:space="preserve">
+    <value>linkProtection</value>
+  </data>
+  <data name="&gt;&gt;linkProtection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkProtection.Parent" xml:space="preserve">
+    <value>panelExService</value>
+  </data>
+  <data name="&gt;&gt;linkProtection.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkDatafiles.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkDatafiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkDatafiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 71</value>
+  </data>
+  <data name="linkDatafiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="linkDatafiles.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="linkDatafiles.Text" xml:space="preserve">
+    <value>Data files</value>
+  </data>
+  <data name="&gt;&gt;linkDatafiles.Name" xml:space="preserve">
+    <value>linkDatafiles</value>
+  </data>
+  <data name="&gt;&gt;linkDatafiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkDatafiles.Parent" xml:space="preserve">
+    <value>panelExService</value>
+  </data>
+  <data name="&gt;&gt;linkDatafiles.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkUpdate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 54</value>
+  </data>
+  <data name="linkUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="linkUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="linkUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;linkUpdate.Name" xml:space="preserve">
+    <value>linkUpdate</value>
+  </data>
+  <data name="&gt;&gt;linkUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkUpdate.Parent" xml:space="preserve">
+    <value>panelExService</value>
+  </data>
+  <data name="&gt;&gt;linkUpdate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelExService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 214</value>
+  </data>
+  <data name="panelExService.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 104</value>
+  </data>
+  <data name="panelExService.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelExService.Name" xml:space="preserve">
+    <value>panelExService</value>
+  </data>
+  <data name="&gt;&gt;panelExService.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExService.Parent" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExService.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelExGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 32</value>
+  </data>
+  <data name="panelExGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 334</value>
+  </data>
+  <data name="panelExGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Name" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Type" xml:space="preserve">
+    <value>PanelsEx.PanelExGroup, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelExNotification.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="linkLabelNotify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelNotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 43</value>
+  </data>
+  <data name="linkLabelNotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 98</value>
+  </data>
+  <data name="linkLabelNotify.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotify.Name" xml:space="preserve">
+    <value>linkLabelNotify</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotify.Parent" xml:space="preserve">
+    <value>panelExNotification</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotify.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="linkLabelNotifyNext.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelNotifyNext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelNotifyNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelNotifyNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 17</value>
+  </data>
+  <data name="linkLabelNotifyNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="linkLabelNotifyNext.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="linkLabelNotifyNext.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyNext.Name" xml:space="preserve">
+    <value>linkLabelNotifyNext</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyNext.Parent" xml:space="preserve">
+    <value>panelExNotification</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyNext.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelNotifyBack.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelNotifyBack.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="linkLabelNotifyBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelNotifyBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 17</value>
+  </data>
+  <data name="linkLabelNotifyBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="linkLabelNotifyBack.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="linkLabelNotifyBack.Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyBack.Name" xml:space="preserve">
+    <value>linkLabelNotifyBack</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyBack.Parent" xml:space="preserve">
+    <value>panelExNotification</value>
+  </data>
+  <data name="&gt;&gt;linkLabelNotifyBack.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelExNotification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 383</value>
+  </data>
+  <data name="panelExNotification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 155</value>
+  </data>
+  <data name="panelExNotification.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panelExNotification.Name" xml:space="preserve">
+    <value>panelExNotification</value>
+  </data>
+  <data name="&gt;&gt;panelExNotification.Type" xml:space="preserve">
+    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.2306.23526, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExNotification.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelExNotification.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>571, 553</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ClamWin Free Antivirus</value>
+  </data>
+  <data name="&gt;&gt;trayIcon.Name" xml:space="preserve">
+    <value>trayIcon</value>
+  </data>
+  <data name="&gt;&gt;trayIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemTrayOpen.Name" xml:space="preserve">
+    <value>menuItemTrayOpen</value>
+  </data>
+  <data name="&gt;&gt;menuItemTrayOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItemTrayExit.Name" xml:space="preserve">
+    <value>menuItemTrayExit</value>
+  </data>
+  <data name="&gt;&gt;menuItemTrayExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sqLiteDataAdapter.Name" xml:space="preserve">
+    <value>sqLiteDataAdapter</value>
+  </data>
+  <data name="&gt;&gt;sqLiteDataAdapter.Type" xml:space="preserve">
+    <value>Finisar.SQLite.SQLiteDataAdapter, SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c</value>
+  </data>
+  <data name="&gt;&gt;imageFilesList.Name" xml:space="preserve">
+    <value>imageFilesList</value>
+  </data>
+  <data name="&gt;&gt;imageFilesList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ClamWinMainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

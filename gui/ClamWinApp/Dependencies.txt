@@ -1,0 +1,4 @@
+ClamWin GUI dependencies:
+
+1) SQLite.NET  - http://sourceforge.net/projects/sqlite-dotnet2
+2) SharpZipLib - http://www.icsharpcode.net/OpenSource/SharpZipLib/
