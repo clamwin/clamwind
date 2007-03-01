@@ -32,12 +32,15 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
     int result, i;
     uint32_t hash[PAN_STAGE_SIZE];
     entry_t *match = NULL;
-    bool nocheck = IsSmall((HANDLE) _get_osfhandle(fd));
+    bool nocheck = !this->cache || IsSmall((HANDLE) _get_osfhandle(fd));
 
     /* If the file is too small threat always as unchecked */
     if (nocheck)
-        dbgprint(LOG_INFO, L"Thread %u; File: %s is too small to insert in cache\n", GetCurrentThreadId(), wsfilename.c_str());
-    else
+	{
+		if(this->cache)
+			dbgprint(LOG_INFO, L"Thread %u; File: %s is too small to insert in cache\n", GetCurrentThreadId(), wsfilename.c_str());
+	}
+	else
     {
         compute_hash((HANDLE) _get_osfhandle(fd), hash);
         match = this->cache->Get(hash);
@@ -92,24 +95,27 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
         entry.filename[0] = L'\0';
         wcscat(entry.filename, wsfilename.c_str());
 
-        this->cache->Insert(hash, entry);
-        /* FIXME: ugly */
-        dbgprint(LOG_DEBUG, L"Thread %u; Scanned: %s - Hash:", GetCurrentThreadId(), wsfilename.c_str());
-        for (i = 0; i < PAN_STAGE_SIZE; i++)
-            dbgprint(LOG_DEBUG, L" %08x", hash[i]);
-        dbgprint(LOG_DEBUG, L"\n");
+		if(this->cache)
+		{
+			this->cache->Insert(hash, entry);
+			/* FIXME: ugly */
+			dbgprint(LOG_DEBUG, L"Thread %u; Scanned: %s - Hash:", GetCurrentThreadId(), wsfilename.c_str());
+			for (i = 0; i < PAN_STAGE_SIZE; i++)
+				dbgprint(LOG_DEBUG, L" %08x", hash[i]);
+			dbgprint(LOG_DEBUG, L"\n");
+		}
     }
     else
     {
         if (match->allowed)
         {
             // FIXME -> LOG_DEBUG
-            dbgprint(LOG_ALWAYS, L"[ALLOWED] Thread %u; Filename: %s found in cache\n", GetCurrentThreadId(), wsfilename.c_str());
+            dbgprint(LOG_DEBUG, L"[ALLOWED] Thread %u; Filename: %s found in cache\n", GetCurrentThreadId(), wsfilename.c_str());
             scanres = SCAN_RES_CLEAN;
         }
         else
         {
-            dbgprint(LOG_ALWAYS, L"[DENIED] Thread %u; Filename: %s found in cache\n", GetCurrentThreadId(), wsfilename.c_str());
+            dbgprint(LOG_DEBUG, L"[DENIED] Thread %u; Filename: %s found in cache\n", GetCurrentThreadId(), wsfilename.c_str());
             scanres = SCAN_RES_INFECTED;
         }
         delete match;

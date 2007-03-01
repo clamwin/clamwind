@@ -36,9 +36,12 @@
 DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
 {
     CClamWinD *svc = static_cast<CClamWinD *>(lpvThreadParam);
+	if(!svc->cache)
+		return 0;
+
     HANDLE hFile = INVALID_HANDLE_VALUE;
-    uint32_t hash[PAN_STAGE_SIZE];
-    uint32_t *dbhash = NULL;
+    /*uint32_t hash[PAN_STAGE_SIZE];
+    uint32_t *dbhash = NULL;*/
     Dbc *cursorp = NULL;
     entry_t *entry = NULL;
 
@@ -64,6 +67,9 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     {
         BREAKIFDONE(SLEEPTIME);
 
+		if(!svc->cache)
+			continue;
+
         svc->cache->database->cursor(NULL, &cursorp, DB_READ_UNCOMMITTED | DB_TXN_SNAPSHOT);
         dkey = NULL;
 
@@ -87,8 +93,8 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
                 break;
             }
 
-            compute_hash(hFile, hash);
-            dbhash = (uint32_t *) key.get_data();
+            /*compute_hash(hFile, hash);
+            dbhash = (uint32_t *) key.get_data();*/
             CloseHandle(hFile);
 #if 0
             /* FIXME: ugly */
@@ -102,12 +108,12 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
                 dbgprint(LOG_TRACE, L" %08x", hash[i]);
             dbgprint(LOG_TRACE, L"\n");
 #endif
-            if (memcmp(dbhash, hash, PAN_STAGES))
+            /*if (memcmp(dbhash, hash, PAN_STAGES))
             {
                 dbgprint(LOG_ALWAYS, L"File has different Checksum: %s - REMOVED\n", entry->filename);
                 dkey = &key;
                 break;
-            }
+            }*/
         }
         cursorp->close();
         cursorp = NULL;
