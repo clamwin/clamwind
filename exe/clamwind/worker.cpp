@@ -390,7 +390,7 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
 
                     this->InsertJobInList(jobresult_pair(jobid, job));
 
-                    /* Delegate it to Thread Pool */
+                    /* Delegate it to the Thread Pool */
                     async_scan.type = JOB_ASYNC;
                     async_scan.jobid = jobid;
                     async_scan.fd = fd;
