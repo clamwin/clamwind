@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8,00"
+	Version="8.00"
 	Name="libclamav"
 	ProjectGUID="{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
 	RootNamespace="clamav"
@@ -160,6 +160,7 @@
 				IgnoreDefaultLibraryNames="libcmt.lib"
 				ModuleDefinitionFile="./clamav/libclamav.def"
 				GenerateDebugInformation="false"
+				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="1"
