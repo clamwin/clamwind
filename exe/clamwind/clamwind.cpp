@@ -41,6 +41,8 @@ CClamWinD::~CClamWinD()
 
 bool CClamWinD::Init(void)
 {
+    DWORD disableCache = 0;
+
     /* no last slash here */
     GetOurDir(this->ourPath, sizeof(ourPath));
 
@@ -53,19 +55,18 @@ bool CClamWinD::Init(void)
     }
 
     /* BDB Database */
-	DWORD disableCache = 0;
-	this->cache = NULL;
+    this->cache = NULL;
     svc.GetConfigValue(L"DisableCache", &disableCache);
-	if(!disableCache)
-	{
-		this->cache = new cwCache(this->ourPath);
-		if (this->cache->error)
-		{
-			dbgprint(LOG_ALWAYS, L"Problems opening Persistant Cache Db, aborting...\n");
-			delete this->cache;
-			this->cache = NULL;
-		}
-	}
+    if(!disableCache)
+    {
+        this->cache = new cwCache(this->ourPath);
+        if (this->cache->error)
+        {
+            dbgprint(LOG_ALWAYS, L"Problems opening Persistant Cache Db, aborting...\n");
+            delete this->cache;
+            this->cache = NULL;
+        }
+    }
 
     /* Sync objects */
     this->InitEvents();

@@ -36,11 +36,9 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
 
     /* If the file is too small threat always as unchecked */
     if (nocheck)
-	{
-		if(this->cache)
-			dbgprint(LOG_INFO, L"Thread %u; File: %s is too small to insert in cache\n", GetCurrentThreadId(), wsfilename.c_str());
-	}
-	else
+        if(this->cache)
+        dbgprint(LOG_INFO, L"Thread %u; File: %s is too small to insert in cache\n", GetCurrentThreadId(), wsfilename.c_str());
+    else
     {
         compute_hash((HANDLE) _get_osfhandle(fd), hash);
         match = this->cache->Get(hash);
@@ -95,15 +93,15 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
         entry.filename[0] = L'\0';
         wcscat(entry.filename, wsfilename.c_str());
 
-		if(this->cache)
-		{
-			this->cache->Insert(hash, entry);
-			/* FIXME: ugly */
-			dbgprint(LOG_DEBUG, L"Thread %u; Scanned: %s - Hash:", GetCurrentThreadId(), wsfilename.c_str());
-			for (i = 0; i < PAN_STAGE_SIZE; i++)
-				dbgprint(LOG_DEBUG, L" %08x", hash[i]);
-			dbgprint(LOG_DEBUG, L"\n");
-		}
+        if(this->cache)
+        {
+            this->cache->Insert(hash, entry);
+            /* FIXME: ugly */
+            dbgprint(LOG_DEBUG, L"Thread %u; Scanned: %s - Hash:", GetCurrentThreadId(), wsfilename.c_str());
+            for (i = 0; i < PAN_STAGE_SIZE; i++)
+                dbgprint(LOG_DEBUG, L" %08x", hash[i]);
+            dbgprint(LOG_DEBUG, L"\n");
+        }
     }
     else
     {

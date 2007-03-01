@@ -36,8 +36,7 @@
 DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
 {
     CClamWinD *svc = static_cast<CClamWinD *>(lpvThreadParam);
-	if(!svc->cache)
-		return 0;
+    if(!svc->cache) return 0;
 
     HANDLE hFile = INVALID_HANDLE_VALUE;
     /*uint32_t hash[PAN_STAGE_SIZE];
