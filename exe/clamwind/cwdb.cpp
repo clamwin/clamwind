@@ -62,12 +62,12 @@ bool cwDB::CVDLoad(const char *dbName, cl_engine **engine)
 
     if (cl_loaddb(dbPath, engine, &signo))
     {
-        dbgprint(LOG_ALWAYS, L"Error Loading Clamav DB file: %s...\n", dbNameW);
+        dbgprint(LOG_ALWAYS, L"Clamav DB not found: %s...\n", dbNameW);
         return false;
     }
     else
     {
-        dbgprint(LOG_ALWAYS, L"Loaded Clamav DB file: %s, %d signatures\n", dbNameW, signo);
+        dbgprint(LOG_ALWAYS, L"Loaded Clamav DB: %s, %d signatures\n", dbNameW, signo);
         return true;
     }
 }
@@ -86,7 +86,7 @@ cwDB::cwDB(const wchar_t *szPath)
 
     // Full DB
     if (!this->CVDLoad("main.cvd", &this->engines[DB_MAIN])) return;
-    if (!this->CVDLoad("daily.cvd", &this->engines[DB_MAIN])) return;
+    if (!(this->CVDLoad("daily.cvd", &this->engines[DB_MAIN]) || this->CVDLoad("daily.inc", &this->engines[DB_MAIN]))) return;
     if (cl_build(this->engines[DB_MAIN]))
     {
         cl_free(this->engines[DB_MAIN]);
@@ -96,7 +96,7 @@ cwDB::cwDB(const wchar_t *szPath)
     }
 
     // Daily Only
-    if (!this->CVDLoad("daily.cvd", &this->engines[DB_DAILY])) return;
+    if (!(this->CVDLoad("daily.cvd", &this->engines[DB_DAILY]) || this->CVDLoad("daily.inc", &this->engines[DB_DAILY]))) return;
     if (cl_build(this->engines[DB_DAILY]))
     {
         cl_free(this->engines[DB_DAILY]);
@@ -107,6 +107,7 @@ cwDB::cwDB(const wchar_t *szPath)
 
     this->versions[DB_MAIN]  = this->CVDVersion("main.cvd");
     this->versions[DB_DAILY] = this->CVDVersion("daily.cvd");
+    if (!this->versions[DB_DAILY]) this->versions[DB_DAILY] = this->CVDVersion("daily.inc");
 
     /* Register the Scan Callbacks */
     this->engines[DB_MAIN]->callback = this->engines[DB_DAILY]->callback = CClamWinD::ScanCallback;
