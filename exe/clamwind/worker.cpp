@@ -247,6 +247,30 @@ DWORD WINAPI CClamWinD::Worker(LPVOID lParam)
         }
     }
 }
+std::string CClamWinD::Escape(const char* str) const
+{
+    size_t position;
+    std::string replacewith = "";
+    std::string search(str);
+    // escape "'" and "&" characters as they are invalid in XML
+    position = search.find("&");
+    if (position > 0)
+    {
+        replacewith = "&amp;";
+    }
+    else
+    {
+        position = search.find("'");
+        if (position > 0)
+        {
+            replacewith = "&apos;";
+        }
+    }
+    if (position > 0)
+        return search.substr(0, position) + replacewith + search.substr(position + 1);
+    else
+        return search;
+}
 
 /* Handle xml messsages recevied from the pipeserver */
 std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
@@ -344,7 +368,7 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
             reply.append("</action>");;
 
             reply.append("<filename>");
-            reply.append(msg->GetArgument(TAG_FILENAME));
+            reply.append(Escape(msg->GetArgument(TAG_FILENAME)));
             reply.append("</filename>");
 
             // need to lock Impersonation from concurrent access

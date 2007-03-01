@@ -78,7 +78,31 @@ namespace ClamWinApp
         }
         #endregion        
 
-        #region Private Helper Functions        
+        #region Private Helper Functions      
+        private string EscapeFilePath(string filePath)
+        {
+            int position;
+            string replacewith = "";
+            // escape "'" and "&" characters as they are invalid in XML
+            position = filePath.IndexOf("&");
+            if (position > 0)
+            {
+                replacewith = "&amp;";
+            }
+            else
+            {
+                position = filePath.IndexOf("'");
+                if (position > 0)
+                {
+                    replacewith = "&apos;";
+                }
+            }
+            if (position > 0)
+                return filePath.Substring(0, position) + replacewith + filePath.Substring(position + 1);
+            else
+                return filePath;
+        }
+
         /// <summary>
         /// Updates RequestText memeber corresponding to current parameters
         /// </summary>
@@ -100,8 +124,7 @@ namespace ClamWinApp
             }
             else if (Action == ClamWinScanner.ActionID.Scan)
             {
-                RequestText += "<filename>";
-                RequestText += FilePath;
+                RequestText += EscapeFilePath(FilePath);
                 RequestText += "</filename>";
             }
             else if (Action == ClamWinScanner.ActionID.FsFilterControl)
@@ -113,7 +136,7 @@ namespace ClamWinApp
             else if (Action == ClamWinScanner.ActionID.AsyncScan)
             {
                 RequestText += "<filename>";
-                RequestText += FilePath;
+                RequestText += EscapeFilePath(FilePath);
                 RequestText += "</filename>";            
             }
             else if (Action == ClamWinScanner.ActionID.AsyncResult)

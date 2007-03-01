@@ -146,7 +146,7 @@
 				AdditionalDependencies="mpr.lib advapi32.lib dnsapi.lib libdb45s.lib ws2_32.lib"
 				OutputFile="$(OutDir)/clamwind.exe"
 				LinkIncremental="1"
-				GenerateDebugInformation="false"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				SubSystem="1"
 				OptimizeReferences="2"

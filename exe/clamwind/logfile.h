@@ -81,12 +81,38 @@ public:
             {
                 if (m_pOutFile)
                 {
-                        WCHAR szMsg[1024];
+                        WCHAR szMsg[4096];
                         va_list marker;
                         va_start( marker, szFormat );
-                        vswprintf(szMsg, szFormat, marker);
+                        vswprintf_s(szMsg, sizeof(szMsg)/sizeof(szMsg[0]), szFormat, marker);
                         va_end(marker);
                         fputws(szMsg, m_pOutFile);
+                        fflush(m_pOutFile);
+                }
+
+            }
+        }
+        __finally
+        {
+            ::ReleaseMutex(m_hMutex);
+        }
+    }
+
+    void Write(INT level, LPCSTR szFormat, ...)
+    {
+        ::WaitForSingleObject(m_hMutex, INFINITE);
+        __try
+        {
+            if (ShouldWrite(level))
+            {
+                if (m_pOutFile)
+                {
+                        CHAR szMsg[4096];
+                        va_list marker;
+                        va_start( marker, szFormat );
+                        vsprintf_s(szMsg, sizeof(szMsg)/sizeof(szMsg[0]), szFormat, marker);
+                        va_end(marker);
+                        fputs(szMsg, m_pOutFile);
                         fflush(m_pOutFile);
                 }
 

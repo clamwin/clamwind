@@ -26,7 +26,7 @@
 #include <panama.h>
 #include <bdb/db_cxx.h>
 
-#define SLEEPTIME   5000 /* FIXME this should be an option */
+#define SLEEPTIME   500000 /* FIXME this should be an option */
 
 #define BREAKIFDONE(time) \
     if (WaitForSingleObject(svc->hStopEvent, time) == WAIT_OBJECT_0) \
