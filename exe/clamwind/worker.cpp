@@ -358,11 +358,12 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
             if ((hFile != INVALID_HANDLE_VALUE) && ((fd = _open_osfhandle((intptr_t) hFile, O_RDONLY | O_BINARY)) != -1))
             {
                 std::string message;
+                FILETIME ts;
+                LARGE_INTEGER timestamp;
                 if (msg->action == ACTION_ASYNSCAN)
                 {
                     uint32_t jobid = this->GenJobId();
                     job_t async_scan;
-                    LARGE_INTEGER ts;
 
                     jobresult_t job;
                     job.timestamp = 0;
@@ -377,12 +378,11 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
                     job.total = _lseeki64(fd, 0, SEEK_END);
                     _lseeki64(fd, 0, SEEK_SET);
 
-                    /* TimeStamp */ /* FIXME: time() ? */
-                    if (QueryPerformanceCounter(&ts))
-                        job.timestamp = ts.QuadPart;
-                    else
-                        dbgprint(LOG_ALWAYS, L"Worker::QueryPerformanceCounter() failed %d\n", GetLastError());
-
+                    /* TimeStamp */
+                    GetSystemTimeAsFileTime(&ts);
+                    timestamp.LowPart = ts.dwLowDateTime;
+                    timestamp.HighPart = ts.dwHighDateTime;
+                    job.timestamp = timestamp.QuadPart;
 
                     reply.append("<jobid>");
                     reply.append(_ui64toa(jobid, szToDigit, 10)); /* FIXME: Check range */
