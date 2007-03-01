@@ -53,28 +53,25 @@ CwXmlMessage::CwXmlMessage(char *buffer, int len, uint32_t type)
 
 CwXmlMessage::~CwXmlMessage(void)
 {
-    std::map<uint32_t, char *>::iterator i;
-    for (i = this->arguments.begin(); i != this->arguments.end(); i++)
-        delete i->second;
     this->arguments.clear(); /* TODO: look if it needs the swap hack to free memory */
 }
 
 void CwXmlMessage::Validate(void)
 {
-    std::map<uint32_t, char *>::iterator i;
+    std::map<uint32_t, std::string>::iterator i;
     dbgprint(LOG_INFO, L"Message parsed -> Action: %s (0x%08x)\n", hash_to_action(this->action), this->action);
     for (i = this->arguments.begin(); i != this->arguments.end(); i++)
     {
         /* FIXME: only for debug very ugly remove :) */
-        int len = MultiByteToWideChar(CP_UTF8, 0, i->second, -1, NULL, 0);
+        int len = MultiByteToWideChar(CP_UTF8, 0, i->second.c_str(), -1, NULL, 0);
         wchar_t *value = new wchar_t[len];
-        MultiByteToWideChar(CP_UTF8, 0, i->second, -1, value, len);
+        MultiByteToWideChar(CP_UTF8, 0, i->second.c_str(), -1, value, len);
         dbgprint(LOG_INFO, L"Found argument %s (0x%08x) - Value: %s\n", hash_to_element(i->first), i->first, value);
         delete value;
     }
 
     /* Special Case since we need it as wchar_t */
-    char *file = this->GetArgument(TAG_FILENAME);
+    const char *file = this->GetArgument(TAG_FILENAME);
     if (file)
     {
         int len = MultiByteToWideChar(CP_UTF8, 0, file, -1, NULL, 0);
@@ -90,10 +87,10 @@ void CwXmlMessage::Validate(void)
     this->valid = true;
 }
 
-char *CwXmlMessage::GetArgument(uint32_t arg)
+const char *CwXmlMessage::GetArgument(uint32_t arg)
 {
     if (this->arguments.find(arg) == this->arguments.end()) return NULL;
-    return this->arguments[arg];
+    return this->arguments[arg].c_str();
 }
 
 void XMLCALL CwXmlMessage::startElement(void *userData, const char *name, const char **atts)
@@ -129,10 +126,12 @@ void XMLCALL CwXmlMessage::dataElement(void *userData, const XML_Char *s, int le
     {
         case TAG_ACTION:
             pThis->action = hash_string(value);
-            delete value;
             break;
         default:
-            pThis->arguments[pThis->tag] = value;
+            if (!pThis->GetArgument(pThis->tag))
+                pThis->arguments[pThis->tag] = std::string(value);
+            else
+                pThis->arguments[pThis->tag].append(value);
     }
-
+    delete value;
 }

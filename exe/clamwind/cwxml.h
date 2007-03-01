@@ -110,14 +110,14 @@ public:
     HANDLE client;
     uint8_t action;
     wchar_t *filename;
-    char *GetArgument(uint32_t arg);
+    const char *GetArgument(uint32_t arg);
     wchar_t *GetFileName(void);
 private:
     uint32_t type;
     uint32_t tag;
     bool inside;
     XML_Parser parser;
-    std::map<uint32_t, char *> arguments;
+    std::map<uint32_t, std::string> arguments;
     void Validate(void);
     static void XMLCALL startElement(void *userData, const char *name, const char **atts);
     static void XMLCALL endElement(void *userData, const char *name);
