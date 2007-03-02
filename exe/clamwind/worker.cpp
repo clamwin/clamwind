@@ -247,29 +247,26 @@ DWORD WINAPI CClamWinD::Worker(LPVOID lParam)
         }
     }
 }
-std::string CClamWinD::Escape(const char* str) const
+std::string CClamWinD::Escape(const char* str)
 {
-    size_t position;
-    std::string replacewith = "";
-    std::string search(str);
-    // escape "'" and "&" characters as they are invalid in XML
-    position = search.find("&");
-    if (position > 0)
+    size_t j;
+    std::string source = std::string(str);
+
+    j = 0;
+    while ((j = source.find("&", j)) != source.npos)
     {
-        replacewith = "&amp;";
+        source.replace(j, 1, "&amp;");
+        j += 5;
     }
-    else
+
+    j = 0;
+    while ((j = source.find("'", j)) != source.npos)
     {
-        position = search.find("'");
-        if (position > 0)
-        {
-            replacewith = "&apos;";
-        }
+        source.replace(j, 1, "&apos;");
+        j += 5;
     }
-    if (position > 0)
-        return search.substr(0, position) + replacewith + search.substr(position + 1);
-    else
-        return search;
+
+    return source;
 }
 
 /* Handle xml messsages recevied from the pipeserver */

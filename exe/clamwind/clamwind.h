@@ -162,7 +162,7 @@ public:
 
     scan_res_t ProcessFile(int fd, database_t dbtype, std::wstring wsfilename, std::string *message);
     std::string  HandleXmlMessage(CwXmlMessage *msg);
-    std::string  Escape(const char* str) const;
+    std::string  Escape(const char* str);
     void Push(job_t& job) { this->jobs.push(job); };
     void Signal(void) { ReleaseSemaphore(this->sem_worker, 1, NULL); };
     void ShutDown(void) { SetEvent(this->hStopEvent); };
