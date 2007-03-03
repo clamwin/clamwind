@@ -81,26 +81,7 @@ namespace ClamWinApp
         #region Private Helper Functions      
         private string EscapeFilePath(string filePath)
         {
-            int position;
-            string replacewith = "";
-            // escape "'" and "&" characters as they are invalid in XML
-            position = filePath.IndexOf("&");
-            if (position > 0)
-            {
-                replacewith = "&amp;";
-            }
-            else
-            {
-                position = filePath.IndexOf("'");
-                if (position > 0)
-                {
-                    replacewith = "&apos;";
-                }
-            }
-            if (position > 0)
-                return filePath.Substring(0, position) + replacewith + filePath.Substring(position + 1);
-            else
-                return filePath;
+            return filePath.Replace("&", "&amp;").Replace("'", "&apos;");
         }
 
         /// <summary>
