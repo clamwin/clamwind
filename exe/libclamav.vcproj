@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="8,00"
 	Name="libclamav"
 	ProjectGUID="{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
 	RootNamespace="clamav"
@@ -65,6 +65,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="ws2_32.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.dll"
 				LinkIncremental="2"
 				IgnoreDefaultLibraryNames=""
@@ -155,6 +156,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="ws2_32.lib"
 				ShowProgress="0"
 				LinkIncremental="1"
 				IgnoreDefaultLibraryNames="libcmt.lib"
