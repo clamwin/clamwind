@@ -43,10 +43,11 @@ CwXmlMessage::CwXmlMessage(char *buffer, int len, uint32_t type)
         this->Validate();
     else
     {
-        /*  FIXME add output in the message */
-        char out[512];
-        strcpy(out, XML_ErrorString(XML_GetErrorCode(this->parser)));
-        dbgprint(LOG_ALWAYS, L"Expat parsing error at line %d\n", XML_GetCurrentLineNumber(this->parser));
+        char errmsgmb[1024] = "";
+        wchar_t errmsg[1024] = L"";
+        strncat(errmsgmb, XML_ErrorString(XML_GetErrorCode(this->parser)), 1024);
+        MultiByteToWideChar(CP_ACP, 0, errmsgmb, -1, errmsg, 1024);
+        dbgprint(LOG_ALWAYS, L"Expat parsing error: %s\n", errmsg);
     }
     XML_ParserFree(this->parser);
 }
