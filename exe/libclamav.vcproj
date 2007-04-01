@@ -641,10 +641,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\clamav\libclamav\defaults.h"
-				>
-			</File>
-			<File
 				RelativePath=".\clamav\libclamav\dsig.h"
 				>
 			</File>
