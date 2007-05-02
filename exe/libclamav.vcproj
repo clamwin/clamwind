@@ -65,7 +65,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib"
+				AdditionalDependencies="ws2_32.lib pthreadVC2.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.dll"
 				LinkIncremental="2"
 				IgnoreDefaultLibraryNames=""
@@ -156,7 +156,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib"
+				AdditionalDependencies="ws2_32.lib pthreadVC2.lib"
 				ShowProgress="0"
 				LinkIncremental="1"
 				IgnoreDefaultLibraryNames="libcmt.lib"
@@ -991,10 +991,6 @@
 				</File>
 				<File
 					RelativePath=".\clamav\src\platform.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\src\pthread.c"
 					>
 				</File>
 				<File

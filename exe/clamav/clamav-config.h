@@ -285,10 +285,6 @@
 /* Version number of package */
 #define VERSION "devel-msvc - "__DATE__
 
-/* use libcurl in mbox code */
-/* #define WITH_CURL 1 */
-/* #define CURL_STATICLIB */
-
 /* endianess */
 #define WORDS_BIGENDIAN 0
 
