@@ -33,7 +33,7 @@ void CClamWinD::InitEvents(void)
 
     this->hStopEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
     this->hReloadEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
-    this->sem_reload = CreateSemaphore(NULL, 0, MAX_THREADS, NULL);
+    this->sem_reload = CreateSemaphore(NULL, 0, this->nthreads, NULL);
 }
 
 void CClamWinD::UninitEvents(void)

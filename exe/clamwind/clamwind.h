@@ -58,7 +58,6 @@
 
 #define CORE_VERSION    "1.0"
 #define XML_MSG_SIZE 1024
-#define MAX_THREADS 10
 #define MIN_FILE_SIZE   512 /* If the file is too small it fools the hashing function */
 
 #define HELP_MESSAGE \
@@ -190,6 +189,7 @@ private:
     friend class cwPruningService;
 
     bool impersonate;
+    DWORD nthreads;
     HANDLE hStopEvent;
 
     wchar_t ourPath[MAX_PATH];
@@ -227,6 +227,7 @@ extern bool GetCanonicalFilename(LPCWSTR devicename, LPCWSTR pathname, LPWSTR sz
 extern bool InitNtFunctions(void);
 extern void UnintNtFunctions(void);
 bool Impersonate(DWORD dwPID);
+extern DWORD GetCPUCount(void);
 extern const char *scanresult_to_string(scan_res_t result);
 extern const char *scanresult_to_desc(scan_res_t result);
 

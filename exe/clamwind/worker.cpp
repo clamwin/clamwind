@@ -282,7 +282,7 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
     {
         case ACTION_RELOADDB:
             dbgprint(LOG_INFO, L"XML::Reload DB\n");
-            int i;
+            unsigned int i;
 
             LOCK(RELOAD);
             this->suspended = 0;
@@ -293,15 +293,15 @@ std::string CClamWinD::HandleXmlMessage(CwXmlMessage *msg)
             {
                 job_t reloadjob;
                 reloadjob.type = JOB_RELOAD;
-                for (i = 0; i < MAX_THREADS; i++)
+                for (i = 0; i < this->nthreads; i++)
                     this->jobs.push(reloadjob);
             }
 
-            ReleaseSemaphore(this->sem_worker, MAX_THREADS, NULL);
+            ReleaseSemaphore(this->sem_worker, this->nthreads, NULL);
 
             /* Wait until all are ready */
             do WaitForSingleObject(this->hReloadEvent, INFINITE);
-            while (this->suspended < MAX_THREADS);
+            while (this->suspended < this->nthreads);
 
             /* Reload */
             delete this->db;

@@ -86,13 +86,18 @@ void CClamWinD::ServiceProc(void)
 {
     dbgprint(LOG_ALWAYS, L"Starting Service...\n");
 
-    HANDLE threads[MAX_THREADS], ioctl;
+    HANDLE *threads, ioctl;
     DWORD i, id;
+    this->nthreads = GetCPUCount();
     this->sem_worker = CreateSemaphore(NULL, 0, 1000, L"ClamWinD_Worker");
     this->isReloading = false;
     this->suspended = 0;
 
-    for(i = 0; i < sizeof(threads)/sizeof(threads[0]); i++)
+    dbgprint(LOG_ALWAYS, L"Detected %d CPUs...\n", nthreads);
+
+    threads = new HANDLE[nthreads];
+
+    for(i = 0; i < nthreads; i++)
         threads[i] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE) Worker, (LPVOID) this, 0, &id);
 
     if (Filter->Present)
@@ -103,8 +108,8 @@ void CClamWinD::ServiceProc(void)
             ShutDown();
     }
 
-    WaitForMultipleObjects(sizeof(threads)/sizeof(threads[0]), threads, TRUE, INFINITE);
-    for(i = 0; i < sizeof(threads)/sizeof(threads[0]); i++)
+    WaitForMultipleObjects(nthreads, threads, TRUE, INFINITE);
+    for(i = 0; i < nthreads; i++)
         CloseHandle(threads[i]);
 
     if (Filter->Present)
@@ -121,6 +126,7 @@ void CClamWinD::ServiceProc(void)
 
     this->Filter->StopFiltering();
     dbgprint(LOG_ALWAYS, L"Service Stopped...\n");
+    delete threads;
     return;
 }
 

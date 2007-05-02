@@ -251,6 +251,14 @@ bool Impersonate(DWORD dwPID)
     return bImpersonated;
 }
 
+DWORD GetCPUCount(void)
+{
+    SYSTEM_INFO sysinfo;
+    memset(&sysinfo, 0, sizeof(sysinfo));
+    GetSystemInfo(&sysinfo);
+    return (sysinfo.dwNumberOfProcessors ? sysinfo.dwNumberOfProcessors : 1);
+}
+
 const char *scanresult_to_string(scan_res_t result)
 {
     switch (result)
