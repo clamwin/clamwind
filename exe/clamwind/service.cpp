@@ -245,7 +245,7 @@ bool CServiceBase::Install(void)
     {
         UINT f = EVENTLOG_ERROR_TYPE | EVENTLOG_WARNING_TYPE | EVENTLOG_INFORMATION_TYPE;
         wchar_t szKey[MAX_PATH];
-        swprintf(szKey, L"%s\\%s", REG_EVENTLOG, GetName());
+        _snwprintf(szKey, MAX_PATH, L"%s\\%s", REG_EVENTLOG, GetName());
 
         HKEY hKey;
         if (RegCreateKey(HKEY_LOCAL_MACHINE, szKey, &hKey) == ERROR_SUCCESS)
@@ -277,7 +277,7 @@ bool CServiceBase::SetConfigValue(wchar_t *key, BYTE *data, DWORD size, DWORD ty
     DWORD disp;
     bool success = false;
 
-    swprintf(RegPath, REG_CONFIG, GetName());
+    _snwprintf(RegPath, MAX_PATH, REG_CONFIG, GetName());
 
     if(Succeeded(RegCreateKeyEx(HKEY_LOCAL_MACHINE, RegPath, 0, NULL, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, NULL, &hKey, &disp) == ERROR_SUCCESS))
     {
@@ -294,7 +294,7 @@ bool CServiceBase::GetConfigValue(wchar_t *key, BYTE *data, DWORD *size, DWORD *
     DWORD disp;
     bool success = false;
 
-    swprintf(RegPath, REG_CONFIG, GetName());
+    _snwprintf(RegPath, MAX_PATH, REG_CONFIG, GetName());
 
     if(Succeeded(RegCreateKeyEx(HKEY_LOCAL_MACHINE, RegPath, 0, NULL, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, NULL, &hKey, &disp) == ERROR_SUCCESS))
     {
