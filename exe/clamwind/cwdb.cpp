@@ -72,6 +72,7 @@ bool cwDB::CVDLoad(const char *dbName, cl_engine **engine)
     }
 }
 
+/* FIXME: ugly for .inc directories */
 cwDB::cwDB(const wchar_t *szPath)
 {
     char szMBPath[MAX_PATH];
@@ -85,7 +86,7 @@ cwDB::cwDB(const wchar_t *szPath)
     dbgprint(LOG_ALWAYS, L"Loading Clamav Signatures from %s...\n", szPath);
 
     // Full DB
-    if (!this->CVDLoad("main.cvd", &this->engines[DB_MAIN])) return;
+    if (!(this->CVDLoad("main.cvd", &this->engines[DB_MAIN]) || this->CVDLoad("main.inc", &this->engines[DB_MAIN]))) return;
     if (!(this->CVDLoad("daily.cvd", &this->engines[DB_MAIN]) || this->CVDLoad("daily.inc", &this->engines[DB_MAIN]))) return;
     if (cl_build(this->engines[DB_MAIN]))
     {
@@ -107,6 +108,7 @@ cwDB::cwDB(const wchar_t *szPath)
 
     this->versions[DB_MAIN]  = this->CVDVersion("main.cvd");
     this->versions[DB_DAILY] = this->CVDVersion("daily.cvd");
+    if (!this->versions[DB_DAILY]) this->versions[DB_DAILY] = this->CVDVersion("main.inc");
     if (!this->versions[DB_DAILY]) this->versions[DB_DAILY] = this->CVDVersion("daily.inc");
 
     /* Register the Scan Callbacks */
