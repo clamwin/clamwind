@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/zziplib"
+				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/nsis"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_USE_INT64;_INTEGRAL_MAX_BITS=64;NO_CONSOLE_IO;_LZMA_IN_CB;$(NOINHERIT)"
 				MinimalRebuild="true"
 				ExceptionHandling="1"
@@ -132,7 +132,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/zziplib"
+				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/nsis"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_USRDLL;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_USE_INT64;_INTEGRAL_MAX_BITS=64;NO_CONSOLE_IO;_LZMA_IN_CB;$(NOINHERIT)"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -590,15 +590,63 @@
 					>
 				</File>
 				<File
-					RelativePath=".\clamav\libclamav\7zip\LzmaDecode.c"
-					>
-				</File>
-				<File
 					RelativePath=".\clamav\libclamav\7zip\LzmaDecode.h"
 					>
 				</File>
 				<File
+					RelativePath=".\clamav\libclamav\7zip\LzmaDecode_cw.c"
+					>
+				</File>
+				<File
 					RelativePath=".\clamav\libclamav\7zip\LzmaTypes.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="nsis"
+				>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\bzlib.c"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\bzlib_private.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\infblock.c"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\LZMADecode.c"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\LZMADecode.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nsis_bzlib.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nsis_zconf.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nsis_zlib.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nsis_zutil.h"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nulsft.c"
+					>
+				</File>
+				<File
+					RelativePath=".\clamav\libclamav\nsis\nulsft.h"
 					>
 				</File>
 			</Filter>
