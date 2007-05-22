@@ -590,7 +590,7 @@
 					>
 				</File>
 				<File
-					RelativePath=".\clamav\libclamav\7zip\LzmaDecode.h"
+					RelativePath=".\clamav\libclamav\7zip\LzmaDecode_cw.h"
 					>
 				</File>
 				<File
