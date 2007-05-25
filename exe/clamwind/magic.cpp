@@ -96,50 +96,13 @@ static const struct cli_magic_s cli_magic[] =
     {-1, NULL,                  0,  NULL,                                   CW_TYPE_UNKNOWN_DATA}
 };
 
-static char internat[256] =
-{
-    /* TODO: Remember to buy a beer to Joerg Wunsch <joerg@FreeBSD.ORG> */
-    0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0,  /* 0x0X */
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,  /* 0x1X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x2X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x3X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x4X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x5X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x6X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,  /* 0x7X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x8X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0x9X */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0xaX */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0xbX */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0xcX */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0xdX */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  /* 0xeX */
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1   /* 0xfX */
-};
-
 cw_magic_t cw_magic(const unsigned char* buf, size_t buflen)
 {
-    int ascii = 1;
-    size_t i, len;
+    size_t i;
 
     for(i = 0; cli_magic[i].magic; i++)
-    {
         if(buflen >= cli_magic[i].offset+cli_magic[i].length)
-        {
             if(memcmp(buf+cli_magic[i].offset, cli_magic[i].magic, cli_magic[i].length) == 0)
-            {
                 return cli_magic[i].type;
-            }
-        }
-    }
-
-    buflen < 25 ? (len = buflen) : (len = 25);
-    for(i = 0; i < len; i++)
-        if(!iscntrl(buf[i]) && !isprint(buf[i]) && !internat[buf[i] & 0xff])
-        {
-            ascii = 0;
-            break;
-        }
-
-    return (ascii ? CW_TYPE_UNKNOWN_TEXT : CW_TYPE_UNKNOWN_DATA);
+    return CW_TYPE_UNKNOWN_DATA;
 }
