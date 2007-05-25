@@ -43,7 +43,7 @@ wchar_t *txtquery(const wchar_t *domain, unsigned int *ttl)
         {
             /* yes strlen is unsafe but win32 doesn't tell me the right length */
             size_t len = wcslen(pRec->Data.TXT.pStringArray[0]);
-            txt = (wchar_t *) malloc(len + 1);
+            txt = new wchar_t[len + 1];
             wcsncpy(txt, (wchar_t *) pRec->Data.TXT.pStringArray[0], len);
             txt[len] = 0;
             *ttl = pRec->dwTtl;

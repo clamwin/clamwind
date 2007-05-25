@@ -65,8 +65,8 @@ size_t GetOurDir(LPWSTR szPath, DWORD cbPath)
     if(!GetModuleFileName(NULL, szPath, cbPath))
         return 0;
     _wsplitpath(szPath, szDrive, szDir, szFile, szExt);
-    wcscpy(szPath, szDrive);
-    wcscat(szPath, szDir);
+    wcsncpy(szPath, szDrive, cbPath);
+    wcsncat(szPath, szDir, cbPath);
     // remove last slash
     size_t len = wcslen(szPath);
     if(szPath[len-1] == L'\\')
@@ -157,7 +157,7 @@ BOOL GetNetworkDriveSharePath(LPCTSTR szDrive, LPTSTR szShare, PDWORD pdwShareSi
     }
 }
 
-bool GetCanonicalFilename(LPCWSTR deviceName, LPCWSTR szFilename, LPWSTR szPath)
+bool GetCanonicalFilename(LPCWSTR deviceName, LPCWSTR szFilename, LPWSTR szPath, DWORD cbPath)
 {
     int i = 0;
     bool bSuccess = FALSE;
@@ -180,17 +180,17 @@ bool GetCanonicalFilename(LPCWSTR deviceName, LPCWSTR szFilename, LPWSTR szPath)
                 wchar_t *pStart = wcschr((wchar_t *) &szFilename[pos], L'\\');
                 if(pStart)
                 {
-                    wchar_t szTemp[MAX_PATH * 2]; // FIXME * 2?
-                    wcscpy(szTemp, L"\\");
+                    wchar_t szTemp[512];
+                    wcsncpy(szTemp, L"\\", sizeof(szTemp));
                     wcsncat(szTemp, pStart, sizeof(szTemp));
-                    wcscpy(szPath, szTemp);
+                    wcsncpy(szPath, szTemp, cbPath);
                     bCopied = true;
                 }
             }
             return bCopied;
         }
         else
-            wcscpy(szPath, L"\\");
+            wcsncpy(szPath, L"\\", cbPath);
     }
     else
     {
@@ -204,8 +204,7 @@ bool GetCanonicalFilename(LPCWSTR deviceName, LPCWSTR szFilename, LPWSTR szPath)
         {
             if(dwDrives & (1 << i))
             {
-
-                swprintf(szDrive, L"%C:", i + 0x41);
+                _snwprintf(szDrive, MAX_PATH, L"%C:", i + 0x41);
                 if(QueryDosDevice(szDrive, szDevice, sizeof(szDevice)))
                 {
                     if(!_wcsicmp(szDevice, deviceName))
@@ -218,17 +217,17 @@ bool GetCanonicalFilename(LPCWSTR deviceName, LPCWSTR szFilename, LPWSTR szPath)
             dbgprint(LOG_INFO, L"Thread %i; Device Name: %s NOT FOUND\n", GetCurrentThreadId(), deviceName);
             return false;
         }
-        wcscpy(szPath, szDrive);
+        wcsncpy(szPath, szDrive, cbPath);
     }
 
     // append back slash to the path
     if(szPath[wcslen(szPath)] != L'\\')
-        wcscat(szPath, L"\\");
+        wcsncat(szPath, L"\\", cbPath);
     // append filename, removing first slash if necessary
     if(szFilename[0] == L'\\')
-        wcscat(szPath, szFilename + 1);
+        wcsncat(szPath, szFilename + 1, cbPath);
     else
-        wcscat(szPath, szFilename);
+        wcsncat(szPath, szFilename, cbPath);
     dbgprint(LOG_TRACE, L"Thread %i; Got canonical name: %s\n", GetCurrentThreadId(), szPath);
     return true;
 }

@@ -142,7 +142,7 @@ int wmain(int argc, wchar_t *argv[])
     {
         wchar_t szPath[MAX_PATH];
         GetOurDir(szPath, sizeof(szPath));
-        wcscat(szPath, L"\\ClamWind.log");
+        wcsncat(szPath, L"\\ClamWind.log", MAX_PATH);
         log.InitFile(logLevel, szPath);
     }
 

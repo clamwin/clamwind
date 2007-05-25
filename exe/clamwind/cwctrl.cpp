@@ -170,7 +170,7 @@ bool cwCtrl::GetNextFilename(std::wstring& filename, DWORD& index, DWORD& pid, D
 
         // get the normal usermode filename
         wchar_t name[MAX_DEVICE_NAME + MAX_NAME_LENGTH + 1];
-        if(!GetCanonicalFilename(devicename, pathname, name))
+        if(!GetCanonicalFilename(devicename, pathname, name, sizeof(name)))
         {
              dbgprint(LOG_ALWAYS, L"Thread %u; Can't get filename for: %s%s\n", GetCurrentThreadId(), devicename, pathname);
              SendResult(index, -1, -1, true);
@@ -294,7 +294,9 @@ bool cwCtrl::EnableCaching(bool bEnable)
 }
 
 /* CClamWinD */
-
+/* FIXME: Scan in place instead of making a job for workers,
+   kernel filter scans should have more priority
+ */
 DWORD WINAPI CClamWinD::HandleIOCTL(LPVOID lParam)
 {
     CClamWinD* pThis = static_cast<CClamWinD*>(lParam);

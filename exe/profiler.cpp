@@ -98,10 +98,10 @@ double benchmark(void)
     wchar_t szLine[MAX_PATH];
 
     GetWindowsDirectory(szWinDir, MAX_PATH);
-    wcscat(szWinDir, L"\\System32\\");
+    wcsncat(szWinDir, L"\\System32\\", MAX_PATH);
     szFileSpec[0] = L'\0';
-    wcscat(szFileSpec, szWinDir);
-    wcscat(szFileSpec, FILESPEC);
+    wcsncat(szFileSpec, szWinDir, MAX_PATH);
+    wcsncat(szFileSpec, FILESPEC, MAX_PATH);
     fp = FindFirstFile(szFileSpec, &info);
 
     do
@@ -113,8 +113,8 @@ double benchmark(void)
         }
 
         szFileName[0] = L'\0';
-        wcscat(szFileName, szWinDir);
-        wcscat(szFileName, info.cFileName);
+        wcsncat(szFileName, szWinDir, MAX_PATH);
+        wcsncat(szFileName, info.cFileName, MAX_PATH);
 
         hFile = CreateFile(szFileName, GENERIC_READ, FILE_SHARE_READ|FILE_SHARE_WRITE, NULL, OPEN_EXISTING, FILE_FLAG_RANDOM_ACCESS, NULL);
         if (hFile == INVALID_HANDLE_VALUE) break;

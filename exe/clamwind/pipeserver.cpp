@@ -49,12 +49,12 @@ void cwPipeServer::GetAnswerToRequest(LPPIPEINST pipe)
     {
         msg->client = pipe->hPipeInst;
         std::string reply = pipe->svc->HandleXmlMessage(msg);
-        strcpy(pipe->chReply, reply.c_str());
+        strncpy(pipe->chReply, reply.c_str(), sizeof(pipe->chReply));
         pipe->cbToWrite = (DWORD) reply.length() + 1;
     }
     else
     {
-        strcpy(pipe->chReply, FULL_ERROR_REPLY);
+        strncpy(pipe->chReply, FULL_ERROR_REPLY, sizeof(pipe->chReply));
         pipe->cbToWrite = (DWORD) sizeof(FULL_ERROR_REPLY);
     }
     delete msg;

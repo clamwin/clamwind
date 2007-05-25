@@ -26,7 +26,6 @@
 #define __CLAMWIND_H_
 
 #define _CRT_SECURE_NO_DEPRECATE
-#define _CRT_NON_CONFORMING_SWPRINTFS
 
 #define WIN32_LEAN_AND_MEAN
 #define _WIN32_WINNT 0x0501
@@ -223,7 +222,7 @@ extern CClamWinD svc;
 extern size_t GetOurDir(LPWSTR szPath, DWORD cbPath);
 extern bool IsSmall(HANDLE hFile);
 extern bool IsRegularFile(LPCWSTR deviceName, LPCWSTR pathName);
-extern bool GetCanonicalFilename(LPCWSTR devicename, LPCWSTR pathname, LPWSTR szPath);
+extern bool GetCanonicalFilename(LPCWSTR devicename, LPCWSTR pathname, LPWSTR szPath, DWORD cbPath);
 extern bool InitNtFunctions(void);
 extern void UnintNtFunctions(void);
 bool Impersonate(DWORD dwPID);

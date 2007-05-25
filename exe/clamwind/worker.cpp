@@ -52,6 +52,7 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
         struct cl_limits limits;
         wchar_t wszVirName[MAX_PATH];
 
+        /* FIXME: bare defaults */
         memset(&limits, 0, sizeof(struct cl_limits));
         limits.maxfiles = 1;                /* max files */
         limits.maxfilesize = 1 * 524288;    /* maximal archived file size == 5 Mb */
@@ -91,7 +92,7 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
         entry.main = this->db->GetEngineVersion(DB_MAIN);
         entry.daily = this->db->GetEngineVersion(DB_DAILY);
         entry.filename[0] = L'\0';
-        wcscat(entry.filename, wsfilename.c_str());
+        wcsncat(entry.filename, wsfilename.c_str(), sizeof(entry.filename));
 
         if(this->cache)
         {
