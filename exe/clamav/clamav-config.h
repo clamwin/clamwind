@@ -156,6 +156,9 @@
 /* have resolv.h */
 /* #undef HAVE_RESOLV_H */
 
+/* Define signed right shift implementation */ /* Sherpya FIXME: check if correct */
+#define HAVE_SAR 1
+
 /* Define to 1 if you have the `sendmsg' function. */
 /* #undef HAVE_SENDMSG */
 
