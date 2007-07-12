@@ -415,6 +415,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\unarj.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\unsp.c"
 				>
 			</File>
@@ -886,6 +890,10 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\tnef.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\unarj.h"
 				>
 			</File>
 			<File
