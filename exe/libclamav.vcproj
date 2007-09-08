@@ -283,10 +283,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\clamav\libclamav\matcher-ncore.c"
-				>
-			</File>
-			<File
 				RelativePath=".\clamav\libclamav\matcher.c"
 				>
 			</File>
@@ -762,10 +758,6 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\matcher-bm.h"
-				>
-			</File>
-			<File
-				RelativePath=".\clamav\libclamav\matcher-ncore.h"
 				>
 			</File>
 			<File
