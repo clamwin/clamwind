@@ -120,9 +120,6 @@
 /* Define to 1 if you have a working `mmap' system call. */
 #define HAVE_MMAP 1
 
-/* Support for NodalCore acceleration */
-/* #undef HAVE_NCORE */
-
 /* Define to 1 if you have the <ndir.h> header file. */
 /* #undef HAVE_NDIR_H */
 
@@ -149,9 +146,6 @@
 
 /* Define to 1 if you have the `recvmsg' function. */
 /* #undef HAVE_RECVMSG */
-
-/* Define to 1 if you have the <regex.h> header file. */
-#define HAVE_REGEX_H 1
 
 /* have resolv.h */
 /* #undef HAVE_RESOLV_H */
