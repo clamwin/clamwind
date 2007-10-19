@@ -371,10 +371,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\clamav\libclamav\sha256.c"
-				>
-			</File>
-			<File
 				RelativePath=".\clamav\libclamav\sis.c"
 				>
 			</File>
@@ -846,10 +842,6 @@
 			</File>
 			<File
 				RelativePath=".\clamav\libclamav\scanners.h"
-				>
-			</File>
-			<File
-				RelativePath=".\clamav\libclamav\sha256.h"
 				>
 			</File>
 			<File
