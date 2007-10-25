@@ -6,6 +6,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clamwind", "clamwind.vcproj
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamav", "libclamav.vcproj", "{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2} = {43C71E14-9324-4A14-BDE8-2E187CBF3ED2}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "profiler", "profiler.vcproj", "{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -13,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "profiler", "profiler.vcproj
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pipeclient", "pipeclient.vcproj", "{92E138CA-2606-4B00-9B2A-EF0FD5196D88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamunrar", "libclamunrar.vcproj", "{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +41,10 @@ Global
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Debug|Win32.Build.0 = Debug|Win32
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.ActiveCfg = Release|Win32
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.Build.0 = Release|Win32
+		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Debug|Win32.Build.0 = Debug|Win32
+		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Release|Win32.ActiveCfg = Release|Win32
+		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

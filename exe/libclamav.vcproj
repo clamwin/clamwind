@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/nsis"
+				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/nsis;clamav/libclamunrar"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_USE_INT64;_INTEGRAL_MAX_BITS=64;NO_CONSOLE_IO;_LZMA_IN_CB;$(NOINHERIT)"
 				MinimalRebuild="true"
 				ExceptionHandling="1"
@@ -132,7 +132,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/unrar;clamav/libclamav/nsis"
+				AdditionalIncludeDirectories="clamav;clamav/include;clamav/libclamav;clamav/libclamav/mspack;clamav/libclamav/nsis;clamav/libclamunrar"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_USRDLL;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_USE_INT64;_INTEGRAL_MAX_BITS=64;NO_CONSOLE_IO;_LZMA_IN_CB;$(NOINHERIT)"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -446,66 +446,6 @@
 				RelativePath=".\clamav\libclamav\yc.c"
 				>
 			</File>
-			<Filter
-				Name="unrar"
-				>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar15.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar15.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar20.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrar20.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarcmd.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarcmd.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarfilter.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarfilter.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarppm.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarppm.h"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarvm.c"
-					>
-				</File>
-				<File
-					RelativePath=".\clamav\libclamav\unrar\unrarvm.h"
-					>
-				</File>
-			</Filter>
 			<Filter
 				Name="7zip"
 				>

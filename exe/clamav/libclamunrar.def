@@ -1,0 +1,6 @@
+EXPORTS
+
+cli_unrar_open
+cli_unrar_close
+cli_unrar_extract_next
+cli_unrar_extract_next_prepare
