@@ -27,8 +27,14 @@
 /* "default FD_SETSIZE value" */
 #define DEFAULT_FD_SETSIZE 64
 
+/* link with libclamunrar (non-GPL, see COPYING.unrar) */
+#define ENABLE_UNRAR 1
+
 /* file i/o buffer size */
 #define FILEBUFF 8192
+
+/* FPU byte ordering is little endian */
+#define FPU_WORDS_BIGENDIAN 0
 
 /* enable workaround for broken DNS servers */
 /* #undef FRESHCLAM_DNS_FIX */

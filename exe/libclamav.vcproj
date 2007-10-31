@@ -207,6 +207,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\clamav\libclamav\autoit.c"
+				>
+			</File>
+			<File
 				RelativePath=".\clamav\libclamav\binhex.c"
 				>
 			</File>
@@ -598,6 +602,10 @@
 			>
 			<File
 				RelativePath=".\clamav\libclamav\aspack.h"
+				>
+			</File>
+			<File
+				RelativePath=".\clamav\libclamav\autoit.h"
 				>
 			</File>
 			<File
