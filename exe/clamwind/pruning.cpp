@@ -66,8 +66,8 @@ DWORD WINAPI cwPruningService::Run(LPVOID lpvThreadParam)
     {
         BREAKIFDONE(SLEEPTIME);
 
-		if(!svc->cache)
-			continue;
+        if(!svc->cache)
+            continue;
 
         svc->cache->database->cursor(NULL, &cursorp, DB_READ_UNCOMMITTED | DB_TXN_SNAPSHOT);
         dkey = NULL;
