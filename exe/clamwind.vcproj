@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="8,00"
 	Name="clamwind"
 	ProjectGUID="{AA78A606-C2A3-4622-861D-DD99729EC6ED}"
 	RootNamespace="clamwind"
@@ -17,8 +17,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="Debug"
-			IntermediateDirectory="Debug"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)\$(PlatformName)"
+			IntermediateDirectory="$(SolutionDir)$(ConfigurationName)\$(PlatformName)\$(ProjectName)"
 			ConfigurationType="1"
 			CharacterSet="1"
 			>
@@ -43,8 +43,11 @@
 				AdditionalIncludeDirectories=".;clamwind;clamav/libclamav;../sys/inc"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
+				ExceptionHandling="2"
 				BasicRuntimeChecks="3"
+				SmallerTypeCheck="false"
 				RuntimeLibrary="3"
+				FloatingPointModel="0"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -62,10 +65,8 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="mpr.lib advapi32.lib dnsapi.lib libdb45sd.lib ws2_32.lib"
-				OutputFile="$(OutDir)/clamwind.exe"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/clamwind.pdb"
 				SubSystem="1"
 				TargetMachine="1"
 			/>
@@ -96,10 +97,11 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="Release"
-			IntermediateDirectory="Release"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)\$(PlatformName)"
+			IntermediateDirectory="$(SolutionDir)$(ConfigurationName)\$(PlatformName)\$(ProjectName)"
 			ConfigurationType="1"
 			CharacterSet="1"
+			WholeProgramOptimization="1"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -118,15 +120,16 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				Optimization="2"
-				InlineFunctionExpansion="1"
-				FavorSizeOrSpeed="1"
-				OmitFramePointers="true"
+				InlineFunctionExpansion="0"
+				EnableIntrinsicFunctions="false"
+				FavorSizeOrSpeed="0"
+				OmitFramePointers="false"
 				AdditionalIncludeDirectories=".;clamwind;clamav/libclamav;../sys/inc"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
-				StringPooling="true"
+				ExceptionHandling="2"
+				SmallerTypeCheck="false"
 				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
+				FloatingPointModel="0"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="true"
@@ -144,14 +147,11 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="mpr.lib advapi32.lib dnsapi.lib libdb45s.lib ws2_32.lib"
-				OutputFile="$(OutDir)/clamwind.exe"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
-				EnableCOMDATFolding="2"
-				OptimizeForWindows98="1"
+				SetChecksum="true"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -181,10 +181,6 @@
 		</Configuration>
 	</Configurations>
 	<References>
-		<ProjectReference
-			ReferencedProjectIdentifier="{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
-			RelativePathToProject=".\libclamav.vcproj"
-		/>
 	</References>
 	<Files>
 		<Filter

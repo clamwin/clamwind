@@ -27,7 +27,7 @@
 /* "default FD_SETSIZE value" */
 #define DEFAULT_FD_SETSIZE 64
 
-/* link with libclamunrar (non-GPL, see COPYING.unrar) */
+/* "build unrar code" */
 #define ENABLE_UNRAR 1
 
 /* file i/o buffer size */

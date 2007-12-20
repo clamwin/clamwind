@@ -2,22 +2,27 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clamwind", "clamwind.vcproj", "{AA78A606-C2A3-4622-861D-DD99729EC6ED}"
 	ProjectSection(ProjectDependencies) = postProject
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6} = {5715B90C-602E-446C-AC4A-D517CBE5E2C6}
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B} = {0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamav", "libclamav.vcproj", "{5715B90C-602E-446C-AC4A-D517CBE5E2C6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamav", "clamav\libclamav.vcproj", "{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}"
 	ProjectSection(ProjectDependencies) = postProject
-		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2} = {43C71E14-9324-4A14-BDE8-2E187CBF3ED2}
+		{1D64C115-3621-48CC-A4E1-10A23E1EF998} = {1D64C115-3621-48CC-A4E1-10A23E1EF998}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamunrar", "clamav\libclamunrar.vcproj", "{DFC90748-B30C-4119-98B4-168106A61254}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamunrar_iface", "clamav\libclamunrar_iface.vcproj", "{1D64C115-3621-48CC-A4E1-10A23E1EF998}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DFC90748-B30C-4119-98B4-168106A61254} = {DFC90748-B30C-4119-98B4-168106A61254}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "profiler", "profiler.vcproj", "{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}"
 	ProjectSection(ProjectDependencies) = postProject
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6} = {5715B90C-602E-446C-AC4A-D517CBE5E2C6}
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B} = {0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pipeclient", "pipeclient.vcproj", "{92E138CA-2606-4B00-9B2A-EF0FD5196D88}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclamunrar", "libclamunrar.vcproj", "{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +34,18 @@ Global
 		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Debug|Win32.Build.0 = Debug|Win32
 		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Release|Win32.ActiveCfg = Release|Win32
 		{AA78A606-C2A3-4622-861D-DD99729EC6ED}.Release|Win32.Build.0 = Release|Win32
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Debug|Win32.Build.0 = Debug|Win32
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Release|Win32.ActiveCfg = Release|Win32
-		{5715B90C-602E-446C-AC4A-D517CBE5E2C6}.Release|Win32.Build.0 = Release|Win32
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}.Debug|Win32.Build.0 = Debug|Win32
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}.Release|Win32.ActiveCfg = Release|Win32
+		{0E45E0DC-F9DB-4F31-A58C-1515EDE2A95B}.Release|Win32.Build.0 = Release|Win32
+		{DFC90748-B30C-4119-98B4-168106A61254}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFC90748-B30C-4119-98B4-168106A61254}.Debug|Win32.Build.0 = Debug|Win32
+		{DFC90748-B30C-4119-98B4-168106A61254}.Release|Win32.ActiveCfg = Release|Win32
+		{DFC90748-B30C-4119-98B4-168106A61254}.Release|Win32.Build.0 = Release|Win32
+		{1D64C115-3621-48CC-A4E1-10A23E1EF998}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D64C115-3621-48CC-A4E1-10A23E1EF998}.Debug|Win32.Build.0 = Debug|Win32
+		{1D64C115-3621-48CC-A4E1-10A23E1EF998}.Release|Win32.ActiveCfg = Release|Win32
+		{1D64C115-3621-48CC-A4E1-10A23E1EF998}.Release|Win32.Build.0 = Release|Win32
 		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Debug|Win32.ActiveCfg = Debug|Win32
 		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Debug|Win32.Build.0 = Debug|Win32
 		{08A8DD2A-C87E-4DCA-8410-8CEDADADB766}.Release|Win32.ActiveCfg = Release|Win32
@@ -41,10 +54,6 @@ Global
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Debug|Win32.Build.0 = Debug|Win32
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.ActiveCfg = Release|Win32
 		{92E138CA-2606-4B00-9B2A-EF0FD5196D88}.Release|Win32.Build.0 = Release|Win32
-		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Debug|Win32.ActiveCfg = Debug|Win32
-		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Debug|Win32.Build.0 = Debug|Win32
-		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Release|Win32.ActiveCfg = Release|Win32
-		{43C71E14-9324-4A14-BDE8-2E187CBF3ED2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

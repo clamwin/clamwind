@@ -1,13 +1,17 @@
 EXPORTS
+
 ; file scanning
-cl_scandesc
+cl_scandesc @1
 cl_scanfile
+cl_settempdir
 
 ; software versions
 cl_retflevel
 cl_retver
 
 ; database
+cl_build
+cl_free
 cl_loaddb
 cl_loaddbdir
 cl_load
@@ -27,8 +31,4 @@ cl_statfree
 
 ; logging functions
 cl_debug
-
-cl_settempdir
-cl_build
-cl_free
 cl_strerror
