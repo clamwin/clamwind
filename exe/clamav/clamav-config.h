@@ -180,6 +180,9 @@
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
 
+/* Define to 1 if you have the `strcasestr' function. */
+/* #undef HAVE_STRCASESTR */
+
 /* Define to 1 if you have the `strerror_r' function. */
 /* #undef HAVE_STRERROR_R */
 
