@@ -237,6 +237,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\libclamav\explode.c"
+				>
+			</File>
+			<File
 				RelativePath=".\libclamav\filetypes.c"
 				>
 			</File>
@@ -688,6 +692,10 @@
 			</File>
 			<File
 				RelativePath=".\libclamav\execs.h"
+				>
+			</File>
+			<File
+				RelativePath=".\libclamav\explode.h"
 				>
 			</File>
 			<File
