@@ -12,11 +12,21 @@
 /* name of the clamav user */
 #define CLAMAVUSER "ClamWin"
 
+/* enable clamuko */
+/* #undef CLAMUKO */
+
+/* enable debugging */
+#ifdef _DEBUG
+#define CL_DEBUG 1
+#endif
+
 /* enable experimental code */
 /* #undef CL_EXPERIMENTAL */
 
 /* thread safe */
+#ifndef __GNUC__
 #define CL_THREAD_SAFE 1
+#endif
 
 /* where to look for the config file */
 #define CONFDIR "."
@@ -49,7 +59,9 @@
 /* undef HAVE_ATTRIB_ALIGNED */
 
 /* attrib packed */
-/* #define HAVE_ATTRIB_PACKED */
+#ifdef __GNUC__
+#define HAVE_ATTRIB_PACKED 1
+#endif
 
 /* have bzip2 */
 #define HAVE_BZLIB_H 1
@@ -90,8 +102,8 @@
 /* Define to 1 if you have the <grp.h> header file. */
 /* #undef HAVE_GRP_H */
 
-/* Define to 1 if you have the <iconv.h> header file. */
-/* #undef HAVE_ICONV_H */
+/* iconv() available */
+/* #undef HAVE_ICONV */
 
 /* Define to 1 if you have the `inet_ntop' function. */
 /* #undef HAVE_INET_NTOP */
@@ -136,7 +148,9 @@
 /* #undef HAVE_POLL_H */
 
 /* "pragma pack" */
+#ifdef _MSC_VER
 #define HAVE_PRAGMA_PACK 1
+#endif
 
 /* "pragma pack hppa/hp-ux style" */
 /* #undef HAVE_PRAGMA_PACK_HPPA */
@@ -289,7 +303,11 @@
 /* #undef USE_SYSLOG */
 
 /* Version number of package */
+#ifdef _MSC_VER
 #define VERSION "devel-msvc - "__DATE__
+#else
+#define VERSION "MinGW Devel - "__DATE__
+#endif
 
 /* endianess */
 #define WORDS_BIGENDIAN 0
@@ -309,8 +327,12 @@
 /* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
 
+#ifdef __GNUC__
+#define inline __inline
+#else
 #ifndef __cplusplus
 #define inline _inline
+#endif
 #endif
 
 #include <osdeps.h>
