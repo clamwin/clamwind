@@ -345,10 +345,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\libclamav\pst.c"
-				>
-			</File>
-			<File
 				RelativePath=".\libclamav\readdb.c"
 				>
 			</File>
@@ -776,10 +772,6 @@
 			</File>
 			<File
 				RelativePath=".\libclamav\phishcheck.h"
-				>
-			</File>
-			<File
-				RelativePath=".\libclamav\pst.h"
 				>
 			</File>
 			<File
