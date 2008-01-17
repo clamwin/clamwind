@@ -253,5 +253,5 @@ int wmain(int argc, wchar_t *argv[])
 #endif
 
     wprintf(L"Average speed: %4.3f mb/s" PADDING_50, (speed * BMTOMS / cycles));
+    return 0;
 }
-
