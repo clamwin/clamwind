@@ -64,7 +64,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib pthreadVC2.lib"
+				AdditionalDependencies="ws2_32.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.dll"
 				LinkIncremental="2"
 				IgnoreDefaultLibraryNames=""
@@ -147,7 +147,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib pthreadVC2.lib"
+				AdditionalDependencies="ws2_32.lib"
 				ShowProgress="0"
 				LinkIncremental="1"
 				IgnoreDefaultLibraryNames=""
