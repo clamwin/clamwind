@@ -40,8 +40,8 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;include;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;$(NOINHERIT)"
+				AdditionalIncludeDirectories=".;include;pthreads;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;PTW32_BUILD_INLINED;PTW32_STATIC_LIB;CLEANUP=__CLEANUP_C;$(NOINHERIT)"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
@@ -124,8 +124,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories=".;include;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;$(NOINHERIT)"
+				AdditionalIncludeDirectories=".;include;pthreads;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;PTW32_BUILD_INLINED;PTW32_STATIC_LIB;CLEANUP=__CLEANUP_C;$(NOINHERIT)"
 				ExceptionHandling="0"
 				SmallerTypeCheck="false"
 				RuntimeLibrary="2"
@@ -882,7 +882,7 @@
 			</File>
 		</Filter>
 		<Filter
-			Name="Compat Files"
+			Name="Win32 Files"
 			>
 			<Filter
 				Name="Header Files"
@@ -977,6 +977,10 @@
 				</File>
 				<File
 					RelativePath=".\src\platform.c"
+					>
+				</File>
+				<File
+					RelativePath=".\pthreads\pthread.c"
 					>
 				</File>
 				<File

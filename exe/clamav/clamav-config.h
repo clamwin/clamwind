@@ -7,7 +7,7 @@
 /* #undef BROKEN_SNPRINTF */
 
 /* "build clamd" */
-/* #undef BUILD_CLAMD */
+#define BUILD_CLAMD 1
 
 /* name of the clamav user */
 #define CLAMAVUSER "ClamWin"
@@ -24,9 +24,7 @@
 /* #undef CL_EXPERIMENTAL */
 
 /* thread safe */
-#ifndef __GNUC__
 #define CL_THREAD_SAFE 1
-#endif
 
 /* where to look for the config file */
 #define CONFDIR "."
