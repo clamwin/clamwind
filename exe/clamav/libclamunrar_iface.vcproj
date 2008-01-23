@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;include;../.."
+				AdditionalIncludeDirectories=".;include;gnulib;../.."
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;$(NOINHERIT)"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
@@ -121,7 +121,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories=".;include;../.."
+				AdditionalIncludeDirectories=".;include;gnulib;../.."
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;$(NOINHERIT)"
 				ExceptionHandling="0"
 				SmallerTypeCheck="false"
@@ -186,10 +186,6 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\libclamav\snprintf.c"
-				>
-			</File>
-			<File
 				RelativePath=".\libclamunrar_iface\unrar_iface.c"
 				>
 			</File>
@@ -210,6 +206,58 @@
 			>
 			<File
 				RelativePath=".\libclamunrar_iface.rc"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="gnulib"
+			>
+			<File
+				RelativePath=".\gnulib\alloca.h"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\asnprintf.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\config.h"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\printf-args.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\printf-args.h"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\printf-parse.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\printf-parse.h"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\snprintf.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\vasnprintf.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\vasnprintf.h"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\vsnprintf.c"
+				>
+			</File>
+			<File
+				RelativePath=".\gnulib\xsize.h"
 				>
 			</File>
 		</Filter>

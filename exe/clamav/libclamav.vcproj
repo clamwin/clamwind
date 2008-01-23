@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;include;pthreads;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
+				AdditionalIncludeDirectories=".;include;gnulib;pthreads;libclamav;libclamav/regex;libclamav/nsis;libclamav/lzma"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;PTW32_BUILD_INLINED;PTW32_STATIC_LIB;CLEANUP=__CLEANUP_C;$(NOINHERIT)"
 				MinimalRebuild="true"
 				ExceptionHandling="0"
@@ -124,7 +124,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories=".;include;pthreads;libclamav;libclamav/lzma;libclamav/nsis;libclamav/regex"
+				AdditionalIncludeDirectories=".;include;gnulib;pthreads;libclamav;libclamav/regex;libclamav/nsis;libclamav/lzma"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;LIBCLAMAV_EXPORTS;HAVE_CONFIG_H;_USE_INT64;_INTEGRAL_MAX_BITS=64;_LZMA_IN_CB;PTW32_BUILD_INLINED;PTW32_STATIC_LIB;CLEANUP=__CLEANUP_C;$(NOINHERIT)"
 				ExceptionHandling="0"
 				SmallerTypeCheck="false"
@@ -366,10 +366,6 @@
 			</File>
 			<File
 				RelativePath=".\libclamav\sis.c"
-				>
-			</File>
-			<File
-				RelativePath=".\libclamav\snprintf.c"
 				>
 			</File>
 			<File
@@ -799,10 +795,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\libclamav\snprintf.h"
-				>
-			</File>
-			<File
 				RelativePath=".\libclamav\special.h"
 				>
 			</File>
@@ -985,6 +977,58 @@
 				</File>
 				<File
 					RelativePath=".\src\winstat.c"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="gnulib"
+				>
+				<File
+					RelativePath=".\gnulib\alloca.h"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\asnprintf.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\config.h"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\printf-args.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\printf-args.h"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\printf-parse.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\printf-parse.h"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\snprintf.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\vasnprintf.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\vasnprintf.h"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\vsnprintf.c"
+					>
+				</File>
+				<File
+					RelativePath=".\gnulib\xsize.h"
 					>
 				</File>
 			</Filter>
