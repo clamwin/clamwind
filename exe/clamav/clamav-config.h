@@ -142,9 +142,6 @@
 /* Define to 1 if you have the `getpagesize' function. */
 #undef HAVE_GETPAGESIZE
 
-/* have gmp installed */
-#define HAVE_GMP 1
-
 /* Define to 1 if you have the <grp.h> header file. */
 #undef HAVE_GRP_H
 
@@ -165,6 +162,9 @@
 
 /* in_port_t is defined */
 #define HAVE_IN_PORT_T 1
+
+/* Define if you have the gmp library. */
+#define HAVE_LIBGMP 1
 
 /* Define to 1 if you have the <libmilter/mfapi.h> header file. */
 #undef HAVE_LIBMILTER_MFAPI_H
@@ -396,14 +396,16 @@
 
 /* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
-#ifndef __cplusplus
-#ifndef __GNUC__
+#if !defined(__cplusplus) && !defined(__GNUC__)
 #define inline _inline
-#endif
 #endif
 
 /* Define to `long int' if <sys/types.h> does not define. */
 #undef off_t
+
+/* Define to equivalent of C99 restrict keyword, or to nothing if this is not
+   supported. Do not define if restrict is supported directly. */
+#undef restrict
 
 /* Define to "int" if <sys/socket.h> does not define. */
 #undef socklen_t
