@@ -60,6 +60,7 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
         limits.maxratio = 1000;             /* maximal compression ratio */
         limits.archivememlim = 0;           /* disable memory limit for bzip2 scanner */
 
+        /* FIXME: This is wrong now, NULL param is not allowed here */
         switch (result = cl_scandesc(fd, &virname, NULL, this->db->GetEngine(dbtype), &limits, CL_SCAN_STDOPT))
         {
             case CL_CLEAN:

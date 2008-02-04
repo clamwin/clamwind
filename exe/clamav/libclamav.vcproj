@@ -393,6 +393,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\libclamav\textnorm.c"
+				>
+			</File>
+			<File
 				RelativePath=".\libclamav\tnef.c"
 				>
 			</File>
@@ -819,6 +823,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\libclamav\textnorm.h"
+				>
+			</File>
+			<File
 				RelativePath=".\libclamav\tnef.h"
 				>
 			</File>
@@ -984,15 +992,7 @@
 				Name="gnulib"
 				>
 				<File
-					RelativePath=".\gnulib\alloca.h"
-					>
-				</File>
-				<File
 					RelativePath=".\gnulib\asnprintf.c"
-					>
-				</File>
-				<File
-					RelativePath=".\gnulib\config.h"
 					>
 				</File>
 				<File
@@ -1000,15 +1000,7 @@
 					>
 				</File>
 				<File
-					RelativePath=".\gnulib\printf-args.h"
-					>
-				</File>
-				<File
 					RelativePath=".\gnulib\printf-parse.c"
-					>
-				</File>
-				<File
-					RelativePath=".\gnulib\printf-parse.h"
 					>
 				</File>
 				<File
@@ -1016,19 +1008,15 @@
 					>
 				</File>
 				<File
+					RelativePath=".\gnulib\strtok_r.c"
+					>
+				</File>
+				<File
 					RelativePath=".\gnulib\vasnprintf.c"
 					>
 				</File>
 				<File
-					RelativePath=".\gnulib\vasnprintf.h"
-					>
-				</File>
-				<File
 					RelativePath=".\gnulib\vsnprintf.c"
-					>
-				</File>
-				<File
-					RelativePath=".\gnulib\xsize.h"
 					>
 				</File>
 			</Filter>
