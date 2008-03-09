@@ -1,6 +1,0 @@
-EXPORTS
-
-unrar_open                  @1 NONAME
-unrar_close                 @2 NONAME
-unrar_extract_next          @3 NONAME
-unrar_extract_next_prepare  @4 NONAME
