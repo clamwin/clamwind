@@ -224,13 +224,14 @@ int wmain(int argc, wchar_t *argv[])
     /* Specify no callback */
     m_root->callback = NULL;
 
-    /* FIXME: use better values */
+    /* set up archive limits */
     memset(&limits, 0, sizeof(struct cl_limits));
-    limits.maxfiles = 1;                /* max files */
-    limits.maxfilesize = 1 * 524288;    /* maximal archived file size == 5 Mb */
-    limits.maxreclevel = 1;             /* maximal recursion level */
-    limits.maxratio = 1000;             /* maximal compression ratio */
-    limits.archivememlim = 0;           /* disable memory limit for bzip2 scanner */
+    limits.maxscansize   = 150 * (1 << 20);     /* 150 mb : during the scanning of archives this size will never be exceeded */
+    limits.maxfilesize   = 100 * (1 << 20);     /* 100 mb : compressed files will only be decompressed and scanned up to this size */
+    limits.maxreclevel   = 15;                  /* maximum recursion level for archives */
+    limits.maxfiles      = 10000;               /* maximum number of files to be scanned within a single archive */
+    limits.archivememlim = 0;                   /* limit memory usage for some unpackers */
+
 #endif
 
     if (cycles)

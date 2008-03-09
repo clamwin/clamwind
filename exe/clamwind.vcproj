@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;clamwind;clamav/libclamav;../sys/inc"
+				AdditionalIncludeDirectories=".;clamwind;deps;../sys/inc"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				ExceptionHandling="2"
@@ -64,7 +64,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="mpr.lib advapi32.lib dnsapi.lib libdb45sd.lib ws2_32.lib"
+				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="1"
@@ -124,7 +124,7 @@
 				EnableIntrinsicFunctions="false"
 				FavorSizeOrSpeed="0"
 				OmitFramePointers="false"
-				AdditionalIncludeDirectories=".;clamwind;clamav/libclamav;../sys/inc"
+				AdditionalIncludeDirectories=".;clamwind;deps;../sys/inc"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				ExceptionHandling="2"
 				SmallerTypeCheck="false"
@@ -146,7 +146,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="mpr.lib advapi32.lib dnsapi.lib libdb45s.lib ws2_32.lib"
+				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="1"

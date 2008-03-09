@@ -50,18 +50,19 @@ scan_res_t CClamWinD::ProcessFile(int fd, database_t dbtype, std::wstring wsfile
     {
         const char *virname;
         struct cl_limits limits;
+        unsigned long scanned = 0;
         wchar_t wszVirName[MAX_PATH];
 
-        /* FIXME: bare defaults */
+        /* set up archive limits */
         memset(&limits, 0, sizeof(struct cl_limits));
-        limits.maxfiles = 1;                /* max files */
-        limits.maxfilesize = 1 * 524288;    /* maximal archived file size == 5 Mb */
-        limits.maxreclevel = 1;             /* maximal recursion level */
-        limits.maxratio = 1000;             /* maximal compression ratio */
-        limits.archivememlim = 0;           /* disable memory limit for bzip2 scanner */
+        limits.maxscansize   = 150 * (1 << 20);     /* 150 mb : during the scanning of archives this size will never be exceeded */
+        limits.maxfilesize   = 100 * (1 << 20);     /* 100 mb : compressed files will only be decompressed and scanned up to this size */
+        limits.maxreclevel   = 15;                  /* maximum recursion level for archives */
+        limits.maxfiles      = 10000;               /* maximum number of files to be scanned within a single archive */
+        limits.archivememlim = 0;                   /* limit memory usage for some unpackers */
 
         /* FIXME: This is wrong now, NULL param is not allowed here */
-        switch (result = cl_scandesc(fd, &virname, NULL, this->db->GetEngine(dbtype), &limits, CL_SCAN_STDOPT))
+        switch (result = cl_scandesc(fd, &virname, &scanned, this->db->GetEngine(dbtype), &limits, CL_SCAN_STDOPT))
         {
             case CL_CLEAN:
                 dbgprint(LOG_DEBUG, L"Thread %u; Scanned: CLEAN\n", GetCurrentThreadId());
