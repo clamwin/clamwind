@@ -64,8 +64,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib"
+				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib deps/libexpatMD.lib"
 				LinkIncremental="2"
+				IgnoreDefaultLibraryNames="msvcrt.lib"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"
@@ -146,7 +147,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib"
+				AdditionalDependencies="ws2_32.lib dnsapi.lib mpr.lib deps/libclamav.lib deps/libdb_small45s.lib deps/libexpatMD.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="1"

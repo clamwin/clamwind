@@ -28,13 +28,6 @@
 #define XML_STATIC
 #include <expat.h>
 
-#ifdef _DEBUG
-#define LIBSUFFIX "d"
-#else
-#define LIBSUFFIX
-#endif
-#pragma comment (lib, "libexpatMD"LIBSUFFIX".lib")
-
 #define CLAMWIND_PIPE   L"\\\\.\\pipe\\ClamWinD"
 
 #define REPLY_HDR       "<?xml version=\"1.0\"?><clamwinreply>"
